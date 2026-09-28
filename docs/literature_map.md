@@ -110,3 +110,30 @@ The candidate contribution is to unify and empirically test a sequence:
 5. the economically important margin may be the middle of the competence distribution and the disappearance of local occupational niches
 
 Novelty will be claimed only after a systematic search establishes that this sequence and the proposed empirical test are not already present in substantially equivalent form.
+
+## 10. Natural-experiment benchmark for online competition
+
+### Gebhardt (2018), Measuring the Competitive Impact of the Internet
+
+Setting:
+German municipalities during early DSL diffusion.
+
+Identification:
+legacy glass-fibre telephone infrastructure unexpectedly limited household DSL access in some areas. The infrastructure predated the commercial broadband era and created a natural source of differential online-shopping access.
+
+Mechanism test:
+the paper compares retail sectors with different exposure to online price competition.
+
+Main pattern:
+- electronics retail employment grows less where broadband makes online competition feasible
+- food retail, with negligible online competition in the period, does not show the same differential
+- book retail does not show the same effect, consistent with legally mandated resale-price maintenance limiting online price competition
+
+Why this matters for our paper:
+This is close to the cleanest empirical demonstration of the first-wave mechanism we have found. It shows that broadband itself is not enough. The effect appears where broadband activates outside competition.
+
+Implication for Study B:
+Our own broadband design should seek an interaction between plausibly exogenous connectivity and predetermined exposure to remote competition. A generic broadband employment effect is insufficient.
+
+Citation:
+Gebhardt, Georg. 2018. "Measuring the Competitive Impact of the Internet: Evidence from a Natural Experiment in Broadband Access." International Journal of Industrial Organization 57: 84-113.
