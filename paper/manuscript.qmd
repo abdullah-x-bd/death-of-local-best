@@ -1,0 +1,66 @@
+---
+title: "From Local Scarcity to Machine Abundance"
+subtitle: "Digital Markets and the Erosion of Competence Rents"
+format:
+  html:
+    toc: true
+bibliography: references.bib
+---
+
+## Abstract
+
+To be written after the first empirical results are frozen. The abstract will distinguish descriptive evidence from causal estimates.
+
+## 1. Introduction
+
+Core question: what happens to the economic value of being locally competent when technology successively removes geographic scarcity and then reduces the scarcity of competent output itself?
+
+The paper's empirical contribution will be stated only after the Wave 1 identification design is executed.
+
+## 2. Conceptual framework
+
+Develop geographic scarcity rent, skill scarcity rent, and human-specific rent.
+
+## 3. Existing literature
+
+### Superstar economics
+
+### Tradability and market integration
+
+### Digital platforms and attention concentration
+
+### Local labor-market adjustment
+
+### Generative AI, productivity, and skill compression
+
+## 4. Data
+
+Document every dataset, harmonization rule, and measurement limitation.
+
+## 5. Descriptive facts
+
+Include national institutional trends and occupation-geography facts.
+
+## 6. Wave 1 empirical strategy
+
+Present estimand, identifying variation, fixed effects, event-study design, inference, and threats.
+
+## 7. Wave 1 results
+
+Reserved.
+
+## 8. Mechanisms and falsification
+
+Reserved.
+
+## 9. Wave 2: machine abundance
+
+Separate causal mechanism evidence from early labor-market evidence.
+
+## 10. Discussion
+
+Distinguish occupational destruction, geographic concentration, institutional reorganization, and foregone occupational entry.
+
+## 11. Conclusion
+
+Reserved until findings are known.
