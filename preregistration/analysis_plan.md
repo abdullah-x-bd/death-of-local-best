@@ -171,3 +171,27 @@ If a credible identification design is later established, the analysis plan will
 ## 20. Deviations
 
 Any departure from this document after headline analysis begins must be logged in docs/deviations_from_plan.md with date, change, reason, whether the relevant result had already been observed, and consequences for confirmatory versus exploratory status.
+
+## 21. Two distinct first-wave mechanisms
+
+The original intuition contains two mechanisms that must not be conflated.
+
+### Module A: remote tradability of labor
+
+Question: does broadband reduce geographic protection for occupations whose work can be supplied from elsewhere?
+
+Primary moderator candidates: Blinder/Blinder-Krueger offshorability and related predetermined measures.
+
+Natural outcomes: local occupation presence, local employment share, wages, migration, occupational entry.
+
+### Module B: scalable digital output and attention
+
+Question: does digital distribution allow a small number of producers or products to serve much larger audiences, weakening local demand for replicated cultural/information output?
+
+This mechanism is closer to Rosen-style superstar technology and cannot be proxied adequately by offshorability alone.
+
+Candidate settings require separate data and identification. Possibilities include recorded music, newspapers/local media, photography/media products, publishing, and other outputs with low marginal reproduction costs.
+
+Module B will not be merged into Module A merely to obtain one headline coefficient.
+
+Any common conclusion across the modules must be supported independently by each design.
