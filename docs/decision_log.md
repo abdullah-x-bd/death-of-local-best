@@ -105,3 +105,14 @@ Decision: Suppressed historical CBP employment values will not be set to zero, d
 Reason: Census provides EMPFLAG size intervals for suppressed cells. Establishment counts are exact, while employment can be analyzed using interval information and partial-identification sensitivity.
 
 Made before headline extension regressions: yes.
+
+### D013: Require mechanism-specific broadband heterogeneity for Study B
+
+Decision: A statistically significant average broadband effect is not sufficient evidence for erosion of geographic scarcity rents.
+
+Reason: the strongest prior natural-experiment evidence on internet competition distinguishes sectors according to whether broadband actually exposes them to outside competition. Our theory likewise predicts heterogeneous effects by predetermined remote tradability.
+
+Requirement:
+Study B must identify a broadband/connectivity shock and show that effects vary in the direction predicted by a predetermined tradability measure, with low-tradability occupations serving as negative controls.
+
+Made before headline Study B regressions: yes.
