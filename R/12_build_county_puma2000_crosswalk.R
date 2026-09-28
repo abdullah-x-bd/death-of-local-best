@@ -30,27 +30,80 @@ state_dirs <- c(
   WY="Wyoming"
 )
 
+state_fips <- c(
+  AL="01", AK="02", AZ="04", AR="05", CA="06", CO="08", CT="09", DE="10",
+  DC="11", FL="12", GA="13", HI="15", ID="16", IL="17", IN="18", IA="19",
+  KS="20", KY="21", LA="22", ME="23", MD="24", MA="25", MI="26", MN="27",
+  MS="28", MO="29", MT="30", NE="31", NV="32", NH="33", NJ="34", NM="35",
+  NY="36", NC="37", ND="38", OH="39", OK="40", OR="41", PA="42", RI="44",
+  SC="45", SD="46", TN="47", TX="48", UT="49", VT="50", VA="51", WA="53",
+  WV="54", WI="55", WY="56"
+)
+
 base_url <- "https://www2.census.gov/census_2000/datasets/PUMS/FivePercent"
 dest_dir <- file.path(DIR_RAW,"census2000_pumeq")
 if (!dir.exists(dest_dir)) dir.create(dest_dir,recursive=TRUE)
 
 download_pumeq <- function(abbr, overwrite=FALSE) {
   state_dir <- unname(state_dirs[[abbr]])
-  fname <- paste0("PUMEQ5-",abbr,".TXT")
-  url <- paste(base_url,state_dir,fname,sep="/")
-  dest <- file.path(dest_dir,fname)
+  alpha_name <- paste0("PUMEQ5-",abbr,".TXT")
+  numeric_name <- paste0("PUMEQ5-",unname(state_fips[[abbr]]),".TXT")
+
+  candidates <- unique(c(
+    paste(base_url,state_dir,alpha_name,sep="/"),
+    paste(base_url,state_dir,numeric_name,sep="/")
+  ))
+
+  dest <- file.path(dest_dir,alpha_name)
+  used_url <- NA_character_
 
   if (!file.exists(dest) || overwrite) {
     message("Downloading ",abbr," geographic equivalency file")
-    utils::download.file(url,destfile=dest,mode="wb",quiet=FALSE)
+
+    errors <- character(0)
+    success <- FALSE
+
+    for (url in candidates) {
+      ok <- tryCatch({
+        tf <- tempfile(fileext=".txt")
+        on.exit(unlink(tf),add=TRUE)
+        utils::download.file(url,destfile=tf,mode="wb",quiet=TRUE)
+
+        if (!file.exists(tf) || file.info(tf)$size < 100) {
+          stop("download too small")
+        }
+
+        first <- readLines(tf,n=5,warn=FALSE)
+        if (!length(first)) stop("empty text file")
+
+        file.copy(tf,dest,overwrite=TRUE)
+        used_url <- url
+        TRUE
+      },error=function(e) {
+        errors <<- c(errors,paste(url,conditionMessage(e),sep=" :: "))
+        FALSE
+      })
+
+      if (isTRUE(ok)) {
+        success <- TRUE
+        break
+      }
+    }
+
+    if (!success) {
+      stop(
+        "No official Census PUMEQ URL succeeded for ",abbr,". Attempts:\n",
+        paste(errors,collapse="\n")
+      )
+    }
   }
 
   data.frame(
     state_abbr=abbr,
-    file=fname,
+    file=alpha_name,
     bytes=file.info(dest)$size,
     md5=unname(tools::md5sum(dest)),
-    source_url=url,
+    source_url=used_url,
     stringsAsFactors=FALSE
   )
 }
