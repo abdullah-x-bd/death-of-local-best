@@ -195,3 +195,69 @@ Candidate settings require separate data and identification. Possibilities inclu
 Module B will not be merged into Module A merely to obtain one headline coefficient.
 
 Any common conclusion across the modules must be supported independently by each design.
+
+## 22. Study A hierarchy: Craigslist and newspaper-market disruption
+
+Study A is the mechanism-specific first-wave anchor.
+
+### Stage A0: reproduce published mechanism
+
+Before original extension outcomes are interpreted, reproduce or verify from the public replication package:
+
+1. Craigslist local entry/take-up
+2. decline in newspaper classified pages among ex ante classified-reliant papers
+3. newspaper staffing decline
+
+Our paper may cite the published estimates, but any treatment transformation used for our new county outcomes must be verified against the replication data.
+
+### Stage A1: county-by-industry employer response
+
+Primary exact administrative outcome candidate:
+number of establishments in NAICS 511110 Newspaper Publishers.
+
+Secondary:
+employment in 511110, treated as interval-censored where CBP suppresses the exact value.
+
+Preferred identifying architecture is an industry-differential model with:
+
+- county × industry fixed effects
+- county × year fixed effects
+- industry × year fixed effects
+
+and a prespecified Craigslist × affected-industry interaction.
+
+This absorbs:
+
+- permanent county-industry specialization
+- every county-wide time-varying shock
+- every national industry-specific time shock
+
+The primary comparison-industry universe and weights must be frozen before estimation.
+
+### Stage A2: independent-work response
+
+Primary candidate:
+NES NAICS 711510 Independent Artists, Writers, and Performers.
+
+Question:
+does local independent/nonemployer activity change after a shock that contracts newspaper employment?
+
+Because 711510 is broader than journalism, it is a proxy for local independent creative/writing activity rather than a direct freelancer-journalist count.
+
+A null result does not establish absence of journalistic freelancing.
+
+### Stage A3: worker-level mechanisms
+
+ACS/CPS may then test migration, occupation switching, self-employment, and entry if sample power is adequate.
+
+These are not allowed to become headline outcomes merely because they produce larger coefficients.
+
+## 23. CBP suppression rule
+
+Historical suppressed employment is interval-censored using EMPFLAG.
+
+Exact establishment counts are preferred where the question is institutional survival.
+
+Any coefficient bounds based on EMPFLAG are reported separately from sampling uncertainty.
+
+No midpoint-imputed employment coefficient will be the sole support for a headline conclusion.
