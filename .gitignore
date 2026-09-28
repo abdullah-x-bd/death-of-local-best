@@ -1,0 +1,39 @@
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Raw and intermediate data
+data/raw/*
+data/intermediate/*
+data/derived/*
+!data/raw/.gitkeep
+!data/intermediate/.gitkeep
+!data/derived/.gitkeep
+
+# Generated outputs
+output/figures/*
+output/tables/*
+!output/figures/.gitkeep
+!output/tables/.gitkeep
+
+# Quarto
+.quarto/
+_freeze/
+paper/_book/
+paper/*.html
+paper/*.pdf
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.Renviron
+.env
+*.key
