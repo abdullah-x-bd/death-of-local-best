@@ -65,3 +65,17 @@ Made before headline regressions: yes.
 Decision: From Local Scarcity to Machine Abundance: Digital Markets and the Erosion of Competence Rents.
 
 Made before headline regressions: yes.
+
+### D009: Separate labor tradability from output scalability
+
+Decision: The first digital wave will not be represented by a single offshorability measure.
+
+Reason: Blinder-style offshorability captures whether labor can be supplied at distance, but it does not capture the separate superstar mechanism in which a locally produced or embodied performance is recorded or distributed at near-zero marginal cost. In the Blinder transcription, writers, editors, translators, and graphic designers score as highly offshorable, while photographers and music directors/composers sit at the non-offshorable boundary. Treating these as one latent construct would mismeasure the original theory.
+
+Empirical consequence:
+
+- Module A studies remote tradability of labor/services.
+- Module B studies scalable/reproducible output and attention-market concentration.
+- The two mechanisms may be combined theoretically but will not be forced into one empirical exposure index.
+
+Made before headline regressions: yes.
