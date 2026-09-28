@@ -79,3 +79,29 @@ Empirical consequence:
 - The two mechanisms may be combined theoretically but will not be forced into one empirical exposure index.
 
 Made before headline regressions: yes.
+
+### D010: Prioritize county administrative data for Study A before sparse ACS occupation cells
+
+Decision: The first original extension of the Craigslist newspaper shock will use County Business Patterns and Nonemployer Statistics at county-by-industry-year level. ACS remains a secondary worker-level mechanism dataset.
+
+Reason: reporters/editors are rare enough that annual occupation-by-PUMA presence measures risk substantial false-zero sampling error. CBP and NES align directly with county treatment geography and provide annual employer/nonemployer outcomes.
+
+Made before headline extension regressions: yes.
+
+### D011: Do not identify the Craigslist extension from raw county before/after variation alone
+
+Decision: Where the data permit, the original administrative-data extension will use county-by-year and industry-by-year variation so that the Craigslist coefficient is identified from the differential response of the prespecified affected industry within the same local economy.
+
+Reason: Craigslist entry timing is correlated with market size and internet conditions. A simple treated-county DiD does not absorb time-varying local shocks. County-by-year fixed effects remove all local shocks common across industries in a county-year.
+
+Remaining assumption: local shocks that specifically affect the treated industry at the same time as Craigslist entry can still confound the estimate. Pre-trends, placebo industries, and the published classified-reliance mechanism remain necessary.
+
+Made before headline extension regressions: yes.
+
+### D012: Treat suppressed CBP employment as interval-censored
+
+Decision: Suppressed historical CBP employment values will not be set to zero, dropped without qualification, or midpoint-imputed as the primary method.
+
+Reason: Census provides EMPFLAG size intervals for suppressed cells. Establishment counts are exact, while employment can be analyzed using interval information and partial-identification sensitivity.
+
+Made before headline extension regressions: yes.
