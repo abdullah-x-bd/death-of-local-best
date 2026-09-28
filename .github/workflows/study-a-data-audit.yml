@@ -1,0 +1,73 @@
+name: study-a-data-audit
+
+on:
+  push:
+    branches:
+      - research-build
+    paths:
+      - ".github/workflows/study-a-data-audit.yml"
+      - "R/00_config.R"
+      - "R/12_build_county_puma2000_crosswalk.R"
+      - "R/21_download_cbp_county.R"
+      - "R/22_download_nonemployer_county.R"
+      - "R/23_audit_cbp_nes_schema.R"
+      - "R/25_download_craigslist_replication.R"
+      - "R/27_feasibility_audit_cbp_nes.R"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+
+      - name: Download CBP county files
+        run: Rscript R/21_download_cbp_county.R
+
+      - name: Download NES county files
+        run: Rscript R/22_download_nonemployer_county.R
+
+      - name: Audit CBP and NES schemas
+        run: Rscript R/23_audit_cbp_nes_schema.R
+
+      - name: Audit target-industry feasibility
+        run: Rscript R/27_feasibility_audit_cbp_nes.R
+
+      - name: Build official Census county-PUMA crosswalk
+        run: Rscript R/12_build_county_puma2000_crosswalk.R
+
+      - name: Try Craigslist public replication acquisition
+        id: craigslist
+        continue-on-error: true
+        run: Rscript R/25_download_craigslist_replication.R
+
+      - name: Record Craigslist acquisition status
+        run: |
+          mkdir -p output/audit
+          echo "craigslist_step_outcome=${{ steps.craigslist.outcome }}" > output/audit/craigslist_status.txt
+
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: study-a-data-audit
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            data/raw/cbp_county/manifest_1998_2010.csv
+            data/raw/nonemployer_county/manifest_1997_2010.csv
+            data/raw/census2000_pumeq/manifest.csv
+            data/raw/craigslist_replication/manifest.csv
+            data/intermediate/cbp_nes_schema_audit.csv
+            data/intermediate/study_a_cbp_feasibility.csv
+            data/intermediate/study_a_nes_feasibility.csv
+            data/intermediate/puma_county_crosswalk_qa.csv
+            data/intermediate/county_to_puma2000_population_weights.csv
+            output/audit/craigslist_status.txt
