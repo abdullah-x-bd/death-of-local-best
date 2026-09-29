@@ -1,0 +1,14 @@
+source,sheet,n_rows,n_columns,columns
+btop_map,CAI Data,25948,10,Award Number | Recipient | Project Name | URL to NTIA Web Page | City | State | Latitude Coordinate | Longitude Coordinate | Anchor Type | Planned Connection
+btop_map,CAI Data Terms,12,2,CAI Data Tab | Unnamed: 1
+btop_map,POP Data,3110,14,Award Number | Recipient | Project Name | URL to NTIA Web Page | Facility 1 City | Facility 1 State | Facility 1 Latitude | Facility 1 Longitude | Facility 2 City | Facility 2 State | Facility 2 Latitude | Facility 2 Longitude | Broadband Speed | Connection Status
+btop_map,POP Data Terms,16,2,POP Data Tab | Unnamed: 1
+btop_map,PCC Sites Data,3367,19,Award ID | Recipient | Project Name | BTOP Project URL | PCC Name | Institution Type | Organization Type | Site Address | Site City | Site State | Site Zip Code | PCC Type | Number of Workstations | Number of Hours Open Per Week | Number of Hours Open Per Weekend | Broadband Access Speed | Number of Users of Per Week | Unnamed: 17 | Unnamed: 18
+btop_map,PCC Sites Data Terms,19,2,PCC Sites Data Tab | Unnamed: 1
+btop_map,PCC Award Data,65,26,Award ID | Prime Recipient | Project Name | BTOP Project URL | Certification Programs | Digital Media | English Second Language | Financial Literacy | Health | Workforce Development | Tribal | Total Training Hours | Federal Amount | Match Amount | Number PCCs Listed | Average Users Per Week | Workstations Available | PCC Upgraded Broadband | PCC New Broadband Wireless | Additional Hours Week | Total Training Partcipants | Headquarter Address | Headquarter City | Headquarter State | Headquarter Zip | Institution Type
+btop_map,PCC Awards Data Terms,28,2,PCC Awards Data Tab | Unnamed: 1
+btop_map,SBA Programs Data,4096,11,Award ID | Recipient | Project Name | BTOP Project URL | Site Name | Institution Type | Organization Type | Site Address | Site City | Site State | Site Zip Code
+btop_map,SBA Programs Data Terms,13,2,SBA Programs Data Tab | Unnamed: 1
+btop_map,SBA Award Data,43,23,Award ID | Prime Recipient | Project Name | BTOP Project URL | Affordable Broadband | Affordable Equipment | Basic Skills Training | Health | Workforce Development Training | Small Business Support | Tribal | Geographic Scope | New Subscribers Households | New Subscribers Businesses | Federal Amount | Match Amount | Number Participants | Total Training Hours | Headquarter Address | Headquarter City | Headquarter State | Headquarter Zip | Institution Type
+btop_map,SBA Award Data Terms,25,2,SBA Award Data Tab | Unnamed: 1
+btop_map,Redacted Data,5,4,Redacted Data | Unnamed: 1 | Unnamed: 2 | Unnamed: 3
