@@ -1,0 +1,64 @@
+name: Persist empirical and experiment build outputs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/persist-stage2-stage3-rct.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  persist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+
+      - name: Download Stage 2 IPUMS outcomes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/derived/ipums_stage2
+          gh run download 36556355913 \
+            --repo abdullah-x-bd/death-of-local-best \
+            --name ipums-usa-stage2-local-markets \
+            --dir data/derived/ipums_stage2
+
+      - name: Download corrected O*NET inventory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/derived/onet_inventory
+          gh run download 36557050630 \
+            --repo abdullah-x-bd/death-of-local-best \
+            --name onet-historical-descriptor-inventory \
+            --dir data/derived/onet_inventory
+
+      - name: Download randomized-market dry run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/derived/market_experiment_dry_run
+          gh run download 36557272763 \
+            --repo abdullah-x-bd/death-of-local-best \
+            --name marketplace-rct-synthetic-dry-run \
+            --dir data/derived/market_experiment_dry_run
+
+      - name: Commit durable derived outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/derived/ipums_stage2 data/derived/onet_inventory data/derived/market_experiment_dry_run
+          if git diff --cached --quiet; then
+            echo "No derived changes to commit"
+          else
+            git commit -m "Persist Stage 2, O*NET, and marketplace dry-run outputs"
+            git push origin HEAD:causal-architecture-v1
+          fi
