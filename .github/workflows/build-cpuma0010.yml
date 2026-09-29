@@ -1,0 +1,48 @@
+name: Build CPUMA0010 harmonized panel
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/build-cpuma0010.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cpuma:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install pandas requests xlrd
+
+      - name: Build official IPUMS CPUMA0010 panel
+        run: |
+          python analysis/09_build_cpuma0010_panel.py
+          cat data/derived/ipums_cpuma0010/qa.json
+          du -h data/derived/ipums_cpuma0010/*
+
+      - name: Persist harmonized panel
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin causal-architecture-v1
+          git add data/derived/ipums_cpuma0010
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Persist CPUMA0010 harmonized occupation panel"
+            git push origin HEAD:causal-architecture-v1
+          fi
