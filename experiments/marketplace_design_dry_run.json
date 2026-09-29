@@ -1,0 +1,43 @@
+{
+  "version": "0.1-dry-run",
+  "status": "synthetic implementation test, not confirmatory protocol freeze",
+  "roles": {
+    "producers_per_cluster": 100,
+    "buyers_per_cluster": 500,
+    "segmented_submarkets_per_cluster": 10
+  },
+  "factorial": {
+    "integrated": [0, 1],
+    "scalable": [0, 1],
+    "ai": [0, 1]
+  },
+  "rounds": {
+    "benchmark": 0,
+    "fixed_price": [1, 2, 3, 4],
+    "producer_price": [5, 6, 7, 8],
+    "continuation": 9
+  },
+  "task_families": [
+    "professional_writing",
+    "marketing_copy",
+    "analytical_explanation"
+  ],
+  "benchmark_raters_per_output": 3,
+  "capacity_k_dry_run": 10,
+  "human_fixed_price_dry_run": 1.0,
+  "ai_price_dry_run": 1.0,
+  "price_bounds_dry_run": [0.5, 1.5],
+  "dry_run_seed": 20260929,
+  "primary_outcomes": [
+    "MiddleSkillRevenueShare",
+    "Top10RevenueShare",
+    "MiddleSkillContinuation",
+    "BuyerQualityAdjustedSurplus"
+  ],
+  "notes": [
+    "All numerical behavioral parameters are synthetic implementation-test values only.",
+    "No dry-run treatment effect is a scientific estimate.",
+    "Pilot nuisance parameters and the scientifically meaningful minimum effect remain unfrozen.",
+    "Confirmatory seed, sample size, prices, capacity K and continuation cost are frozen only after the Stage 0 pilot."
+  ]
+}
