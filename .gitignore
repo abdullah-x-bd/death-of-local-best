@@ -17,3 +17,6 @@ public-data-qcew/
 # Local credentials
 .Renviron
 .env
+
+# Ephemeral private data cache
+data/private/
