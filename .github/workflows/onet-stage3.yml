@@ -56,3 +56,5 @@ jobs:
           name: onet-historical-descriptor-inventory
           path: outputs/onet_inventory/
           retention-days: 30
+
+# parser revision 2
