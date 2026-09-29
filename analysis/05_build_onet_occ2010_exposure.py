@@ -14,7 +14,7 @@ import requests
 
 UA="death-of-local-best-research/0.1"
 ONET_BUNDLE="https://github.com/abdullah-x-bd/death-of-local-best/releases/download/public-data-core-v0.1/onet.tar.gz"
-BLS_SOC_URLS=["https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls","https://www.ilo.org/surveyLib/index.php/catalog/7389/download/45876"]
+BLS_SOC_URLS=["https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls","https://raw.githubusercontent.com/sidsatya/ailabor/9ba422152072e900899f4acd84d95575422af29f/data/occsoc_crosswalks/soc_2000_to_2010_crosswalk.csv"]
 BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"
 
 ITEMS={
@@ -170,14 +170,17 @@ def detect_crosswalk_columns(df):
     raise RuntimeError(f"Could not detect SOC crosswalk columns: {cols}")
 
 def read_bls_2000_2010(path: Path):
-    # Find header row robustly.
-    raw=pd.read_excel(path,header=None,dtype=str,engine="xlrd")
-    header=0
-    for i,row in raw.head(25).iterrows():
-        txt=" ".join(row.fillna("").astype(str))
-        if "2000" in txt and "2010" in txt and "SOC" in txt:
-            header=i;break
-    d=pd.read_excel(path,header=header,dtype=str,engine="xlrd")
+    rawbytes=path.read_bytes()[:16]
+    if rawbytes.startswith(b"\xef\xbb\xbf") or b"," in path.read_bytes()[:256]:
+        d=pd.read_csv(path,dtype=str,encoding="utf-8-sig")
+    else:
+        raw=pd.read_excel(path,header=None,dtype=str,engine="xlrd")
+        header=0
+        for i,row in raw.head(25).iterrows():
+            txt=" ".join(row.fillna("").astype(str))
+            if "2000" in txt and "2010" in txt and "SOC" in txt:
+                header=i;break
+        d=pd.read_excel(path,header=header,dtype=str,engine="xlrd")
     c0,c1=detect_crosswalk_columns(d)
     out=d[[c0,c1]].copy()
     out.columns=["soc2000_raw","soc2010_raw"]
