@@ -15,7 +15,8 @@ import requests
 UA="death-of-local-best-research/0.1"
 ONET_BUNDLE="https://github.com/abdullah-x-bd/death-of-local-best/releases/download/public-data-core-v0.1/onet.tar.gz"
 BLS_SOC_URLS=["https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls","https://raw.githubusercontent.com/sidsatya/ailabor/9ba422152072e900899f4acd84d95575422af29f/data/occsoc_crosswalks/soc_2000_to_2010_crosswalk.csv"]
-BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"\nCENSUS2010_FALLBACK_CSV="https://raw.githubusercontent.com/lowmason/agent-skills/617f5c663ae2a586fd03f0893f36d58864469022/skills/classification-codes/data/census_occ_2010.csv"
+BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"
+CENSUS2010_FALLBACK_CSV="https://raw.githubusercontent.com/lowmason/agent-skills/617f5c663ae2a586fd03f0893f36d58864469022/skills/classification-codes/data/census_occ_2010.csv"
 
 ITEMS={
  "computer_mediated":{
@@ -219,8 +220,8 @@ def parse_census2010():
         titlecol=next((c for n,c in cols.items() if "occupationtitle" in n),target.columns[0])
         rows=[]
         for _,r in target.iterrows():
-            occs=re.findall(r"(?<!\\d)(\\d{4})(?!\\d)",str(r[occcol]))
-            socs=re.findall(r"\\d{2}-\\d{4}",str(r[soccol]))
+            occs=re.findall(r"(?<!\d)(\d{4})(?!\d)",str(r[occcol]))
+            socs=re.findall(r"\d{2}-\d{4}",str(r[soccol]))
             if len(occs)!=1 or not socs:
                 continue
             for soc in socs:
@@ -235,10 +236,10 @@ def parse_census2010():
         d=pd.read_csv(io.StringIO(r.text),dtype=str)
         if len(d) < 530:
             raise RuntimeError(f"Fallback Census mapping unexpectedly small: {len(d)}")
-        out=d[d["census_occ"].str.fullmatch(r"\\d{4}",na=False) & d["soc_code"].notna()].copy()
+        out=d[d["census_occ"].str.fullmatch(r"\d{4}",na=False) & d["soc_code"].notna()].copy()
         out["OCC2010"]=out["census_occ"].astype(int)
         out["census_title"]=out["title"]
-        out["census_soc2010"]=out["soc_code"].str.extract(r"(\\d{2}-\\d{4})",expand=False)
+        out["census_soc2010"]=out["soc_code"].str.extract(r"(\d{2}-\d{4})",expand=False)
         out=out.dropna(subset=["census_soc2010"])[["OCC2010","census_title","census_soc2010"]].drop_duplicates()
         return out, CENSUS2010_FALLBACK_CSV
 
@@ -330,7 +331,10 @@ def main():
           "rules":"docs/onet_exposure_freeze_v0.md",
           "bls_soc_crosswalk_transport":bls_transport,
           "bls_soc_crosswalk_canonical":BLS_SOC_URLS[0],
-          "bls_soc_crosswalk_mirror_commit":"sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",\n          "census2010_crosswalk_transport":census_transport,\n          "census2010_crosswalk_canonical":BLS_CENSUS_HTML,\n          "census2010_crosswalk_fallback_commit":"lowmason/agent-skills@617f5c663ae2a586fd03f0893f36d58864469022",
+          "bls_soc_crosswalk_mirror_commit":"sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",
+          "census2010_crosswalk_transport":census_transport,
+          "census2010_crosswalk_canonical":BLS_CENSUS_HTML,
+          "census2010_crosswalk_fallback_commit":"lowmason/agent-skills@617f5c663ae2a586fd03f0893f36d58864469022",
           "treatment_effects_estimated":False
         }
         (out/"qa.json").write_text(json.dumps(coverage,indent=2))
