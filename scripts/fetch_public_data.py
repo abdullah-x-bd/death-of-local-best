@@ -102,8 +102,8 @@ def fetch_nonemployer(root: Path):
     for y in range(1997, 2024):
         yy = str(y)[-2:]
         urls = [
-            f"https://www2.census.gov/programs-surveys/nonemployer-statistics/datasets/{y}/nonemp{yy}co.zip",
             f"https://www2.census.gov/programs-surveys/nonemployer-statistics/datasets/{y}/historical-datasets/nonemp{yy}co.zip",
+            f"https://www2.census.gov/programs-surveys/nonemployer-statistics/datasets/{y}/nonemp{yy}co.zip",
         ]
         found = None
         for u in urls:
