@@ -35,6 +35,9 @@ SOURCES = {
         "alternates": [
             "https://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
         ],
+        "direct_wayback": [
+            "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+        ],
         "kind": "excel",
         "description": "BTOP/BIP applications database",
     },
@@ -77,7 +80,7 @@ def plausible_csv(content: bytes) -> bool:
     # NTIA's Round 2 "CSV" is effectively a one-identifier-per-line text file,
     # so requiring a comma would falsely reject the official download.
     text = head.decode("utf-8", errors="ignore")
-    return bool("," in text or re.search(r"(?m)^\\D*\\d{11,12}\\D*$", text))
+    return bool("," in text or re.search(r"(?m)^\D*\d{11,12}\D*$", text))
 
 
 def request_bytes(url: str):
@@ -136,6 +139,27 @@ def acquire(name: str, spec: dict, rawdir: Path):
         if status == 200 and ok:
             dest.write_bytes(body)
             return dest, attempts, {"transport": "live", "source_url": url}
+
+    # Known verified archive snapshots are tried before the CDX index, which
+    # is intermittently unavailable from cloud runners.
+    for archived in spec.get("direct_wayback", []):
+        status, final, body, ctype = request_bytes(archived)
+        ok = plausible_excel(body) if spec["kind"] == "excel" else plausible_csv(body)
+        attempts.append({
+            "transport": "direct_wayback",
+            "requested_url": archived,
+            "final_url": final,
+            "status": status,
+            "content_type": ctype,
+            "bytes": len(body),
+            "valid_signature": ok,
+        })
+        if status == 200 and ok:
+            dest.write_bytes(body)
+            return dest, attempts, {
+                "transport": "direct_wayback",
+                "archived_url": archived,
+            }
 
     # Search captures for both canonical and alternates.
     seen = set()
