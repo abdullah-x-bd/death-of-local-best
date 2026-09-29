@@ -1,0 +1,49 @@
+name: Validate randomized marketplace dry run
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/marketplace-dry-run.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install numpy pandas
+
+      - name: Run synthetic implementation test
+        run: |
+          python analysis/04_market_experiment_dry_run.py \
+            --config experiments/marketplace_design_dry_run.json \
+            --outdir outputs/market_experiment_dry_run \
+            --blocks 3
+
+      - name: Inspect invariants
+        run: |
+          cat outputs/market_experiment_dry_run/dry_run_summary.json
+          cat outputs/market_experiment_dry_run/design_invariants.csv
+          head -n 12 outputs/market_experiment_dry_run/primary_outcomes_by_cluster.csv
+
+      - name: Upload synthetic dry-run outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: marketplace-rct-synthetic-dry-run
+          path: outputs/market_experiment_dry_run/
+          retention-days: 30
