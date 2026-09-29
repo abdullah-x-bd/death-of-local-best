@@ -1,0 +1,58 @@
+name: Inventory historical O*NET descriptors
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/onet-stage3.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python -m pip install pandas
+
+      - name: Download frozen O*NET release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/public_frozen
+          gh release download public-data-core-v0.1 \
+            --repo abdullah-x-bd/death-of-local-best \
+            --pattern onet.tar.gz \
+            --dir data/public_frozen
+
+      - name: Build blind descriptor inventory
+        run: |
+          python analysis/03_onet_pre_treatment_inventory.py \
+            --bundle data/public_frozen/onet.tar.gz \
+            --outdir outputs/onet_inventory
+
+      - name: Inspect
+        run: |
+          cat outputs/onet_inventory/qa.json
+          head -n 25 outputs/onet_inventory/blind_candidate_descriptor_sheet.csv
+
+      - name: Upload inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: onet-historical-descriptor-inventory
+          path: outputs/onet_inventory/
+          retention-days: 30
