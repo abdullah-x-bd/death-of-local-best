@@ -30,11 +30,29 @@ def find_col(cols, candidates):
         if k in norm: return norm[k]
     return None
 
+def looks_tabular_text(p: Path) -> bool:
+    try:
+        raw=p.read_bytes()[:8192]
+        if not raw or b"\x00" in raw:
+            return False
+        return b"\t" in raw or p.suffix.lower() in (".txt",".tsv",".dat")
+    except Exception:
+        return False
+
 def inventory_release(root: Path, release: str):
-    files=sorted(root.rglob("*.txt"))
+    files=sorted(p for p in root.rglob("*") if p.is_file())
     table_rows=[]
     desc=[]
+    members=[]
     for p in files:
+        members.append({
+            "release":release,
+            "member":str(p.relative_to(root)),
+            "size_bytes":p.stat().st_size,
+            "suffix":p.suffix.lower()
+        })
+        if not looks_tabular_text(p):
+            continue
         try:
             df=read_tab(p)
         except Exception:
@@ -82,7 +100,7 @@ def inventory_release(root: Path, release: str):
                     "scales":r[scale] if scale else "",
                     "occupation_count":int(r[soc]) if soc and pd.notna(r[soc]) else None,
                 })
-    return pd.DataFrame(table_rows),pd.DataFrame(desc)
+    return pd.DataFrame(table_rows),pd.DataFrame(desc),pd.DataFrame(members)
 
 def main():
     ap=argparse.ArgumentParser()
@@ -100,7 +118,7 @@ def main():
     if not zips:
         raise SystemExit("No O*NET db_*.zip archives found")
 
-    summaries=[]; descriptors=[]
+    summaries=[]; descriptors=[]; member_sets=[]
     for z in zips:
         m=re.search(r"db_(\d+)_(\d+)|db_(\d+)",z.name)
         rel=z.stem.replace("db_","").replace("_",".")
@@ -108,12 +126,14 @@ def main():
         target.mkdir(exist_ok=True)
         with zipfile.ZipFile(z) as zz:
             zz.extractall(target)
-        t,d=inventory_release(target,rel)
-        summaries.append(t); descriptors.append(d)
+        t,d,members=inventory_release(target,rel)
+        summaries.append(t); descriptors.append(d); member_sets.append(members)
 
     tables=pd.concat(summaries,ignore_index=True)
     desc=pd.concat(descriptors,ignore_index=True).drop_duplicates()
+    members=pd.concat(member_sets,ignore_index=True)
 
+    members.to_csv(out/"archive_member_inventory.csv",index=False)
     tables.to_csv(out/"historical_onet_table_inventory.csv",index=False)
     desc.to_csv(out/"historical_onet_descriptor_inventory.csv",index=False)
 
