@@ -1,0 +1,353 @@
+column,value,count
+Project - Program,Broadband Infrastructure Programs,1875
+Project - Program,Broadband Non-Infrastructure Programs,1207
+Project - Program,<NA>,120
+Project - Program,NTIA,15
+Project Type,BTOP,1942
+Project Type,BIP/BTOP,849
+Project Type,BIP,426
+Classification,Public Computer Center,659
+Classification,Last Mile Non-Remote Area,655
+Classification,Sustainable Broadband Adoption,597
+Classification,Last Mile Remote Area,416
+Classification,Comprehensive Community Infrastructure,389
+Classification,Middle Mile,381
+Classification,Last Mile (BTOP Only),114
+Classification,Last Mile (BTOP only),3
+Classification,CCI,3
+Project - Funding Cycle,Summer 2009 Broadband Initiatives Program and Broadband Technology Opportunities Program,1498
+Project - Funding Cycle,Summer 2009 Public Computer Centers and Sustainable Broadband Adoption,734
+Project - Funding Cycle,Winter 2010 Public Computer Centers and Sustainable Broadband Adoption,445
+Project - Funding Cycle,Winter 2010 Broadband Technology Opportunities Program,374
+Project - Funding Cycle,<NA>,74
+Project - Funding Cycle,Winter 2010 Public Computer Centers,46
+Project - Funding Cycle,Winter 2010 Sustainable Broadband Adoption,28
+Project - Funding Cycle,Summer 2010 Broadband Technology Opportunities Program,18
+Tasks - Outcome,Application Not Funded,2895
+Tasks - Outcome,Awarded,299
+Tasks - Outcome,Application Withdrawn,20
+Tasks - Outcome,Application Ineligible,2
+Tasks - Outcome,awarded,1
+Funding Round Number,1,2306
+Funding Round Number,2,911
+RBI - Rural Classificaton,<NA>,1714
+RBI - Rural Classificaton,True,1236
+RBI - Rural Classificaton,False,267
+RBI - BIP - Last Mile Remote Area,<NA>,1968
+RBI - BIP - Last Mile Remote Area,BIP - Last Mile Non-Remote Area,635
+RBI - BIP - Last Mile Remote Area,BIP - Last Mile Remote Area,386
+RBI - BIP - Last Mile Remote Area,BIP - Middle Mile Project,228
+RBI - BIP with BTOP Consideration,<NA>,1953
+RBI - BIP with BTOP Consideration,Yes,861
+RBI - BIP with BTOP Consideration,No (Implies Single Filing with BIP),403
+Non-Rural BTOP Infrastructure Category Consideration,<NA>,2316
+Non-Rural BTOP Infrastructure Category Consideration,Last Mile,638
+Non-Rural BTOP Infrastructure Category Consideration,Middle Mile,263
+positive_award_amount_candidate,False,2978
+positive_award_amount_candidate,True,239
+project_area,CA,212
+project_area,NY,142
+project_area,TX,141
+project_area,GA,123
+project_area,FL,113
+project_area,TN,112
+project_area,IL,109
+project_area,IA,100
+project_area,VA,95
+project_area,MI,94
+project_area,AL,89
+project_area,PA,79
+project_area,MO,77
+project_area,OH,72
+project_area,OK,70
+project_area,AZ,66
+project_area,MS,62
+project_area,NM,55
+project_area,NC,55
+project_area,MN,54
+project_area,MT,52
+project_area,IN,50
+project_area,KY,50
+project_area,SC,47
+project_area,WA,45
+project_area,CO,42
+project_area,KS,42
+project_area,LA,41
+project_area,AK,40
+project_area,WI,39
+project_area,MA,38
+project_area,"AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",35
+project_area,NJ,35
+project_area,AR,34
+project_area,OR,34
+project_area,PR,32
+project_area,WV,30
+project_area,ID,28
+project_area,NE,28
+project_area,UT,27
+project_area,ME,26
+project_area,NV,23
+project_area,MD,22
+project_area,NH,20
+project_area,ND,19
+project_area,WY,17
+project_area,DC,17
+project_area,SD,15
+project_area,"AL, AK, AS, AZ, AR, CA, CO, CT, DE, DC, FM, FL, GA, GU, HI, ID, IL, IN, IA, KS, KY, LA, ME, MH, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, MP, OH, OK, OR, PW, PA, PR, RI, SC, SD, TN, TX, UT, VT, VI, VA, WA, WV, WI, WY",14
+project_area,HI,14
+project_area,CT,13
+project_area,VT,10
+project_area,VI,9
+project_area,RI,7
+project_area,"OK, TX",7
+project_area,"DC, MD, VA",6
+project_area,"KS, MO",6
+project_area,"AZ, NM, UT",5
+project_area,MP,5
+project_area,AS,4
+project_area,"AL, GA",4
+project_area,"NH, VT",4
+project_area,"MI, WI",4
+project_area,DE,4
+project_area,"NM, TX",4
+project_area,"GU, MP",4
+project_area,"AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",3
+project_area,"AZ, CA",3
+project_area,"AL, GA, MS",3
+project_area,"CA, FL, GA, IN, MI, NJ, PA, WI",3
+project_area,"ND, SD",3
+project_area,"AL, AK, AZ, AR, CA, CO, CT, DE, DC, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY",3
+project_area,"AL, FL, GA, KY, NC, SC, TN",3
+project_area,"GA, SC",3
+project_area,"CA, OR",3
+project_area,"KS, MO, OK",3
+project_area,"AL, AK, AS, AZ, AR, CA, CO, CT, DE, DC, FM, FL, GA, GU, HI, ID, IL, IN, IA, KS, KY, LA, ME, MH, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, MP, NA, OH, OK, OR, PW, PA, PR, RI, SC, SD, TN, TX, UT, VT, VI, VA, WA, WV, WI, WY",3
+project_area,"CA, MD, NC, NM, WA",2
+project_area,"NJ, NY, PA",2
+project_area,"AZ, NM",2
+project_area,"AR, TX",2
+project_area,"AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, FM, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MH, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, PW, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",2
+project_area,"OR, WA",2
+project_area,"OH, PA, WV",2
+project_area,"OH, PA",2
+project_area,"CA, IL, OR, PA",2
+project_area,"AL, LA, MS, TX",2
+project_area,"DC, MD",2
+project_area,GU,2
+project_area,"AZ, CA, CT, DC, FL, GA, IL, MA, NJ, NY, OH, PA, TN, TX",2
+project_area,"AR, OK",2
+project_area,"AZ, CA, CO, ID, KS, MD, MN, MO, NM, PA, TX",2
+project_area,"AZ, CA, HI, NV",2
+project_area,"CO, NE",2
+project_area,"AL, LA, MS, NC, OH, SC, TX, VA",2
+project_area,"NY, PR, VI",2
+project_area,"DE, FL, NH",1
+project_area,"IL, KY, LA, MS, TN",1
+project_area,"AL, AR, CA, FL, GA, IL, IN",1
+project_area,"AL, TN",1
+project_area,"MT, ND, SD, WY, UT, CO, NE, KS, OK, TX, NM, AZ, NV",1
+project_area,"LA, MS, TX",1
+project_area,"AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"CA, MO, TX",1
+project_area,"AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AL, AK, AZ, AR, CA, CO, CT, DE, DC, FL, GA, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY",1
+project_area,"AR, KS, OK, TX",1
+project_area,"FL, GA, TN, VA",1
+project_area,"AZ, CT, DE, FL, IA, ID, IL, IN, MS, ND, NE, NM, OH, PA, TN, TX, WA",1
+project_area,"KY, MD",1
+project_area,"CO, DC, MD, NC, VA, WV",1
+project_area,"AL, AR, AZ, CA, CO, CT, DC, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AL, AR, AZ, CA, FL, GA, ID, KY, LA, MI, MS, MT, NM, OK, SC, TN, TX, WV",1
+project_area,"AL, MS",1
+project_area,"AL, GA, SC, TN",1
+project_area,"IN, KY, MI",1
+project_area,"CT, MA, NY, VT",1
+project_area,"AR, MS, TN",1
+project_area,"LA, NM, TX",1
+project_area,"MD, TN, VA, WV",1
+project_area,"IL, IN, IA, MN, OH, WI",1
+project_area,"DC, KY, MD, MO",1
+project_area,"FL, IN, KY, PA",1
+project_area,"MN, OH, TN",1
+project_area,"DC, IL",1
+project_area,"AL, AR, CA, DC, FL, GA, IL, IN, KY, LA, MD, MA, MI, MN, MS, MO, NJ, NY, NC, OH, OK, PA, SC, TN, TX, VA, WI",1
+project_area,"AR, VA",1
+project_area,"AK, CO, OH, TX, WA",1
+project_area,"AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",1
+project_area,"MD, VA, WV",1
+project_area,"AR, CO, LA, MS, TN, TX",1
+project_area,"AZ, CA, CO, FL, ME, NE, NY, VA",1
+project_area,"AK, FL, GA, IA, ID, IL, IN, KS, KY, LA, MI, MN, MS, NV, NY, OH, PR, SC, TN, TX, WV",1
+project_area,"AL, GA, MS, NC, SC",1
+project_area,"AZ, NM, TX",1
+project_area,"DE, GA, IL, MD, MO, NY, PA, TX, UT, WI",1
+project_area,"CA, DC, MD, TN, TX",1
+project_area,"MT, ND, SD",1
+project_area,"AL, CA, LA, TX",1
+project_area,"CA, CO, IL, MA, MI, MN, MO, NC, OK, OR, PA, TX, VT",1
+project_area,"AZ, CA, CO, DC, MA, MN, NJ, NY, OH, OR, PA, TX, VT",1
+project_area,"ID, IN, MO, MS, MT, NE, PA, VA",1
+project_area,"IN, NY, SD",1
+project_area,"AL, AR, AZ, CA, CO, CT, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AK, AL, AR, AZ, CA, FL, GA, HI, ID, IL, ME, MI, MN, MO, MT, ND, NE, NM, NV, OR, SD, TX, VA, WV",1
+project_area,"AR, KY, MS, TN, TX, VA",1
+project_area,"AL, AR, FL, GA, IL, LA, MD, MO, MS, NC, OH, OK, SC, TN, TX",1
+project_area,"AL, FL, GA, NC, SC, TN",1
+project_area,"FL, NJ",1
+project_area,"DC, DE, MD, NC, NJ, PA, VA, WV",1
+project_area,"LA, TX",1
+project_area,"AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AL, AR, IN, KS, KY, MN, MO, NC, OH, OK, TN",1
+project_area,"CA, DC, FL, GA, IL, IN, MD, MI, MO, NC, NJ, NY, OH, PA, TX, VA",1
+project_area,"AZ, CA, NV",1
+project_area,"AK, AZ, CA, CO, ID, MT, NM, NV, OR, UT, WA, WY",1
+project_area,"NC, VA",1
+project_area,"AZ, ID, MT, OR, UT, WY",1
+project_area,"AZ, CO, NM, TX",1
+project_area,"AK, AL, AR, AZ, CA, CO, CT, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AL, AR, CA, CT, DE, FL, GA, IA, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, NC, ND, NE, NH, NJ, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, VA, VT, WA, WI, WV",1
+project_area,"HI, NJ, NY",1
+project_area,<NA>,1
+project_area,"CA, IL, NM, PA",1
+project_area,"MI, OH",1
+project_area,"SD, MT, WY",1
+project_area,"AZ, ID, NV, OR, WA",1
+project_area,"IL, MS, NC, TN",1
+project_area,"IA, IN, MI, NE, OH, PA, TN, VA",1
+project_area,"FL, GA",1
+project_area,"IN, OH",1
+project_area,"AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",1
+project_area,"GA, TN, VA",1
+project_area,"AK, AL, AR, AS, AZ, CA, CO, CT, DE, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AL, AK, AR, CA, CO, FL, GA, ID, IL, IN, IA, KS, KY, LA, ME, MA, MN, MS, MO, MT, NE, NV, NH, NM, NY, NC, ND, OH, OK, OR, PA, PR, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY",1
+project_area,"CA, DC, GA, LA, NY",1
+project_area,"AL, LA, MS",1
+project_area,"MD, VA",1
+project_area,USA,1
+project_area,"AK, AZ, CA, CO, IA, ID, IL, MN, MT, ND, NM, NY, OK, OR, SC, SD, TX, UT, WA, WY",1
+project_area,"FL, IL, MN, NJ, NY, OR, PA, TX",1
+project_area,"CT, DC, DE, MA, MD, NH, NJ, NY, PA, RI, VA, VT",1
+project_area,"MI, MN, WI",1
+project_area,"IN, MI, OH",1
+project_area,"DC, MA, MD, NY, RI, VA",1
+project_area,"DC, FL, MD, MA, VA",1
+project_area,"CA, MA, PA, TX",1
+project_area,"AK, AL, AZ, CA, FL, GA, HI, IL, LA, MA, MS, PA, SC, TX, WA",1
+project_area,"CA, GA, MS, NY",1
+project_area,"AL, CT, IL, MN, TX, WA",1
+project_area,"AL, CT, IL",1
+project_area,"AK, AZ, CA, CO, DC, FL, HI, IL, KY, MN, NM, NY, OR, SD, WI",1
+project_area,"AZ, CA, NV, NM, UT",1
+project_area,"AZ, CA, CO, NV",1
+project_area,"AK, AZ, CO, ID, MT, NE, NM, ND, OR, SD, UT, WA",1
+project_area,"AK, HI",1
+project_area,"AZ, CO, GA, MA, NM, UT",1
+project_area,"CA, IN, LA, MA, NJ, SC, TX, WA",1
+project_area,"IL, IN, WI",1
+project_area,"IL, IN, MI, WI",1
+project_area,"AR, LA",1
+project_area,"MA, RI",1
+project_area,"NC, SC",1
+project_area,"GA, MO",1
+project_area,"AZ, CA, CO, FL, GA, ID, IL, IN, LA, MD, MN, NV, NM, NY, NC, ND, OR, SC, SD, TX, VA, WA, WY",1
+project_area,"AL, CA, CO, CT, DC, FL, GA, IL, IN, KS, KY, LA, MA, MD, MI, MN, MS, NC, NJ, NM, NY, OH, OK, OR, PA, SC, SD, TN, TX, VA, WA, WI, WV",1
+project_area,"AL, CA, CO, CT, DC, FL, IA, IL, IN, LA, MI, MO, NC, NJ, NM, OH, OR, PA, SC, TX, VA",1
+project_area,"FL, KY, MI, MN, MS, OH, SD",1
+project_area,"AL, AR, CA, CO, IL, IN, NY, OH, PA, WI",1
+project_area,"CA, DC, LA, NY",1
+project_area,"AZ, CA, DC, FL, GA, IL, LA, MI",1
+project_area,"IN, OH, PA",1
+project_area,"IA, KS, MO, NE, OK",1
+project_area,"MI, NM, TX",1
+project_area,"MD, PA, WV",1
+project_area,"CA, LA, MN, NY, OR, TX",1
+project_area,"CA, NV, OH, PA, SC, TX, UT, VA",1
+project_area,"IN, MO, TN, TX, WA",1
+project_area,"AK, AL, AR, AZ, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, TN, TX, UT, VA, VT, WA, WI, WV, WY",1
+project_area,"AK, AL, AR, AZ, CO, HI, IA, ID, IL, KS, LA, MO, MS, MT, ND, NE, NV, OK, OR, TN, TX, UT, WA, WI, WY",1
+project_area,"MT, ND",1
+project_area,"DE, PA",1
+project_area,"CT, DC, DE, MA, MD, ME, MI, NH, NJ, NY, OH, PA, RI, VT",1
+project_area,"AK, AL, AR, AZ, CA, CO, CT, DE, FL, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MI, MN, MO, MP, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",1
+project_area,"IA, MN, SD",1
+project_area,"AZ, CA, CO, IA, ID, KS, MN, MO, MT, ND, NE, NM, NV, OK, OR, SD, TX, UT, WA, WY",1
+project_area,"CA, NV",1
+project_area,"AK, AL, AR, AS, AZ, CA, CO, CT, DC, DE, FL, FM, GA, GU, HI, IA, ID, IL, IN, KS, KY, LA, MA, MD, ME, MH, MI, MN, MO, MP, MS, MT, NA, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, PR, PW, RI, SC, SD, TN, TX, UT, VA, VI, VT, WA, WI, WV, WY",1
+project_area,"CA, CT, DC, FL, IL, MA, MI, MN, NC, NJ, NM, NY, OK, OR, PA, SC, TN, TX, VA, VT, WA, WI, WV",1
+project_area,"KY, MO, TN",1
+project_area,"CA, CO, GA, WV",1
+project_area,"MN, SD",1
+project_area,"DC, DE, FL, MD, NC, NJ, VA",1
+project_area,"AL, DE, FL, GA, MD, NC, NJ, PA, SC, VA",1
+project_area,"AL, FL, GA, KY, LA, MS, NC, SC, TN, TX",1
+project_area,"KS, OK",1
+project_area,"MN, WI",1
+project_area,"AK, GA, IL, MI, MS, OH, TN, VA",1
+project_area,"CA, CT, MI",1
+project_area,"IN, IA, MI, MN, NH, OH, TX, VA, WA, WI",1
+project_area,"IL, IN, MA, MI, MN, VT",1
+project_area,"AR, CO, KS, OR, TX, WA",1
+project_area,"AL, GA, TN",1
+project_area,"VA, WV",1
+project_area,"IL, IN, SC",1
+project_area,"TX, VA",1
+project_area,"NM, OR",1
+project_area,"AL, GA, SC",1
+project_area,"ID, OR",1
+project_area,"AZ, CO, ID, NM, NY, WA",1
+project_area,"MI, AL, GA",1
+project_area,"CO, UT",1
+project_area,"CO, UT, WY",1
+project_area,"AL, AK, AZ, AR, CA, CO, CT, DE, DC, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, ND, NA, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY",1
+project_area,"AS, FM, GU, HI, MH, MP, PW",1
+project_area,"PA, VI",1
+project_area,"DE, MD, NJ, PA",1
+project_area,"NH, NY, VT",1
+project_area,"CA, MN, WI",1
+project_area,"FL, PR",1
+project_area,"KY, TN",1
+project_area,"CA, KS, LA, MO",1
+project_area,"CO, WY",1
+project_area,"AL, AR, FL, GA, IA, IL, KS, KY, LA, MO, MS, NE, OK, TN, TX",1
+project_area,"NV, UT",1
+project_area,"ID, IL, IA, MN, MT, ND, WA, WI",1
+project_area,"MD, MA, TN",1
+project_area,"CA, HI, NM, OR, UT, WA",1
+project_area,"AZ, CA, CO, GA, HI, IL, MA, MN, NM, NV, NY, OR, PA, UT, WA",1
+project_area,"OH, WV",1
+n_project_states,1.0,2882
+n_project_states,2.0,93
+n_project_states,3.0,57
+n_project_states,56.0,35
+n_project_states,4.0,25
+n_project_states,59.0,20
+n_project_states,8.0,15
+n_project_states,6.0,14
+n_project_states,5.0,12
+n_project_states,7.0,7
+n_project_states,50.0,7
+n_project_states,51.0,7
+n_project_states,10.0,5
+n_project_states,15.0,5
+n_project_states,13.0,3
+n_project_states,11.0,3
+n_project_states,12.0,3
+n_project_states,14.0,3
+n_project_states,21.0,2
+n_project_states,20.0,2
+n_project_states,23.0,2
+n_project_states,49.0,1
+n_project_states,17.0,1
+n_project_states,18.0,1
+n_project_states,27.0,1
+n_project_states,55.0,1
+n_project_states,48.0,1
+n_project_states,24.0,1
+n_project_states,16.0,1
+n_project_states,40.0,1
+n_project_states,<NA>,1
+n_project_states,53.0,1
+n_project_states,43.0,1
+n_project_states,33.0,1
+n_project_states,25.0,1
+n_project_states,54.0,1
