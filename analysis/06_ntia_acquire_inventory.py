@@ -215,9 +215,10 @@ def applications_audit(path: Path):
         for c in d.columns:
             n = re.sub(r"[^a-z0-9]", "", str(c).lower())
             if any(k in n for k in [
-                "status", "round", "program", "projecttype", "application",
-                "easygrants", "state", "county", "servicearea", "award",
-                "score", "rating", "requested", "funding"
+                "status", "outcome", "classification", "round", "program",
+                "projecttype", "application", "easygrants", "state", "county",
+                "projectarea", "servicearea", "award", "score", "rating",
+                "requested", "funding", "rural"
             ]):
                 candidates.append((sheet, c))
                 vc = d[c].fillna("<NA>").astype(str).str.strip().value_counts(dropna=False).head(50)
