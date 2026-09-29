@@ -1,13 +1,10 @@
 {
-  "application_database_acquired": false,
+  "application_database_acquired": true,
   "btop_map_acquired": true,
-  "aggregate_round2_service_area_list_acquired": false,
+  "aggregate_round2_service_area_list_acquired": true,
   "application_linked_rejected_service_area_geometry_available": false,
   "near_cutoff_score_design_operational": false,
   "reason_near_cutoff_not_yet_operational": "Public review documents establish score-based advancement, but the application-level merit scores / threshold data have not yet been recovered and validated.",
   "treatment_effect_regression_allowed": false,
-  "unresolved_sources": [
-    "applications",
-    "round2_proposed_service_areas"
-  ]
+  "unresolved_sources": []
 }
