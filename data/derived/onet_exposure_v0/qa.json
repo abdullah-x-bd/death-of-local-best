@@ -1,0 +1,17 @@
+{
+  "onet_data_level_occupations": 900,
+  "soc2000_scored": 677,
+  "soc2010_scored": 840,
+  "census_occ2010_rows": 525,
+  "census_occ2010_all_components": 472,
+  "stage2_occ2010_rows": 23906,
+  "stage2_rows_with_all_components": 21081,
+  "rules": "docs/onet_exposure_freeze_v0.md",
+  "bls_soc_crosswalk_transport": "https://raw.githubusercontent.com/sidsatya/ailabor/9ba422152072e900899f4acd84d95575422af29f/data/occsoc_crosswalks/soc_2000_to_2010_crosswalk.csv",
+  "bls_soc_crosswalk_canonical": "https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls",
+  "bls_soc_crosswalk_mirror_commit": "sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",
+  "census2010_crosswalk_transport": "https://raw.githubusercontent.com/lowmason/agent-skills/617f5c663ae2a586fd03f0893f36d58864469022/skills/classification-codes/data/census_occ_2010.csv",
+  "census2010_crosswalk_canonical": "https://www.bls.gov/cps/cenocc2010.htm",
+  "census2010_crosswalk_fallback_commit": "lowmason/agent-skills@617f5c663ae2a586fd03f0893f36d58864469022",
+  "treatment_effects_estimated": false
+}
