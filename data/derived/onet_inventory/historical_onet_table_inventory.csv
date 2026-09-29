@@ -1,0 +1,32 @@
+release,table,rows,columns,occupation_count,has_element_id,has_element_name,has_scale,has_data_value
+40,Ability.TXT,93600,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,Interest.TXT,8100,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,Knowledge.TXT,59400,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,Readme.TXT,33,O*NET 4.0 Database,,False,False,False,False
+40,Skills.TXT,63000,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,Tasks.TXT,10266,O*NET-SOC CODE | TITLE | TASKS,900.0,False,False,False,False
+40,WorkActivity.TXT,73800,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,WorkContext.TXT,34200,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,WorkValue.TXT,24300,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value,900.0,True,True,True,True
+40,job_zone_reference.TXT,5,NUMBER | NAME | EXPERIENCE | EDUCATION | JOB TRAINING | EXAMPLES | SVP RANGE,,False,False,False,False
+40,onet_content_model_reference.TXT,564,ELEMENT ID | ELEMENT NAME | DESCRIPTION,,True,True,False,False
+40,onetsoc_data.TXT,1166,O*NET-SOC CODE | TITLE | DESCRIPTION,1166.0,False,False,False,False
+40,onetsoc_job_zones.TXT,900,O*NET-SOC CODE |  Job Zone,900.0,False,False,False,False
+40,scales_reference.TXT,62,SCALE ID | SCALE NAME | MINIMUM | MAXIMUM,,False,False,True,False
+50,Readme.txt,35,O*NET 5.0 Database,,False,False,False,False
+50,Tasks.txt,13434,O*NET-SOC Code | Task ID | Task | Task Type | Incumbents Responding | Percent Relevant | Mean Importance | Percent Frequency: Yearly or less | Percent Frequency: More than yearly | Percent Frequency: More than monthly | Percent Frequency: More than weekly | Percent Frequency: Daily | Percent Frequency: More than daily | Percent Frequency: Hourly or more | Date | Source,931.0,False,False,False,False
+50,Ability.txt,93808,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,902.0,True,True,True,True
+50,EducTrainExp.txt,2214,O*NET-SOC Code | Element ID | Element Name | Scale ID | Category | Data Value | Date | Source,54.0,True,True,True,True
+50,Interest.txt,8100,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,900.0,True,True,True,True
+50,Knowledge.txt,59532,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,902.0,True,True,True,True
+50,Skills.txt,63140,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,902.0,True,True,True,True
+50,Survey_Booklet_Location_Reference.txt,238,Element ID | Element Name | Survey Item Number,,True,True,False,False
+50,WorkActivity.txt,73964,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,902.0,True,True,True,True
+50,WorkContext.txt,50476,O*NET-SOC Code | Element ID | Element Name | Scale ID | Category | Data Value | Date | Source,902.0,True,True,True,True
+50,WorkStyles.txt,864,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,54.0,True,True,True,True
+50,WorkValue.txt,24300,O*NET-SOC Code | Element ID | Element Name | Scale ID | Data Value | Date | Source,900.0,True,True,True,True
+50,job_zone_reference.txt,5,Number | Name | Experience | Education | Job Training | Examples | SVP Range,,False,False,False,False
+50,onet_content_model_reference.txt,564,Element ID | Element Name | Description,,True,True,False,False
+50,onetsoc_data.txt,1166,O*NET-SOC Code | Title | Description,1166.0,False,False,False,False
+50,onetsoc_job_zones.txt,900,O*NET-SOC Code | Job Zone,900.0,False,False,False,False
+50,scales_reference.txt,70,Scale ID | Scale Name | Minimum | Maximum,,False,False,True,False

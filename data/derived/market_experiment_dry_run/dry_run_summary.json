@@ -1,0 +1,12 @@
+{
+  "synthetic_only": true,
+  "blocks": 3,
+  "clusters": 24,
+  "synthetic_producers": 2400,
+  "synthetic_buyers_per_round": 12000,
+  "factorial_cells": 8,
+  "all_design_invariants_passed": true,
+  "confirmatory_seed_frozen": false,
+  "confirmatory_sample_size_frozen": false,
+  "pilot_nuisance_parameters_available": false
+}
