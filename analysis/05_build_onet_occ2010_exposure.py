@@ -15,7 +15,7 @@ import requests
 UA="death-of-local-best-research/0.1"
 ONET_BUNDLE="https://github.com/abdullah-x-bd/death-of-local-best/releases/download/public-data-core-v0.1/onet.tar.gz"
 BLS_SOC_URLS=["https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls","https://raw.githubusercontent.com/sidsatya/ailabor/9ba422152072e900899f4acd84d95575422af29f/data/occsoc_crosswalks/soc_2000_to_2010_crosswalk.csv"]
-BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"
+BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"\nCENSUS2010_FALLBACK_CSV="https://raw.githubusercontent.com/lowmason/agent-skills/617f5c663ae2a586fd03f0893f36d58864469022/skills/classification-codes/data/census_occ_2010.csv"
 
 ITEMS={
  "computer_mediated":{
@@ -202,30 +202,45 @@ def build_soc2010(by2000,cw):
 
 def parse_census2010():
     headers={"User-Agent":UA}
-    html=requests.get(BLS_CENSUS_HTML,headers=headers,timeout=120)
-    html.raise_for_status()
-    tables=pd.read_html(io.StringIO(html.text))
-    target=None
-    for d in tables:
-        ns=[norm(c) for c in d.columns]
-        if any("2010censuscode" in n for n in ns) and any("2010soccode" in n for n in ns):
-            target=d;break
-    if target is None:
-        raise RuntimeError("Could not find BLS Census 2010 occupation table")
-    cols={norm(c):c for c in target.columns}
-    occcol=next(c for n,c in cols.items() if "2010censuscode" in n)
-    soccol=next(c for n,c in cols.items() if "2010soccode" in n)
-    titlecol=next((c for n,c in cols.items() if "occupationtitle" in n),target.columns[0])
-    rows=[]
-    for _,r in target.iterrows():
-        occs=re.findall(r"(?<!\d)(\d{4})(?!\d)",str(r[occcol]))
-        socs=re.findall(r"\d{2}-\d{4}",str(r[soccol]))
-        # Detailed Census occupations have one four-digit code. Broad range rows are excluded.
-        if len(occs)!=1 or not socs:
-            continue
-        for soc in socs:
-            rows.append({"OCC2010":int(occs[0]),"census_title":str(r[titlecol]),"census_soc2010":soc})
-    return pd.DataFrame(rows).drop_duplicates()
+    try:
+        html=requests.get(BLS_CENSUS_HTML,headers=headers,timeout=120)
+        html.raise_for_status()
+        tables=pd.read_html(io.StringIO(html.text))
+        target=None
+        for d in tables:
+            ns=[norm(c) for c in d.columns]
+            if any("2010censuscode" in n for n in ns) and any("2010soccode" in n for n in ns):
+                target=d;break
+        if target is None:
+            raise RuntimeError("Could not find BLS Census 2010 occupation table")
+        cols={norm(c):c for c in target.columns}
+        occcol=next(c for n,c in cols.items() if "2010censuscode" in n)
+        soccol=next(c for n,c in cols.items() if "2010soccode" in n)
+        titlecol=next((c for n,c in cols.items() if "occupationtitle" in n),target.columns[0])
+        rows=[]
+        for _,r in target.iterrows():
+            occs=re.findall(r"(?<!\\d)(\\d{4})(?!\\d)",str(r[occcol]))
+            socs=re.findall(r"\\d{2}-\\d{4}",str(r[soccol]))
+            if len(occs)!=1 or not socs:
+                continue
+            for soc in socs:
+                rows.append({"OCC2010":int(occs[0]),"census_title":str(r[titlecol]),"census_soc2010":soc})
+        out=pd.DataFrame(rows).drop_duplicates()
+        if len(out) < 500:
+            raise RuntimeError(f"BLS Census mapping unexpectedly small: {len(out)}")
+        return out, BLS_CENSUS_HTML
+    except Exception:
+        r=requests.get(CENSUS2010_FALLBACK_CSV,headers=headers,timeout=120)
+        r.raise_for_status()
+        d=pd.read_csv(io.StringIO(r.text),dtype=str)
+        if len(d) < 530:
+            raise RuntimeError(f"Fallback Census mapping unexpectedly small: {len(d)}")
+        out=d[d["census_occ"].str.fullmatch(r"\\d{4}",na=False) & d["soc_code"].notna()].copy()
+        out["OCC2010"]=out["census_occ"].astype(int)
+        out["census_title"]=out["title"]
+        out["census_soc2010"]=out["soc_code"].str.extract(r"(\\d{2}-\\d{4})",expand=False)
+        out=out.dropna(subset=["census_soc2010"])[["OCC2010","census_title","census_soc2010"]].drop_duplicates()
+        return out, CENSUS2010_FALLBACK_CSV
 
 def descendants(code, available):
     if code in available:
@@ -288,7 +303,7 @@ def main():
         if len(cw) < 800:
             raise RuntimeError(f"SOC crosswalk structure check failed: only {len(cw)} unique links")
         soc10=build_soc2010(by2000,cw)
-        census=parse_census2010()
+        census,census_transport=parse_census2010()
         occ=map_census(census,soc10)
 
         scorecols=["computer_mediated","physical_dependence","relational_public",
@@ -315,7 +330,7 @@ def main():
           "rules":"docs/onet_exposure_freeze_v0.md",
           "bls_soc_crosswalk_transport":bls_transport,
           "bls_soc_crosswalk_canonical":BLS_SOC_URLS[0],
-          "bls_soc_crosswalk_mirror_commit":"sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",
+          "bls_soc_crosswalk_mirror_commit":"sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",\n          "census2010_crosswalk_transport":census_transport,\n          "census2010_crosswalk_canonical":BLS_CENSUS_HTML,\n          "census2010_crosswalk_fallback_commit":"lowmason/agent-skills@617f5c663ae2a586fd03f0893f36d58864469022",
           "treatment_effects_estimated":False
         }
         (out/"qa.json").write_text(json.dumps(coverage,indent=2))
