@@ -72,7 +72,12 @@ def plausible_excel(content: bytes) -> bool:
 
 def plausible_csv(content: bytes) -> bool:
     head = content[:4096].lstrip().lower()
-    return bool(content) and not head.startswith(b"<!doctype") and not head.startswith(b"<html") and b"," in head
+    if not content or head.startswith(b"<!doctype") or head.startswith(b"<html"):
+        return False
+    # NTIA's Round 2 "CSV" is effectively a one-identifier-per-line text file,
+    # so requiring a comma would falsely reject the official download.
+    text = head.decode("utf-8", errors="ignore")
+    return bool("," in text or re.search(r"(?m)^\\D*\\d{11,12}\\D*$", text))
 
 
 def request_bytes(url: str):
@@ -92,7 +97,7 @@ def wayback_candidates(original_url: str):
     cdx = (
         "https://web.archive.org/cdx/search/cdx?"
         + "url=" + quote(original_url, safe="")
-        + "&output=json&filter=statuscode:200&filter=collapse:digest"
+        + "&output=json&filter=statuscode:200&collapse=digest"
         + "&from=2009&to=2016&fl=timestamp,original,statuscode,mimetype,digest,length"
     )
     status, final, body, ctype = request_bytes(cdx)
