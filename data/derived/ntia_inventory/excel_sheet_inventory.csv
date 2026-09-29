@@ -1,8 +1,4 @@
 source,sheet,n_rows,n_columns,columns
-applications,Sheet1,3217,35,Project - Easygrants ID | Organization - Legal Name | Project - Title | RBI - Non-Infrastructure Project Type | RBI - Rural Classificaton | RBI - BIP - Last Mile Remote Area | RBI - BIP with BTOP Consideration | BTOP Infrastructure Category Consideration | Non-Rural BTOP Infrastructure Category Consideration | RBI - Non-Infrastructure Total Budget Summary | RBI - Noninfrastructure Budget Federal Funding | RBI - Infrastructure - Total Project Budget | RBI - Grant Request | RBI - Loan Request | Project - Program | Project Type | Classification | Project - Description | Project - Funding Cycle | Organization - Primary Address City | Organization - Primary Address State/Province | Tasks - Outcome | Primary Person - Name First | Primary Person - Name Last | Primary Person - Primary Phone Number | Allow Exec Summ | Native Answer | E-mail | PNR | Fact Sheet | Tribes Served | Grant Award | Loan Award | Other Funding | Funding Round Number
-applications,Sheet2,8415,2,Project - Easygrants ID | Project State
-applications,Sheet3,3218,2,EGID | Project Area
-applications,Sheet4,2,2,roundnum | grantround
 btop_map,CAI Data,25948,10,Award Number | Recipient | Project Name | URL to NTIA Web Page | City | State | Latitude Coordinate | Longitude Coordinate | Anchor Type | Planned Connection
 btop_map,CAI Data Terms,12,2,CAI Data Tab | Unnamed: 1
 btop_map,POP Data,3110,14,Award Number | Recipient | Project Name | URL to NTIA Web Page | Facility 1 City | Facility 1 State | Facility 1 Latitude | Facility 1 Longitude | Facility 2 City | Facility 2 State | Facility 2 Latitude | Facility 2 Longitude | Broadband Speed | Connection Status

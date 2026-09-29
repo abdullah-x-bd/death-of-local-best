@@ -5,12 +5,7 @@
     "applications": {
       "description": "BTOP/BIP applications database",
       "canonical_url": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
-      "chosen": {
-        "transport": "wayback",
-        "source_url": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
-        "capture_timestamp": "20110429013531",
-        "archived_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls"
-      },
+      "chosen": null,
       "attempts": [
         {
           "transport": "live",
@@ -18,7 +13,7 @@
           "final_url": "https://www.ntia.gov/legacy/broadbandgrants/applications/Comprehensive_Query_Results.xls",
           "status": 403,
           "content_type": "text/html; charset=UTF-8",
-          "bytes": 4542,
+          "bytes": 4544,
           "valid_signature": false
         },
         {
@@ -27,32 +22,25 @@
           "final_url": "https://www.ntia.gov/legacy/broadbandgrants/applications/Comprehensive_Query_Results.xls",
           "status": 403,
           "content_type": "text/html; charset=UTF-8",
-          "bytes": 4542,
+          "bytes": 4544,
           "valid_signature": false
         },
         {
           "transport": "wayback_cdx",
           "original": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
           "cdx_url": "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fwww.ntia.doc.gov%2Fbroadbandgrants%2Fapplications%2FComprehensive_Query_Results.xls&output=json&filter=statuscode:200&collapse=digest&from=2009&to=2016&fl=timestamp,original,statuscode,mimetype,digest,length",
-          "status": 200,
-          "captures": 3
+          "status": 503,
+          "content_type": "text/html"
         },
         {
-          "transport": "wayback",
-          "capture_timestamp": "20110429013531",
-          "original": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
-          "requested_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
-          "final_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
-          "status": 200,
-          "content_type": "application/vnd.ms-excel",
-          "bytes": 3450880,
-          "valid_signature": true
+          "transport": "wayback_cdx",
+          "original": "https://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "cdx_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.ntia.doc.gov%2Fbroadbandgrants%2Fapplications%2FComprehensive_Query_Results.xls&output=json&filter=statuscode:200&collapse=digest&from=2009&to=2016&fl=timestamp,original,statuscode,mimetype,digest,length",
+          "status": 503,
+          "content_type": "text/html"
         }
       ],
-      "acquired": true,
-      "filename": "applications.xls",
-      "size_bytes": 3450880,
-      "sha256": "b9105eb9a475f66bc93b3e9473789c4a98509189f22dc0e949e0b1637ca65629"
+      "acquired": false
     },
     "btop_map": {
       "description": "BTOP awarded-project map data",
@@ -95,8 +83,8 @@
           "transport": "wayback_cdx",
           "original": "https://www2.ntia.gov/files/BTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv",
           "cdx_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww2.ntia.gov%2Ffiles%2FBTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv&output=json&filter=statuscode:200&collapse=digest&from=2009&to=2016&fl=timestamp,original,statuscode,mimetype,digest,length",
-          "status": 200,
-          "captures": 0
+          "status": 503,
+          "content_type": "text/html"
         }
       ],
       "acquired": false
