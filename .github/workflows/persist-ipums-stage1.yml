@@ -1,0 +1,44 @@
+name: Persist IPUMS Stage 1 derived outputs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/persist-ipums-stage1.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  persist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+
+      - name: Download successful Stage 1 artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/derived/ipums_stage1
+          gh run download 36555567289 \
+            --repo abdullah-x-bd/death-of-local-best \
+            --name ipums-usa-stage1-derived \
+            --dir data/derived/ipums_stage1
+
+      - name: Commit derived outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/derived/ipums_stage1
+          if git diff --cached --quiet; then
+            echo "No derived changes to commit"
+          else
+            git commit -m "Persist IPUMS USA Stage 1 derived outputs"
+            git push origin HEAD:causal-architecture-v1
+          fi
