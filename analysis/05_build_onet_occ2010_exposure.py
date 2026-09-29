@@ -14,7 +14,7 @@ import requests
 
 UA="death-of-local-best-research/0.1"
 ONET_BUNDLE="https://github.com/abdullah-x-bd/death-of-local-best/releases/download/public-data-core-v0.1/onet.tar.gz"
-BLS_SOC_XLS="https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls"
+BLS_SOC_URLS=["https://www.bls.gov/soc/soc_2000_to_2010_crosswalk.xls","https://www.ilo.org/surveyLib/index.php/catalog/7389/download/45876"]
 BLS_CENSUS_HTML="https://www.bls.gov/cps/cenocc2010.htm"
 
 ITEMS={
@@ -41,15 +41,25 @@ def get(url: str, dest: Path):
     headers={"User-Agent":UA}
     for attempt in range(4):
         try:
-            r=requests.get(url,headers=headers,timeout=120)
+            r=requests.get(url,headers=headers,timeout=120,allow_redirects=True)
             if r.status_code==200 and len(r.content)>100:
                 dest.parent.mkdir(parents=True,exist_ok=True)
                 dest.write_bytes(r.content)
-                return
+                return url
             err=f"HTTP {r.status_code}, {len(r.content)} bytes"
         except Exception as e:
             err=repr(e)
     raise RuntimeError(f"Download failed {url}: {err}")
+
+def get_any(urls, dest: Path):
+    errors=[]
+    for url in urls:
+        try:
+            used=get(url,dest)
+            return used
+        except Exception as e:
+            errors.append(f"{url}: {e}")
+    raise RuntimeError("All download sources failed: "+" | ".join(errors))
 
 def read_tab(path: Path):
     for enc in ("utf-8-sig","cp1252","latin1"):
@@ -270,8 +280,10 @@ def main():
         bundle=work/"onet.tar.gz"; get(ONET_BUNDLE,bundle)
         root=extract_onet4(bundle,work/"bundle")
         wide,by2000,itemqa=build_onet_scores(root)
-        xls=work/"soc_2000_to_2010.xls"; get(BLS_SOC_XLS,xls)
+        xls=work/"soc_2000_to_2010.xls"; bls_transport=get_any(BLS_SOC_URLS,xls)
         cw=read_bls_2000_2010(xls)
+        if len(cw) < 800:
+            raise RuntimeError(f"SOC crosswalk structure check failed: only {len(cw)} unique links")
         soc10=build_soc2010(by2000,cw)
         census=parse_census2010()
         occ=map_census(census,soc10)
@@ -298,6 +310,8 @@ def main():
           "stage2_occ2010_rows":int(len(panel)),
           "stage2_rows_with_all_components":int(panel[scorecols].notna().all(axis=1).sum()),
           "rules":"docs/onet_exposure_freeze_v0.md",
+          "bls_soc_crosswalk_transport":bls_transport,
+          "bls_soc_crosswalk_canonical":BLS_SOC_URLS[0],
           "treatment_effects_estimated":False
         }
         (out/"qa.json").write_text(json.dumps(coverage,indent=2))
