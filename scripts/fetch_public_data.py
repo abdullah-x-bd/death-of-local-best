@@ -6,10 +6,16 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-UA = "death-of-local-best-research/0.1 (+https://github.com/abdullah-x-bd/death-of-local-best)"
+UA = "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 TIMEOUT = 120
 S = requests.Session()
-S.headers.update({"User-Agent": UA})
+S.headers.update({
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Connection": "keep-alive",
+    "From": "https://github.com/abdullah-x-bd/death-of-local-best",
+})
 
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -24,9 +30,13 @@ def download(url: str, dest: Path, required=True):
         return {"url": url, "path": str(dest), "size": dest.stat().st_size, "sha256": sha256(dest), "cached": True}
     tmp = Path(str(dest) + ".part")
     last = None
+    candidates = [url]
+    if url.startswith("https://download.bls.gov/"):
+        candidates.append("http://" + url[len("https://"):])
     for attempt in range(4):
+        request_url = candidates[min(attempt, len(candidates)-1)]
         try:
-            with S.get(url, stream=True, timeout=TIMEOUT, allow_redirects=True) as r:
+            with S.get(request_url, stream=True, timeout=TIMEOUT, allow_redirects=True) as r:
                 if r.status_code >= 400:
                     raise RuntimeError(f"HTTP {r.status_code}")
                 final_url = r.url
@@ -35,7 +45,7 @@ def download(url: str, dest: Path, required=True):
                         if chunk:
                             f.write(chunk)
             tmp.replace(dest)
-            return {"url": url, "final_url": final_url, "path": str(dest), "size": dest.stat().st_size, "sha256": sha256(dest), "cached": False}
+            return {"url": url, "request_url": request_url, "final_url": final_url, "path": str(dest), "size": dest.stat().st_size, "sha256": sha256(dest), "cached": False}
         except Exception as e:
             last = repr(e)
             if tmp.exists():
