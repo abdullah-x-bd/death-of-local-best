@@ -1,0 +1,108 @@
+{
+  "archive_page": "https://www2.ntia.gov/archives",
+  "purpose": "treatment-source inventory only; no outcome data used",
+  "sources": {
+    "applications": {
+      "description": "BTOP/BIP applications database",
+      "canonical_url": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+      "chosen": {
+        "transport": "direct_wayback",
+        "archived_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls"
+      },
+      "attempts": [
+        {
+          "transport": "live",
+          "requested_url": "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "final_url": "https://www.ntia.gov/legacy/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 4541,
+          "valid_signature": false
+        },
+        {
+          "transport": "live",
+          "requested_url": "https://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "final_url": "https://www.ntia.gov/legacy/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "status": 403,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 4541,
+          "valid_signature": false
+        },
+        {
+          "transport": "direct_wayback",
+          "requested_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "final_url": "https://web.archive.org/web/20110429013531id_/http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls",
+          "status": 200,
+          "content_type": "application/vnd.ms-excel",
+          "bytes": 3450880,
+          "valid_signature": true
+        }
+      ],
+      "acquired": true,
+      "filename": "applications.xls",
+      "size_bytes": 3450880,
+      "sha256": "b9105eb9a475f66bc93b3e9473789c4a98509189f22dc0e949e0b1637ca65629"
+    },
+    "btop_map": {
+      "description": "BTOP awarded-project map data",
+      "canonical_url": "http://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls",
+      "chosen": {
+        "transport": "live",
+        "source_url": "http://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls"
+      },
+      "attempts": [
+        {
+          "transport": "live",
+          "requested_url": "http://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls",
+          "final_url": "https://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls",
+          "status": 200,
+          "content_type": "application/vnd.ms-excel",
+          "bytes": 7387136,
+          "valid_signature": true
+        }
+      ],
+      "acquired": true,
+      "filename": "btop_map.xls",
+      "size_bytes": 7387136,
+      "sha256": "69bd2c9d131652b5f42bf9eac9de412b861b1cdcb461938635da9cdbf6ff2667"
+    },
+    "round2_proposed_service_areas": {
+      "description": "Aggregate list of Round 2 CCI proposed tracts/block groups, NOT application-linked",
+      "canonical_url": "https://www2.ntia.gov/files/BTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv",
+      "chosen": {
+        "transport": "live",
+        "source_url": "https://www2.ntia.gov/files/BTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv"
+      },
+      "attempts": [
+        {
+          "transport": "live",
+          "requested_url": "https://www2.ntia.gov/files/BTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv",
+          "final_url": "https://www2.ntia.gov/files/BTOP_Proposed_Funded_Service_Area_Tract_and_BlockGroup_Numbers.csv",
+          "status": 200,
+          "content_type": "text/csv",
+          "bytes": 938500,
+          "valid_signature": true
+        }
+      ],
+      "acquired": true,
+      "filename": "round2_proposed_service_areas.csv",
+      "size_bytes": 938500,
+      "sha256": "2891b908d042cb69805d78919a67984d0ea856c628b434536b5c6d691cd78c49",
+      "audit": {
+        "rows": 69879,
+        "columns": [
+          "01001020100"
+        ],
+        "identifier_column_candidate": "01001020100",
+        "share_11_or_12_digit": 1.0,
+        "valid_identifier_rows": 69879,
+        "unique_identifiers": 69879,
+        "tract_11_digit_rows": 39819,
+        "blockgroup_12_digit_rows": 30060,
+        "states_by_prefix": 54,
+        "counties_by_prefix": 2743
+      }
+    }
+  },
+  "public_service_area_warning": "NTIA states the public Round 2 CCI proposed tract/block-group list is NOT listed according to specific applications. It cannot by itself identify funded versus rejected application geography."
+}

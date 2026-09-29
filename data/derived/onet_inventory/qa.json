@@ -1,0 +1,10 @@
+{
+  "archives": [
+    "db_40.zip",
+    "db_50.zip"
+  ],
+  "table_rows": 31,
+  "unique_descriptor_rows": 1875,
+  "candidate_descriptor_rows": 231,
+  "rule": "No labor-market outcomes or treatment-effect estimates used in descriptor retrieval."
+}

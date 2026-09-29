@@ -1,0 +1,1876 @@
+release,table,element_id,element_name,scales,occupation_count
+40,Ability.TXT,1.A.1.a.1,Oral Comprehension,IM | LV,900.0
+40,Ability.TXT,1.A.1.a.2,Written Comprehension,IM | LV,900.0
+40,Ability.TXT,1.A.1.a.3,Oral Expression,IM | LV,900.0
+40,Ability.TXT,1.A.1.a.4,Written Expression,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.1,Fluency of Ideas,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.2,Originality,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.3,Problem Sensitivity,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.4,Deductive Reasoning,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.5,Inductive Reasoning,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.6,Information Ordering,IM | LV,900.0
+40,Ability.TXT,1.A.1.b.7,Category Flexibility,IM | LV,900.0
+40,Ability.TXT,1.A.1.c.1,Mathematical Reasoning,IM | LV,900.0
+40,Ability.TXT,1.A.1.c.2,Number Facility,IM | LV,900.0
+40,Ability.TXT,1.A.1.d.1,Memorization,IM | LV,900.0
+40,Ability.TXT,1.A.1.e.1,Speed of Closure,IM | LV,900.0
+40,Ability.TXT,1.A.1.e.2,Flexibility of Closure,IM | LV,900.0
+40,Ability.TXT,1.A.1.e.3,Perceptual Speed,IM | LV,900.0
+40,Ability.TXT,1.A.1.f.1,Spatial Orientation,IM | LV,900.0
+40,Ability.TXT,1.A.1.f.2,Visualization,IM | LV,900.0
+40,Ability.TXT,1.A.1.g.1,Selective Attention,IM | LV,900.0
+40,Ability.TXT,1.A.1.g.2,Time Sharing,IM | LV,900.0
+40,Ability.TXT,1.A.2.a.1,Arm-Hand Steadiness,IM | LV,900.0
+40,Ability.TXT,1.A.2.a.2,Manual Dexterity,IM | LV,900.0
+40,Ability.TXT,1.A.2.a.3,Finger Dexterity,IM | LV,900.0
+40,Ability.TXT,1.A.2.b.1,Control Precision,IM | LV,900.0
+40,Ability.TXT,1.A.2.b.2,Multilimb Coordination,IM | LV,900.0
+40,Ability.TXT,1.A.2.b.3,Response Orientation,IM | LV,900.0
+40,Ability.TXT,1.A.2.b.4,Rate Control,IM | LV,900.0
+40,Ability.TXT,1.A.2.c.1,Reaction Time,IM | LV,900.0
+40,Ability.TXT,1.A.2.c.2,Wrist-Finger Speed,IM | LV,900.0
+40,Ability.TXT,1.A.2.c.3,Speed of Limb Movement,IM | LV,900.0
+40,Ability.TXT,1.A.3.a.1,Static Strength,IM | LV,900.0
+40,Ability.TXT,1.A.3.a.2,Explosive Strength,IM | LV,900.0
+40,Ability.TXT,1.A.3.a.3,Dynamic Strength,IM | LV,900.0
+40,Ability.TXT,1.A.3.a.4,Trunk Strength,IM | LV,900.0
+40,Ability.TXT,1.A.3.b.1,Stamina,IM | LV,900.0
+40,Ability.TXT,1.A.3.c.1,Extent Flexibility,IM | LV,900.0
+40,Ability.TXT,1.A.3.c.2,Dynamic Flexibility,IM | LV,900.0
+40,Ability.TXT,1.A.3.c.3,Gross Body Coordination,IM | LV,900.0
+40,Ability.TXT,1.A.3.c.4,Gross Body Equilibrium,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.1,Near Vision,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.2,Far Vision,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.3,Visual Color Discrimination,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.4,Night Vision,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.5,Peripheral Vision,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.6,Depth Perception,IM | LV,900.0
+40,Ability.TXT,1.A.4.a.7,Glare Sensitivity,IM | LV,900.0
+40,Ability.TXT,1.A.4.b.1,Hearing Sensitivity,IM | LV,900.0
+40,Ability.TXT,1.A.4.b.2,Auditory Attention,IM | LV,900.0
+40,Ability.TXT,1.A.4.b.3,Sound Localization,IM | LV,900.0
+40,Ability.TXT,1.A.4.b.4,Speech Recognition,IM | LV,900.0
+40,Ability.TXT,1.A.4.b.5,Speech Clarity,IM | LV,900.0
+40,Interest.TXT,1.B.1.a,Realistic,OI,900.0
+40,Interest.TXT,1.B.1.b,Investigative,OI,900.0
+40,Interest.TXT,1.B.1.c,Artistic,OI,900.0
+40,Interest.TXT,1.B.1.d,Social,OI,900.0
+40,Interest.TXT,1.B.1.e,Enterprising,OI,900.0
+40,Interest.TXT,1.B.1.f,Conventional,OI,900.0
+40,Interest.TXT,1.B.1.g,First Interest High-Point,IH,900.0
+40,Interest.TXT,1.B.1.h,Second Interest High-Point,IH,900.0
+40,Interest.TXT,1.B.1.i,Third Interest High-Point,IH,900.0
+40,Knowledge.TXT,2.C.1.a,Administration and Management,IM | LV,900.0
+40,Knowledge.TXT,2.C.1.b,Clerical,IM | LV,900.0
+40,Knowledge.TXT,2.C.1.c,Economics and Accounting,IM | LV,900.0
+40,Knowledge.TXT,2.C.1.d,Sales and Marketing,IM | LV,900.0
+40,Knowledge.TXT,2.C.1.e,Customer and Personal Service,IM | LV,900.0
+40,Knowledge.TXT,2.C.1.f,Personnel and Human Resources,IM | LV,900.0
+40,Knowledge.TXT,2.C.10,Transportation,IM | LV,900.0
+40,Knowledge.TXT,2.C.2.a,Production and Processing,IM | LV,900.0
+40,Knowledge.TXT,2.C.2.b,Food Production,IM | LV,900.0
+40,Knowledge.TXT,2.C.3.a,Computers and Electronics,IM | LV,900.0
+40,Knowledge.TXT,2.C.3.b,Engineering and Technology,IM | LV,900.0
+40,Knowledge.TXT,2.C.3.c,Design,IM | LV,900.0
+40,Knowledge.TXT,2.C.3.d,Building and Construction,IM | LV,900.0
+40,Knowledge.TXT,2.C.3.e,Mechanical,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.a,Mathematics,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.b,Physics,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.c,Chemistry,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.d,Biology,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.e,Psychology,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.f,Sociology and Anthropology,IM | LV,900.0
+40,Knowledge.TXT,2.C.4.g,Geography,IM | LV,900.0
+40,Knowledge.TXT,2.C.5.a,Medicine and Dentistry,IM | LV,900.0
+40,Knowledge.TXT,2.C.5.b,Therapy and Counseling,IM | LV,900.0
+40,Knowledge.TXT,2.C.6,Education and Training,IM | LV,900.0
+40,Knowledge.TXT,2.C.7.a,English Language,IM | LV,900.0
+40,Knowledge.TXT,2.C.7.b,Foreign Language,IM | LV,900.0
+40,Knowledge.TXT,2.C.7.c,Fine Arts,IM | LV,900.0
+40,Knowledge.TXT,2.C.7.d,History and Archeology,IM | LV,900.0
+40,Knowledge.TXT,2.C.7.e,Philosophy and Theology,IM | LV,900.0
+40,Knowledge.TXT,2.C.8.a,Public Safety and Security,IM | LV,900.0
+40,Knowledge.TXT,2.C.8.b,Law and Government,IM | LV,900.0
+40,Knowledge.TXT,2.C.9.a,Telecommunications,IM | LV,900.0
+40,Knowledge.TXT,2.C.9.b,Communications and Media,IM | LV,900.0
+40,Skills.TXT,2.A.1.a,Reading Comprehension,IM | LV,900.0
+40,Skills.TXT,2.A.1.b,Active Listening,IM | LV,900.0
+40,Skills.TXT,2.A.1.c,Writing,IM | LV,900.0
+40,Skills.TXT,2.A.1.d,Speaking,IM | LV,900.0
+40,Skills.TXT,2.A.1.e,Mathematics,IM | LV,900.0
+40,Skills.TXT,2.A.1.f,Science,IM | LV,900.0
+40,Skills.TXT,2.A.2.a,Critical Thinking,IM | LV,900.0
+40,Skills.TXT,2.A.2.b,Active Learning,IM | LV,900.0
+40,Skills.TXT,2.A.2.c,Learning Strategies,IM | LV,900.0
+40,Skills.TXT,2.A.2.d,Monitoring,IM | LV,900.0
+40,Skills.TXT,2.B.1.a,Social Perceptiveness,IM | LV,900.0
+40,Skills.TXT,2.B.1.b,Coordination,IM | LV,900.0
+40,Skills.TXT,2.B.1.c,Persuasion,IM | LV,900.0
+40,Skills.TXT,2.B.1.d,Negotiation,IM | LV,900.0
+40,Skills.TXT,2.B.1.e,Instructing,IM | LV,900.0
+40,Skills.TXT,2.B.1.f,Service Orientation,IM | LV,900.0
+40,Skills.TXT,2.B.2.i,Complex Problem Solving,IM | LV,900.0
+40,Skills.TXT,2.B.3.a,Operations Analysis,IM | LV,900.0
+40,Skills.TXT,2.B.3.b,Technology Design,IM | LV,900.0
+40,Skills.TXT,2.B.3.c,Equipment Selection,IM | LV,900.0
+40,Skills.TXT,2.B.3.d,Installation,IM | LV,900.0
+40,Skills.TXT,2.B.3.e,Programming,IM | LV,900.0
+40,Skills.TXT,2.B.3.g,Operation Monitoring,IM | LV,900.0
+40,Skills.TXT,2.B.3.h,Operation and Control,IM | LV,900.0
+40,Skills.TXT,2.B.3.j,Equipment Maintenance,IM | LV,900.0
+40,Skills.TXT,2.B.3.k,Troubleshooting,IM | LV,900.0
+40,Skills.TXT,2.B.3.l,Repairing,IM | LV,900.0
+40,Skills.TXT,2.B.3.m,Quality Control Analysis,IM | LV,900.0
+40,Skills.TXT,2.B.4.e,Judgment and Decision Making,IM | LV,900.0
+40,Skills.TXT,2.B.4.g,Systems Analysis,IM | LV,900.0
+40,Skills.TXT,2.B.4.h,Systems Evaluation,IM | LV,900.0
+40,Skills.TXT,2.B.5.a,Time Management,IM | LV,900.0
+40,Skills.TXT,2.B.5.b,Management of Financial Resources,IM | LV,900.0
+40,Skills.TXT,2.B.5.c,Management of Material Resources,IM | LV,900.0
+40,Skills.TXT,2.B.5.d,Management of Personnel Resources,IM | LV,900.0
+40,WorkActivity.TXT,4.A.1.a.1,Getting Information,IM | LV,900.0
+40,WorkActivity.TXT,4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",IM | LV,900.0
+40,WorkActivity.TXT,4.A.1.b.1,"Identifying Objects, Actions, and Events",IM | LV,900.0
+40,WorkActivity.TXT,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",IM | LV,900.0
+40,WorkActivity.TXT,4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.a.2,Processing Information,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.a.4,Analyzing Data or Information,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.1,Making Decisions and Solving Problems,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.2,Thinking Creatively,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.3,Updating and Using Relevant Knowledge,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.4,Developing Objectives and Strategies,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.5,Scheduling Work and Activities,IM | LV,900.0
+40,WorkActivity.TXT,4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.a.1,Performing General Physical Activities,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.a.2,Handling and Moving Objects,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.a.3,Controlling Machines and Processes,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.b.1,Interacting With Computers,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,IM | LV,900.0
+40,WorkActivity.TXT,4.A.3.b.6,Documenting/Recording Information,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.1,Interpreting the Meaning of Information for Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.3,Communicating with Persons Outside Organization,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.5,Assisting and Caring for Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.6,Selling or Influencing Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.7,Resolving Conflicts and Negotiating with Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.a.8,Performing for or Working Directly with the Public,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.1,Coordinating the Work and Activities of Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.2,Developing and Building Teams,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.3,Training and Teaching Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.5,Coaching and Developing Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.b.6,Provide Consultation and Advice to Others,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.c.1,Performing Administrative Activities,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.c.2,Staffing Organizational Units,IM | LV,900.0
+40,WorkActivity.TXT,4.A.4.c.3,Monitoring and Controlling Resources,IM | LV,900.0
+40,WorkContext.TXT,4.C.1.a.4,Contact With Others,CX,900.0
+40,WorkContext.TXT,4.C.1.b.1.f,Deal With External Customers,CX,900.0
+40,WorkContext.TXT,4.C.1.b.1.g,Coordinate or Lead Others,CX,900.0
+40,WorkContext.TXT,4.C.1.c.1,Responsible for Others' Health and Safety,CX,900.0
+40,WorkContext.TXT,4.C.1.c.2,Responsibility for Outcomes and Results,CX,900.0
+40,WorkContext.TXT,4.C.1.d.1,Frequency of Conflict Situations,CX,900.0
+40,WorkContext.TXT,4.C.1.d.2,Deal With Unpleasant or Angry People,CX,900.0
+40,WorkContext.TXT,4.C.1.d.3,Deal With Physically Aggressive People,CX,900.0
+40,WorkContext.TXT,4.C.2.a.1.a,"Indoors, Environmentally Controlled",CX,900.0
+40,WorkContext.TXT,4.C.2.a.1.c,"Outdoors, Exposed to Weather",CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.b,Very Hot or Cold Temperatures,CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.d,Exposed to Contaminants,CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",CX,900.0
+40,WorkContext.TXT,4.C.2.b.1.f,Exposed to Whole Body Vibration,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.a,Exposed to Radiation,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.b,Exposed to Disease or Infections,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.c,Exposed to High Places,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.d,Exposed to Hazardous Conditions,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.e,Exposed to Hazardous Equipment,CX,900.0
+40,WorkContext.TXT,4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.a,Spend Time Sitting,CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.b,Spend Time Standing,CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.d,Spend Time Walking and Running,CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling?",CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.h,Spend Time Bending or Twisting the Body,CX,900.0
+40,WorkContext.TXT,4.C.2.d.1.i,Spend Time Making Repetitive Motions,CX,900.0
+40,WorkContext.TXT,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",CX,900.0
+40,WorkContext.TXT,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",CX,900.0
+40,WorkContext.TXT,4.C.3.a.1,Consequence of Error,CX,900.0
+40,WorkContext.TXT,4.C.3.b.2,Degree of Automation,CX,900.0
+40,WorkContext.TXT,4.C.3.b.4,Importance of Being Exact or Accurate,CX,900.0
+40,WorkContext.TXT,4.C.3.b.7,Importance of Repeating Same Tasks,CX,900.0
+40,WorkContext.TXT,4.C.3.d.3,Pace Determined by Speed of Equipment,CX,900.0
+40,WorkValue.TXT,1.B.2.a,Achievement-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.a.1,Ability Utilization,EN,900.0
+40,WorkValue.TXT,1.B.2.a.2,Achievement,EN,900.0
+40,WorkValue.TXT,1.B.2.b,Working Conditions-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.b.1,Activity,EN,900.0
+40,WorkValue.TXT,1.B.2.b.2,Independence,EN,900.0
+40,WorkValue.TXT,1.B.2.b.3,Variety,EN,900.0
+40,WorkValue.TXT,1.B.2.b.4,Compensation,EN,900.0
+40,WorkValue.TXT,1.B.2.b.5,Security,EN,900.0
+40,WorkValue.TXT,1.B.2.b.6,Working Conditions,EN,900.0
+40,WorkValue.TXT,1.B.2.c,Recognition-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.c.1,Advancement,EN,900.0
+40,WorkValue.TXT,1.B.2.c.2,Recognition,EN,900.0
+40,WorkValue.TXT,1.B.2.c.3,Authority,EN,900.0
+40,WorkValue.TXT,1.B.2.c.4,Social Status,EN,900.0
+40,WorkValue.TXT,1.B.2.d,Relationships-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.d.1,Co-workers,EN,900.0
+40,WorkValue.TXT,1.B.2.d.2,Social Service,EN,900.0
+40,WorkValue.TXT,1.B.2.d.3,Moral Values,EN,900.0
+40,WorkValue.TXT,1.B.2.e,Support-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.e.1,Company Policies and Practices,EN,900.0
+40,WorkValue.TXT,1.B.2.e.2,"Supervision, Human Relations",EN,900.0
+40,WorkValue.TXT,1.B.2.e.3,"Supervision, Technical",EN,900.0
+40,WorkValue.TXT,1.B.2.f,Independence-Mean Extent,EN,900.0
+40,WorkValue.TXT,1.B.2.f.1,Creativity,EN,900.0
+40,WorkValue.TXT,1.B.2.f.2,Responsibility,EN,900.0
+40,WorkValue.TXT,1.B.2.f.3,Autonomy,EN,900.0
+40,onet_content_model_reference.TXT,1,Worker Characteristics,,
+40,onet_content_model_reference.TXT,1.A,Abilities,,
+40,onet_content_model_reference.TXT,1.A.1,Cognitive Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.a,Verbal Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.a.1,Oral Comprehension,,
+40,onet_content_model_reference.TXT,1.A.1.a.2,Written Comprehension,,
+40,onet_content_model_reference.TXT,1.A.1.a.3,Oral Expression,,
+40,onet_content_model_reference.TXT,1.A.1.a.4,Written Expression,,
+40,onet_content_model_reference.TXT,1.A.1.b,Idea Generation and Reasoning Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.b.1,Fluency of Ideas,,
+40,onet_content_model_reference.TXT,1.A.1.b.2,Originality,,
+40,onet_content_model_reference.TXT,1.A.1.b.3,Problem Sensitivity,,
+40,onet_content_model_reference.TXT,1.A.1.b.4,Deductive Reasoning,,
+40,onet_content_model_reference.TXT,1.A.1.b.5,Inductive Reasoning,,
+40,onet_content_model_reference.TXT,1.A.1.b.6,Information Ordering,,
+40,onet_content_model_reference.TXT,1.A.1.b.7,Category Flexibility,,
+40,onet_content_model_reference.TXT,1.A.1.c,Quantitative Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.c.1,Mathematical Reasoning,,
+40,onet_content_model_reference.TXT,1.A.1.c.2,Number Facility,,
+40,onet_content_model_reference.TXT,1.A.1.d,Memory,,
+40,onet_content_model_reference.TXT,1.A.1.d.1,Memorization,,
+40,onet_content_model_reference.TXT,1.A.1.e,Perceptual Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.e.1,Speed of Closure,,
+40,onet_content_model_reference.TXT,1.A.1.e.2,Flexibility of Closure,,
+40,onet_content_model_reference.TXT,1.A.1.e.3,Perceptual Speed,,
+40,onet_content_model_reference.TXT,1.A.1.f,Spatial Abilities,,
+40,onet_content_model_reference.TXT,1.A.1.f.1,Spatial Orientation,,
+40,onet_content_model_reference.TXT,1.A.1.f.2,Visualization,,
+40,onet_content_model_reference.TXT,1.A.1.g,Attentiveness,,
+40,onet_content_model_reference.TXT,1.A.1.g.1,Selective Attention,,
+40,onet_content_model_reference.TXT,1.A.1.g.2,Time Sharing,,
+40,onet_content_model_reference.TXT,1.A.2,Psychomotor Abilities,,
+40,onet_content_model_reference.TXT,1.A.2.a,Fine Manipulative Abilities,,
+40,onet_content_model_reference.TXT,1.A.2.a.1,Arm-Hand Steadiness,,
+40,onet_content_model_reference.TXT,1.A.2.a.2,Manual Dexterity,,
+40,onet_content_model_reference.TXT,1.A.2.a.3,Finger Dexterity,,
+40,onet_content_model_reference.TXT,1.A.2.b,Control Movement Abilities,,
+40,onet_content_model_reference.TXT,1.A.2.b.1,Control Precision,,
+40,onet_content_model_reference.TXT,1.A.2.b.2,Multilimb Coordination,,
+40,onet_content_model_reference.TXT,1.A.2.b.3,Response Orientation,,
+40,onet_content_model_reference.TXT,1.A.2.b.4,Rate Control,,
+40,onet_content_model_reference.TXT,1.A.2.c,Reaction Time and Speed Abilities,,
+40,onet_content_model_reference.TXT,1.A.2.c.1,Reaction Time,,
+40,onet_content_model_reference.TXT,1.A.2.c.2,Wrist-Finger Speed,,
+40,onet_content_model_reference.TXT,1.A.2.c.3,Speed of Limb Movement,,
+40,onet_content_model_reference.TXT,1.A.3,Physical Abilities,,
+40,onet_content_model_reference.TXT,1.A.3.a,Physical Strength Abilities,,
+40,onet_content_model_reference.TXT,1.A.3.a.1,Static Strength,,
+40,onet_content_model_reference.TXT,1.A.3.a.2,Explosive Strength,,
+40,onet_content_model_reference.TXT,1.A.3.a.3,Dynamic Strength,,
+40,onet_content_model_reference.TXT,1.A.3.a.4,Trunk Strength,,
+40,onet_content_model_reference.TXT,1.A.3.b,Endurance,,
+40,onet_content_model_reference.TXT,1.A.3.b.1,Stamina,,
+40,onet_content_model_reference.TXT,1.A.3.c,"Flexibility, Balance, and Coordination",,
+40,onet_content_model_reference.TXT,1.A.3.c.1,Extent Flexibility,,
+40,onet_content_model_reference.TXT,1.A.3.c.2,Dynamic Flexibility,,
+40,onet_content_model_reference.TXT,1.A.3.c.3,Gross Body Coordination,,
+40,onet_content_model_reference.TXT,1.A.3.c.4,Gross Body Equilibrium,,
+40,onet_content_model_reference.TXT,1.A.4,Sensory Abilities,,
+40,onet_content_model_reference.TXT,1.A.4.a,Visual Abilities,,
+40,onet_content_model_reference.TXT,1.A.4.a.1,Near Vision,,
+40,onet_content_model_reference.TXT,1.A.4.a.2,Far Vision,,
+40,onet_content_model_reference.TXT,1.A.4.a.3,Visual Color Discrimination,,
+40,onet_content_model_reference.TXT,1.A.4.a.4,Night Vision,,
+40,onet_content_model_reference.TXT,1.A.4.a.5,Peripheral Vision,,
+40,onet_content_model_reference.TXT,1.A.4.a.6,Depth Perception,,
+40,onet_content_model_reference.TXT,1.A.4.a.7,Glare Sensitivity,,
+40,onet_content_model_reference.TXT,1.A.4.b,Auditory and Speech Abilities,,
+40,onet_content_model_reference.TXT,1.A.4.b.1,Hearing Sensitivity,,
+40,onet_content_model_reference.TXT,1.A.4.b.2,Auditory Attention,,
+40,onet_content_model_reference.TXT,1.A.4.b.3,Sound Localization,,
+40,onet_content_model_reference.TXT,1.A.4.b.4,Speech Recognition,,
+40,onet_content_model_reference.TXT,1.A.4.b.5,Speech Clarity,,
+40,onet_content_model_reference.TXT,1.B,Interests,,
+40,onet_content_model_reference.TXT,1.B.1,Occupational Interests,,
+40,onet_content_model_reference.TXT,1.B.1.a,Realistic,,
+40,onet_content_model_reference.TXT,1.B.1.b,Investigative,,
+40,onet_content_model_reference.TXT,1.B.1.c,Artistic,,
+40,onet_content_model_reference.TXT,1.B.1.d,Social,,
+40,onet_content_model_reference.TXT,1.B.1.e,Enterprising,,
+40,onet_content_model_reference.TXT,1.B.1.f,Conventional,,
+40,onet_content_model_reference.TXT,1.B.1.g,First Interest High-Point,,
+40,onet_content_model_reference.TXT,1.B.1.h,Second Interest High-Point,,
+40,onet_content_model_reference.TXT,1.B.1.i,Third Interest High-Point,,
+40,onet_content_model_reference.TXT,1.B.2,Occupational Values,,
+40,onet_content_model_reference.TXT,1.B.2.a,Achievement-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.a.1,Ability Utilization,,
+40,onet_content_model_reference.TXT,1.B.2.a.2,Achievement,,
+40,onet_content_model_reference.TXT,1.B.2.b,Working Conditions-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.b.1,Activity,,
+40,onet_content_model_reference.TXT,1.B.2.b.2,Independence,,
+40,onet_content_model_reference.TXT,1.B.2.b.3,Variety,,
+40,onet_content_model_reference.TXT,1.B.2.b.4,Compensation,,
+40,onet_content_model_reference.TXT,1.B.2.b.5,Security,,
+40,onet_content_model_reference.TXT,1.B.2.b.6,Working Conditions,,
+40,onet_content_model_reference.TXT,1.B.2.c,Recognition-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.c.1,Advancement,,
+40,onet_content_model_reference.TXT,1.B.2.c.2,Recognition,,
+40,onet_content_model_reference.TXT,1.B.2.c.3,Authority,,
+40,onet_content_model_reference.TXT,1.B.2.c.4,Social Status,,
+40,onet_content_model_reference.TXT,1.B.2.d,Relationships-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.d.1,Co-workers,,
+40,onet_content_model_reference.TXT,1.B.2.d.2,Social Service,,
+40,onet_content_model_reference.TXT,1.B.2.d.3,Moral Values,,
+40,onet_content_model_reference.TXT,1.B.2.e,Support-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.e.1,Company Policies and Practices,,
+40,onet_content_model_reference.TXT,1.B.2.e.2,"Supervision, Human Relations",,
+40,onet_content_model_reference.TXT,1.B.2.e.3,"Supervision, Technical",,
+40,onet_content_model_reference.TXT,1.B.2.f,Independence-Mean Extent,,
+40,onet_content_model_reference.TXT,1.B.2.f.1,Creativity,,
+40,onet_content_model_reference.TXT,1.B.2.f.2,Responsibility,,
+40,onet_content_model_reference.TXT,1.B.2.f.3,Autonomy,,
+40,onet_content_model_reference.TXT,1.C,Work Styles,,
+40,onet_content_model_reference.TXT,1.C.1,Achievement Orientation,,
+40,onet_content_model_reference.TXT,1.C.1.a,Achievement/Effort,,
+40,onet_content_model_reference.TXT,1.C.1.b,Persistence,,
+40,onet_content_model_reference.TXT,1.C.1.c,Initiative,,
+40,onet_content_model_reference.TXT,1.C.2,Social Influence,,
+40,onet_content_model_reference.TXT,1.C.2.b,Leadership,,
+40,onet_content_model_reference.TXT,1.C.3,Interpersonal Orientation,,
+40,onet_content_model_reference.TXT,1.C.3.a,Cooperation,,
+40,onet_content_model_reference.TXT,1.C.3.b,Concern for Others,,
+40,onet_content_model_reference.TXT,1.C.3.c,Social Orientation,,
+40,onet_content_model_reference.TXT,1.C.4,Adjustment,,
+40,onet_content_model_reference.TXT,1.C.4.a,Self Control,,
+40,onet_content_model_reference.TXT,1.C.4.b,Stress Tolerance,,
+40,onet_content_model_reference.TXT,1.C.4.c,Adaptability/Flexibility,,
+40,onet_content_model_reference.TXT,1.C.5,Conscientiousness,,
+40,onet_content_model_reference.TXT,1.C.5.a,Dependability,,
+40,onet_content_model_reference.TXT,1.C.5.b,Attention to Detail,,
+40,onet_content_model_reference.TXT,1.C.5.c,Integrity,,
+40,onet_content_model_reference.TXT,1.C.6,Independence,,
+40,onet_content_model_reference.TXT,1.C.7,Practical Intelligence,,
+40,onet_content_model_reference.TXT,1.C.7.a,Innovation,,
+40,onet_content_model_reference.TXT,1.C.7.b,Analytical Thinking,,
+40,onet_content_model_reference.TXT,2,Worker Requirements,,
+40,onet_content_model_reference.TXT,2.A,Basic Skills,,
+40,onet_content_model_reference.TXT,2.A.1,Content,,
+40,onet_content_model_reference.TXT,2.A.1.a,Reading Comprehension,,
+40,onet_content_model_reference.TXT,2.A.1.b,Active Listening,,
+40,onet_content_model_reference.TXT,2.A.1.c,Writing,,
+40,onet_content_model_reference.TXT,2.A.1.d,Speaking,,
+40,onet_content_model_reference.TXT,2.A.1.e,Mathematics,,
+40,onet_content_model_reference.TXT,2.A.1.f,Science,,
+40,onet_content_model_reference.TXT,2.A.2,Process,,
+40,onet_content_model_reference.TXT,2.A.2.a,Critical Thinking,,
+40,onet_content_model_reference.TXT,2.A.2.b,Active Learning,,
+40,onet_content_model_reference.TXT,2.A.2.c,Learning Strategies,,
+40,onet_content_model_reference.TXT,2.A.2.d,Monitoring,,
+40,onet_content_model_reference.TXT,2.B,Cross-Functional Skills,,
+40,onet_content_model_reference.TXT,2.B.1,Social Skills,,
+40,onet_content_model_reference.TXT,2.B.1.a,Social Perceptiveness,,
+40,onet_content_model_reference.TXT,2.B.1.b,Coordination,,
+40,onet_content_model_reference.TXT,2.B.1.c,Persuasion,,
+40,onet_content_model_reference.TXT,2.B.1.d,Negotiation,,
+40,onet_content_model_reference.TXT,2.B.1.e,Instructing,,
+40,onet_content_model_reference.TXT,2.B.1.f,Service Orientation,,
+40,onet_content_model_reference.TXT,2.B.2,Complex Problem Solving Skills,,
+40,onet_content_model_reference.TXT,2.B.2.i,Complex Problem Solving,,
+40,onet_content_model_reference.TXT,2.B.3,Technical Skills,,
+40,onet_content_model_reference.TXT,2.B.3.a,Operations Analysis,,
+40,onet_content_model_reference.TXT,2.B.3.b,Technology Design,,
+40,onet_content_model_reference.TXT,2.B.3.c,Equipment Selection,,
+40,onet_content_model_reference.TXT,2.B.3.d,Installation,,
+40,onet_content_model_reference.TXT,2.B.3.e,Programming,,
+40,onet_content_model_reference.TXT,2.B.3.g,Operation Monitoring,,
+40,onet_content_model_reference.TXT,2.B.3.h,Operation and Control,,
+40,onet_content_model_reference.TXT,2.B.3.j,Equipment Maintenance,,
+40,onet_content_model_reference.TXT,2.B.3.k,Troubleshooting,,
+40,onet_content_model_reference.TXT,2.B.3.l,Repairing,,
+40,onet_content_model_reference.TXT,2.B.3.m,Quality Control Analysis,,
+40,onet_content_model_reference.TXT,2.B.4,Systems Skills,,
+40,onet_content_model_reference.TXT,2.B.4.e,Judgment and Decision Making,,
+40,onet_content_model_reference.TXT,2.B.4.g,Systems Analysis,,
+40,onet_content_model_reference.TXT,2.B.4.h,Systems Evaluation,,
+40,onet_content_model_reference.TXT,2.B.5,Resource Management Skills,,
+40,onet_content_model_reference.TXT,2.B.5.a,Time Management,,
+40,onet_content_model_reference.TXT,2.B.5.b,Management of Financial Resources,,
+40,onet_content_model_reference.TXT,2.B.5.c,Management of Material Resources,,
+40,onet_content_model_reference.TXT,2.B.5.d,Management of Personnel Resources,,
+40,onet_content_model_reference.TXT,2.C,Knowledge,,
+40,onet_content_model_reference.TXT,2.C.1,Business and Management,,
+40,onet_content_model_reference.TXT,2.C.1.a,Administration and Management,,
+40,onet_content_model_reference.TXT,2.C.1.b,Clerical,,
+40,onet_content_model_reference.TXT,2.C.1.c,Economics and Accounting,,
+40,onet_content_model_reference.TXT,2.C.1.d,Sales and Marketing,,
+40,onet_content_model_reference.TXT,2.C.1.e,Customer and Personal Service,,
+40,onet_content_model_reference.TXT,2.C.1.f,Personnel and Human Resources,,
+40,onet_content_model_reference.TXT,2.C.10,Transportation,,
+40,onet_content_model_reference.TXT,2.C.2,Manufacturing and Production,,
+40,onet_content_model_reference.TXT,2.C.2.a,Production and Processing,,
+40,onet_content_model_reference.TXT,2.C.2.b,Food Production,,
+40,onet_content_model_reference.TXT,2.C.3,Engineering and Technology,,
+40,onet_content_model_reference.TXT,2.C.3.a,Computers and Electronics,,
+40,onet_content_model_reference.TXT,2.C.3.b,Engineering and Technology,,
+40,onet_content_model_reference.TXT,2.C.3.c,Design,,
+40,onet_content_model_reference.TXT,2.C.3.d,Building and Construction,,
+40,onet_content_model_reference.TXT,2.C.3.e,Mechanical,,
+40,onet_content_model_reference.TXT,2.C.4,Mathematics and Science,,
+40,onet_content_model_reference.TXT,2.C.4.a,Mathematics,,
+40,onet_content_model_reference.TXT,2.C.4.b,Physics,,
+40,onet_content_model_reference.TXT,2.C.4.c,Chemistry,,
+40,onet_content_model_reference.TXT,2.C.4.d,Biology,,
+40,onet_content_model_reference.TXT,2.C.4.e,Psychology,,
+40,onet_content_model_reference.TXT,2.C.4.f,Sociology and Anthropology,,
+40,onet_content_model_reference.TXT,2.C.4.g,Geography,,
+40,onet_content_model_reference.TXT,2.C.5,Health Services,,
+40,onet_content_model_reference.TXT,2.C.5.a,Medicine and Dentistry,,
+40,onet_content_model_reference.TXT,2.C.5.b,Therapy and Counseling,,
+40,onet_content_model_reference.TXT,2.C.6,Education and Training,,
+40,onet_content_model_reference.TXT,2.C.7,Arts and Humanities,,
+40,onet_content_model_reference.TXT,2.C.7.a,English Language,,
+40,onet_content_model_reference.TXT,2.C.7.b,Foreign Language,,
+40,onet_content_model_reference.TXT,2.C.7.c,Fine Arts,,
+40,onet_content_model_reference.TXT,2.C.7.d,History and Archeology,,
+40,onet_content_model_reference.TXT,2.C.7.e,Philosophy and Theology,,
+40,onet_content_model_reference.TXT,2.C.8,Law and Public Safety,,
+40,onet_content_model_reference.TXT,2.C.8.a,Public Safety and Security,,
+40,onet_content_model_reference.TXT,2.C.8.b,Law and Government,,
+40,onet_content_model_reference.TXT,2.C.9,Communications,,
+40,onet_content_model_reference.TXT,2.C.9.a,Telecommunications,,
+40,onet_content_model_reference.TXT,2.C.9.b,Communications and Media,,
+40,onet_content_model_reference.TXT,2.D,Education,,
+40,onet_content_model_reference.TXT,2.D.1,Required Level of Education,,
+40,onet_content_model_reference.TXT,2.D.2,Instructional Program Required,,
+40,onet_content_model_reference.TXT,2.D.3,Education Level in Specific Subjects,,
+40,onet_content_model_reference.TXT,2.D.3.a,Technical Vocational,,
+40,onet_content_model_reference.TXT,2.D.3.b,Business Vocational,,
+40,onet_content_model_reference.TXT,2.D.3.c,English/language Arts,,
+40,onet_content_model_reference.TXT,2.D.3.d,Oral Communication,,
+40,onet_content_model_reference.TXT,2.D.3.e,Languages,,
+40,onet_content_model_reference.TXT,2.D.3.f,Basic Math,,
+40,onet_content_model_reference.TXT,2.D.3.g,Advanced Math,,
+40,onet_content_model_reference.TXT,2.D.3.h,Physical Science,,
+40,onet_content_model_reference.TXT,2.D.3.i,Computer Science,,
+40,onet_content_model_reference.TXT,2.D.3.j,Biological Science,,
+40,onet_content_model_reference.TXT,2.D.3.k,Applied Science,,
+40,onet_content_model_reference.TXT,2.D.3.l,Social Science,,
+40,onet_content_model_reference.TXT,2.D.3.m,Arts,,
+40,onet_content_model_reference.TXT,2.D.3.n,Humanities,,
+40,onet_content_model_reference.TXT,2.D.3.o,Physical Education,,
+40,onet_content_model_reference.TXT,3,Experience Requirements,,
+40,onet_content_model_reference.TXT,3.A,Experience and Training,,
+40,onet_content_model_reference.TXT,3.A.1,Related Work Experience,,
+40,onet_content_model_reference.TXT,3.A.2,On-Site or In-Plant Training,,
+40,onet_content_model_reference.TXT,3.A.3,On-the-Job Training,,
+40,onet_content_model_reference.TXT,3.A.4,Apprenticeship,,
+40,onet_content_model_reference.TXT,3.B,Basic Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1,Content - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.a,Reading Comprehension - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.b,Active Listening - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.c,Writing - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.d,Speaking - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.e,Mathematics - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.1.f,Science - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.2,Process - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.2.a,Critical Thinking - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.2.b,Active Learning - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.2.c,Learning Strategies - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.B.2.d,Monitoring - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C,Cross-Functional Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1,Social Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.a,Social Perceptiveness - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.b,Coordination - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.c,Persuasion - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.d,Negotiation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.e,Instructing - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.1.f,Service Orientation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2,Complex Problem Solving Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.a,Problem Identification - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.b,Information Gathering - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.c,Information Organization - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.d,Synthesis/Reorganization - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.e,Idea Generation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.f,Idea Evaluation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.g,Implementation Planning - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.2.h,Solution Appraisal - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3,Technical Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.a,Operations Analysis - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.b,Technology Design - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.c,Equipment Selection - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.d,Installation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.e,Programming - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.f,Testing - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.g,Operation Monitoring - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.h,Operation and Control - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.i,Product Inspection - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.j,Equipment Maintenance - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.k,Troubleshooting - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.3.l,Repairing - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4,Systems Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.a,Visioning - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.b,Systems Perception - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.c,Identifying Downstream Consequences - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.d,Identification of Key Causes - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.e,Judgment and Decision Making - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.4.f,System Evaluation - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.5,Resource Management Skills - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.5.a,Time Management - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.5.b,Management of Financial Resources - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.5.c,Management of Material Resources - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.C.5.d,Management of Personnel Resources - Entry Requirement,,
+40,onet_content_model_reference.TXT,3.D,Licensing,,
+40,onet_content_model_reference.TXT,3.D.1,"License, Certificate, or Registration Required",,
+40,onet_content_model_reference.TXT,3.D.2,Specific License or Certificate Required,,
+40,onet_content_model_reference.TXT,3.D.2.a,Post-Secondary Degree,,
+40,onet_content_model_reference.TXT,3.D.2.b,Graduate Degree,,
+40,onet_content_model_reference.TXT,3.D.2.c,On-the-Job Training,,
+40,onet_content_model_reference.TXT,3.D.2.d,Examination,,
+40,onet_content_model_reference.TXT,3.D.2.e,Character References,,
+40,onet_content_model_reference.TXT,3.D.4,Additional Education and Training,,
+40,onet_content_model_reference.TXT,3.D.5,Organization and Agency Requirements,,
+40,onet_content_model_reference.TXT,3.D.5.a,Legal Requirement,,
+40,onet_content_model_reference.TXT,3.D.5.b,Employer Requirement,,
+40,onet_content_model_reference.TXT,3.D.5.c,"Union, Guild, or Professional Association",,
+40,onet_content_model_reference.TXT,4,Occupational Requirements,,
+40,onet_content_model_reference.TXT,4.A,Generalized Work Activities,,
+40,onet_content_model_reference.TXT,4.A.1,Information Input,,
+40,onet_content_model_reference.TXT,4.A.1.a,Looking for and Receiving Job-Related Information,,
+40,onet_content_model_reference.TXT,4.A.1.a.1,Getting Information,,
+40,onet_content_model_reference.TXT,4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",,
+40,onet_content_model_reference.TXT,4.A.1.b,Identify and Evaluating Job-Relevant Information,,
+40,onet_content_model_reference.TXT,4.A.1.b.1,"Identifying Objects, Actions, and Events",,
+40,onet_content_model_reference.TXT,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,
+40,onet_content_model_reference.TXT,4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",,
+40,onet_content_model_reference.TXT,4.A.2,Mental Processes,,
+40,onet_content_model_reference.TXT,4.A.2.a,Information and Data Processing,,
+40,onet_content_model_reference.TXT,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,
+40,onet_content_model_reference.TXT,4.A.2.a.2,Processing Information,,
+40,onet_content_model_reference.TXT,4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,,
+40,onet_content_model_reference.TXT,4.A.2.a.4,Analyzing Data or Information,,
+40,onet_content_model_reference.TXT,4.A.2.b,Reasoning and Decision Making,,
+40,onet_content_model_reference.TXT,4.A.2.b.1,Making Decisions and Solving Problems,,
+40,onet_content_model_reference.TXT,4.A.2.b.2,Thinking Creatively,,
+40,onet_content_model_reference.TXT,4.A.2.b.3,Updating and Using Relevant Knowledge,,
+40,onet_content_model_reference.TXT,4.A.2.b.4,Developing Objectives and Strategies,,
+40,onet_content_model_reference.TXT,4.A.2.b.5,Scheduling Work and Activities,,
+40,onet_content_model_reference.TXT,4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",,
+40,onet_content_model_reference.TXT,4.A.3,Work Output,,
+40,onet_content_model_reference.TXT,4.A.3.a,Performing Physical and Manual Work Activities,,
+40,onet_content_model_reference.TXT,4.A.3.a.1,Performing General Physical Activities,,
+40,onet_content_model_reference.TXT,4.A.3.a.2,Handling and Moving Objects,,
+40,onet_content_model_reference.TXT,4.A.3.a.3,Controlling Machines and Processes,,
+40,onet_content_model_reference.TXT,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,
+40,onet_content_model_reference.TXT,4.A.3.b,Performing Complex and Technical Activities,,
+40,onet_content_model_reference.TXT,4.A.3.b.1,Interacting With Computers,,
+40,onet_content_model_reference.TXT,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,
+40,onet_content_model_reference.TXT,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,
+40,onet_content_model_reference.TXT,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,
+40,onet_content_model_reference.TXT,4.A.3.b.6,Documenting/Recording Information,,
+40,onet_content_model_reference.TXT,4.A.4,Interacting With Others,,
+40,onet_content_model_reference.TXT,4.A.4.a,Communicating and Interacting,,
+40,onet_content_model_reference.TXT,4.A.4.a.1,Interpreting the Meaning of Information for Others,,
+40,onet_content_model_reference.TXT,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,
+40,onet_content_model_reference.TXT,4.A.4.a.3,Communicating with Persons Outside Organization,,
+40,onet_content_model_reference.TXT,4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,,
+40,onet_content_model_reference.TXT,4.A.4.a.5,Assisting and Caring for Others,,
+40,onet_content_model_reference.TXT,4.A.4.a.6,Selling or Influencing Others,,
+40,onet_content_model_reference.TXT,4.A.4.a.7,Resolving Conflicts and Negotiating with Others,,
+40,onet_content_model_reference.TXT,4.A.4.a.8,Performing for or Working Directly with the Public,,
+40,onet_content_model_reference.TXT,4.A.4.b,"Coordinating, Developing, Managing, and Advising",,
+40,onet_content_model_reference.TXT,4.A.4.b.1,Coordinating the Work and Activities of Others,,
+40,onet_content_model_reference.TXT,4.A.4.b.2,Developing and Building Teams,,
+40,onet_content_model_reference.TXT,4.A.4.b.3,Training and Teaching Others,,
+40,onet_content_model_reference.TXT,4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",,
+40,onet_content_model_reference.TXT,4.A.4.b.5,Coaching and Developing Others,,
+40,onet_content_model_reference.TXT,4.A.4.b.6,Provide Consultation and Advice to Others,,
+40,onet_content_model_reference.TXT,4.A.4.c,Administering,,
+40,onet_content_model_reference.TXT,4.A.4.c.1,Performing Administrative Activities,,
+40,onet_content_model_reference.TXT,4.A.4.c.2,Staffing Organizational Units,,
+40,onet_content_model_reference.TXT,4.A.4.c.3,Monitoring and Controlling Resources,,
+40,onet_content_model_reference.TXT,4.B,Organizational Context,,
+40,onet_content_model_reference.TXT,4.B.1,Structural Characteristics,,
+40,onet_content_model_reference.TXT,4.B.1.a,Organizational Structure,,
+40,onet_content_model_reference.TXT,4.B.1.a.1,Decision Making System,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a,Decentralization and Employee Empowerment,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.1,Have Control Over Unit or Department,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.2,Have Influence Over Decisions,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.3,Monitor Data on Quality/costs/Waste/etc.,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.4,Determine Work Flow or Order of Tasks,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.5,Invest in New Equipment and Technology,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.6,"Develop New Products, Services, and Procedures",,
+40,onet_content_model_reference.TXT,4.B.1.a.1.b,Individual versus Team Structure,,
+40,onet_content_model_reference.TXT,4.B.1.a.1.b.1,Percent of Time in Intact Team,,
+40,onet_content_model_reference.TXT,4.B.1.a.2,Job Characteristics,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.a,Skill Variety,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.a.1,Job Variety,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.a.2,Complex or High Level Skills Required,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.a.3,Variety of Tasks Required,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.b,Task Significance,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.b.1,Significance or Importance of Job,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.b.2,Job Quality Affects Lots of People,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.b.3,Job Itself Is Very Significant,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.c,Task Identity,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.c.1,Job Involves Whole Piece of Work,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.c.2,Can Do Entire Piece of Work,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.c.3,Can Finish What You Start,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.d,Autonomy,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.d.1,Autonomy and Freedom in Job,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.d.2,Chance for Initiative and Judgment,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.d.3,Opportunity for Independence and Freedom,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.e,Feedback,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.e.1,Extent of Feedback From Doing Job Itself,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.e.2,Doing Job Provides Chances for Feedback,,
+40,onet_content_model_reference.TXT,4.B.1.a.2.e.3,"After Finishing Job, Know Own Performance",,
+40,onet_content_model_reference.TXT,4.B.1.a.3,Job Stability and Rotation,,
+40,onet_content_model_reference.TXT,4.B.1.a.3.a,Number of Supervisors in Past Year,,
+40,onet_content_model_reference.TXT,4.B.1.a.3.b,Number of Work Teams in Past Year,,
+40,onet_content_model_reference.TXT,4.B.1.a.3.c,Number of Work Group Reorganizations in Past Year,,
+40,onet_content_model_reference.TXT,4.B.1.a.3.d,Number of Times Nature of Job Changed,,
+40,onet_content_model_reference.TXT,4.B.1.a.3.e,Job Rotation Practices,,
+40,onet_content_model_reference.TXT,4.B.1.b,Human Resources Systems and Practices,,
+40,onet_content_model_reference.TXT,4.B.1.b.1,Recruitment and Selection,,
+40,onet_content_model_reference.TXT,4.B.1.b.1.a,Recruitment Operations,,
+40,onet_content_model_reference.TXT,4.B.1.b.1.a.1,Sources of People for Current Job,,
+40,onet_content_model_reference.TXT,4.B.1.b.1.b,Selection Assessment Methods Used,,
+40,onet_content_model_reference.TXT,4.B.1.b.1.b.1,Assessment Methods Used to Select for Job,,
+40,onet_content_model_reference.TXT,4.B.1.b.2,Training and Development,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.a,Training Methods,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.a.1,Training Methods Used in Company,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.b,Training Topics and Content,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.b.1,Areas of Recent Formal Training,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.c,Extent and Support of Training Activities,,
+40,onet_content_model_reference.TXT,4.B.1.b.2.c.1,Recent Technical Skill Training,,
+40,onet_content_model_reference.TXT,4.B.1.b.3,Reward System,,
+40,onet_content_model_reference.TXT,4.B.1.b.3.a,Basis of Compensation,,
+40,onet_content_model_reference.TXT,4.B.1.b.3.a.1,Compensation Package Components,,
+40,onet_content_model_reference.TXT,4.B.1.b.3.b,Benefits,,
+40,onet_content_model_reference.TXT,4.B.1.b.3.b.1,Benefit Components,,
+40,onet_content_model_reference.TXT,4.B.2,Social Processes,,
+40,onet_content_model_reference.TXT,4.B.2.a,Goals,,
+40,onet_content_model_reference.TXT,4.B.2.a.1,Individual Goal Characteristics,,
+40,onet_content_model_reference.TXT,4.B.2.a.1.a,Achieve Most Important Individual Goal,,
+40,onet_content_model_reference.TXT,4.B.2.a.1.b,How Many Quantitative Individual Goals,,
+40,onet_content_model_reference.TXT,4.B.2.a.2,Goal Feedback,,
+40,onet_content_model_reference.TXT,4.B.2.a.2.a,How Many Specific Individual Goals,,
+40,onet_content_model_reference.TXT,4.B.2.a.2.b,When Get Information on Individual Goals,,
+40,onet_content_model_reference.TXT,4.B.2.a.2.c,"Informal, Job-Relevant Feedback",,
+40,onet_content_model_reference.TXT,4.B.2.a.2.d,"Meet One-on-One With Supervisor on Goals, Training, and Development",,
+40,onet_content_model_reference.TXT,4.B.2.b,Roles,,
+40,onet_content_model_reference.TXT,4.B.2.b.1,Role Conflict,,
+40,onet_content_model_reference.TXT,4.B.2.b.1.a,Often Receive Conflicting Requests,,
+40,onet_content_model_reference.TXT,4.B.2.b.1.b,Work With Groups With Different Focuses,,
+40,onet_content_model_reference.TXT,4.B.2.b.1.c,You and Your Supervisor Agree About Job,,
+40,onet_content_model_reference.TXT,4.B.2.b.1.d,Supervisor Makes Conflicting Requests,,
+40,onet_content_model_reference.TXT,4.B.2.b.2,Role Negotiability,,
+40,onet_content_model_reference.TXT,4.B.2.b.2.a,Negotiate Changes in Role with Supervisor,,
+40,onet_content_model_reference.TXT,4.B.2.b.2.b,Significant Input Into Way You Do Job,,
+40,onet_content_model_reference.TXT,4.B.2.b.3,Role Overload,,
+40,onet_content_model_reference.TXT,4.B.2.b.3.a,Get Assignments without Adequate Resources,,
+40,onet_content_model_reference.TXT,4.B.2.b.3.b,Given Enough Time to Do Work,,
+40,onet_content_model_reference.TXT,4.B.2.b.3.c,Too Much for One Person to Do,,
+40,onet_content_model_reference.TXT,4.B.2.c,Culture,,
+40,onet_content_model_reference.TXT,4.B.2.c.1,Organizational Values,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a,Guiding Principles of Organization,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.1,Taking Chances; Going Out on a Limb,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.10,Providing High Quality Products,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.11,Openness and Honesty,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.12,"Flexibility, Adapting to Change",,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.2,Fairness; Justice,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.3,Precision,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.4,Stability,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.5,Getting Things Done,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.6,Caring About Employees,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.7,Innovation,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.8,Aggressiveness,,
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.9,Valuing Customers,,
+40,onet_content_model_reference.TXT,4.B.2.d,Supervisor Role,,
+40,onet_content_model_reference.TXT,4.B.2.d.1,Supervisor Friendly and Supportive,,
+40,onet_content_model_reference.TXT,4.B.2.d.2,Supervisor Takes Active Role,,
+40,onet_content_model_reference.TXT,4.B.2.d.3,Supervisor Provides Clear Vision,,
+40,onet_content_model_reference.TXT,4.B.2.d.4,Supervisor Solves Problems,,
+40,onet_content_model_reference.TXT,4.C,Work Context,,
+40,onet_content_model_reference.TXT,4.C.1,Interpersonal Relationships,,
+40,onet_content_model_reference.TXT,4.C.1.a,Communication,,
+40,onet_content_model_reference.TXT,4.C.1.a.2,Communication Methods,,
+40,onet_content_model_reference.TXT,4.C.1.a.2.c,Public Speaking,,
+40,onet_content_model_reference.TXT,4.C.1.a.2.f,Telephone,,
+40,onet_content_model_reference.TXT,4.C.1.a.2.h,Electronic Mail,,
+40,onet_content_model_reference.TXT,4.C.1.a.2.j,Letters and Memos,,
+40,onet_content_model_reference.TXT,4.C.1.a.2.l,Face-to-Face Discussions,,
+40,onet_content_model_reference.TXT,4.C.1.a.4,Contact With Others,,
+40,onet_content_model_reference.TXT,4.C.1.b,Role Relationships,,
+40,onet_content_model_reference.TXT,4.C.1.b.1,Job Interactions,,
+40,onet_content_model_reference.TXT,4.C.1.b.1.e,Work With Work Group or Team,,
+40,onet_content_model_reference.TXT,4.C.1.b.1.f,Deal With External Customers,,
+40,onet_content_model_reference.TXT,4.C.1.b.1.g,Coordinate or Lead Others,,
+40,onet_content_model_reference.TXT,4.C.1.c,Responsibility for Others,,
+40,onet_content_model_reference.TXT,4.C.1.c.1,Responsible for Others' Health and Safety,,
+40,onet_content_model_reference.TXT,4.C.1.c.2,Responsibility for Outcomes and Results,,
+40,onet_content_model_reference.TXT,4.C.1.d,Conflictual Contact,,
+40,onet_content_model_reference.TXT,4.C.1.d.1,Frequency of Conflict Situations,,
+40,onet_content_model_reference.TXT,4.C.1.d.2,Deal With Unpleasant or Angry People,,
+40,onet_content_model_reference.TXT,4.C.1.d.3,Deal With Physically Aggressive People,,
+40,onet_content_model_reference.TXT,4.C.2,Physical Work Conditions,,
+40,onet_content_model_reference.TXT,4.C.2.a,Work Setting,,
+40,onet_content_model_reference.TXT,4.C.2.a.1,Frequency Required to Work:,,
+40,onet_content_model_reference.TXT,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,
+40,onet_content_model_reference.TXT,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,
+40,onet_content_model_reference.TXT,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,
+40,onet_content_model_reference.TXT,4.C.2.a.1.d,"Outdoors, Under Cover",,
+40,onet_content_model_reference.TXT,4.C.2.a.1.e,In an Open Vehicle or Equipment,,
+40,onet_content_model_reference.TXT,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,
+40,onet_content_model_reference.TXT,4.C.2.a.3,Physical Proximity,,
+40,onet_content_model_reference.TXT,4.C.2.b,Environmental Conditions,,
+40,onet_content_model_reference.TXT,4.C.2.b.1,Frequency in Environmental Conditions,,
+40,onet_content_model_reference.TXT,4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",,
+40,onet_content_model_reference.TXT,4.C.2.b.1.b,Very Hot or Cold Temperatures,,
+40,onet_content_model_reference.TXT,4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,,
+40,onet_content_model_reference.TXT,4.C.2.b.1.d,Exposed to Contaminants,,
+40,onet_content_model_reference.TXT,4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",,
+40,onet_content_model_reference.TXT,4.C.2.b.1.f,Exposed to Whole Body Vibration,,
+40,onet_content_model_reference.TXT,4.C.2.c,Job Hazards,,
+40,onet_content_model_reference.TXT,4.C.2.c.1,Frequency of Exposure to Job Hazards,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.a,Exposed to Radiation,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.b,Exposed to Disease or Infections,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.c,Exposed to High Places,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.d,Exposed to Hazardous Conditions,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.e,Exposed to Hazardous Equipment,,
+40,onet_content_model_reference.TXT,4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",,
+40,onet_content_model_reference.TXT,4.C.2.c.2,Likelihood of Injury From Job Hazards,,
+40,onet_content_model_reference.TXT,4.C.2.c.3,Degree of Injury,,
+40,onet_content_model_reference.TXT,4.C.2.d,Body Positioning,,
+40,onet_content_model_reference.TXT,4.C.2.d.1,Time Spent in Body Positions,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.a,Spend Time Sitting,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.b,Spend Time Standing,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",,
+40,onet_content_model_reference.TXT,4.C.2.d.1.d,Spend Time Walking and Running,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling?",,
+40,onet_content_model_reference.TXT,4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",,
+40,onet_content_model_reference.TXT,4.C.2.d.1.h,Spend Time Bending or Twisting the Body,,
+40,onet_content_model_reference.TXT,4.C.2.d.1.i,Spend Time Making Repetitive Motions,,
+40,onet_content_model_reference.TXT,4.C.2.e,Work Attire,,
+40,onet_content_model_reference.TXT,4.C.2.e.1,Frequency of Wearing Work Attire,,
+40,onet_content_model_reference.TXT,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,
+40,onet_content_model_reference.TXT,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,
+40,onet_content_model_reference.TXT,4.C.3,Structural Job Characteristics,,
+40,onet_content_model_reference.TXT,4.C.3.a,Criticality of Position,,
+40,onet_content_model_reference.TXT,4.C.3.a.1,Consequence of Error,,
+40,onet_content_model_reference.TXT,4.C.3.a.2,Impact of Decisions,,
+40,onet_content_model_reference.TXT,4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,,
+40,onet_content_model_reference.TXT,4.C.3.a.2.b,Frequency of Decision Making,,
+40,onet_content_model_reference.TXT,4.C.3.a.4,Freedom to Make Decisions,,
+40,onet_content_model_reference.TXT,4.C.3.b,Routine versus Challenging Work,,
+40,onet_content_model_reference.TXT,4.C.3.b.2,Degree of Automation,,
+40,onet_content_model_reference.TXT,4.C.3.b.4,Importance of Being Exact or Accurate,,
+40,onet_content_model_reference.TXT,4.C.3.b.7,Importance of Repeating Same Tasks,,
+40,onet_content_model_reference.TXT,4.C.3.b.8,Structured versus Unstructured Work,,
+40,onet_content_model_reference.TXT,4.C.3.c,Competition,,
+40,onet_content_model_reference.TXT,4.C.3.c.1,Level of Competition,,
+40,onet_content_model_reference.TXT,4.C.3.d,Pace and Scheduling,,
+40,onet_content_model_reference.TXT,4.C.3.d.1,Time Pressure,,
+40,onet_content_model_reference.TXT,4.C.3.d.3,Pace Determined by Speed of Equipment,,
+40,onet_content_model_reference.TXT,4.C.3.d.4,Work Schedules,,
+40,onet_content_model_reference.TXT,4.C.3.d.8,Duration of Typical Work Week,,
+40,onet_content_model_reference.TXT,5.,Occupation-Specific Information,,
+40,onet_content_model_reference.TXT,5.A,Tasks,,
+40,onet_content_model_reference.TXT,5.A.1,Task List,,
+40,onet_content_model_reference.TXT,6,Labor Market Characteristics,,
+40,onet_content_model_reference.TXT,6.A,Labor Market Information,,
+40,onet_content_model_reference.TXT,6.A.1,Occupational Statistics,,
+40,onet_content_model_reference.TXT,6.B,Occupational Outlook,,
+40,onet_content_model_reference.TXT,6.B.1,Occupational Projections,,
+50,Ability.txt,1.A.1.a.1,Oral Comprehension,IM | LV,902.0
+50,Ability.txt,1.A.1.a.2,Written Comprehension,IM | LV,902.0
+50,Ability.txt,1.A.1.a.3,Oral Expression,IM | LV,902.0
+50,Ability.txt,1.A.1.a.4,Written Expression,IM | LV,902.0
+50,Ability.txt,1.A.1.b.1,Fluency of Ideas,IM | LV,902.0
+50,Ability.txt,1.A.1.b.2,Originality,IM | LV,902.0
+50,Ability.txt,1.A.1.b.3,Problem Sensitivity,IM | LV,902.0
+50,Ability.txt,1.A.1.b.4,Deductive Reasoning,IM | LV,902.0
+50,Ability.txt,1.A.1.b.5,Inductive Reasoning,IM | LV,902.0
+50,Ability.txt,1.A.1.b.6,Information Ordering,IM | LV,902.0
+50,Ability.txt,1.A.1.b.7,Category Flexibility,IM | LV,902.0
+50,Ability.txt,1.A.1.c.1,Mathematical Reasoning,IM | LV,902.0
+50,Ability.txt,1.A.1.c.2,Number Facility,IM | LV,902.0
+50,Ability.txt,1.A.1.d.1,Memorization,IM | LV,902.0
+50,Ability.txt,1.A.1.e.1,Speed of Closure,IM | LV,902.0
+50,Ability.txt,1.A.1.e.2,Flexibility of Closure,IM | LV,902.0
+50,Ability.txt,1.A.1.e.3,Perceptual Speed,IM | LV,902.0
+50,Ability.txt,1.A.1.f.1,Spatial Orientation,IM | LV,902.0
+50,Ability.txt,1.A.1.f.2,Visualization,IM | LV,902.0
+50,Ability.txt,1.A.1.g.1,Selective Attention,IM | LV,902.0
+50,Ability.txt,1.A.1.g.2,Time Sharing,IM | LV,902.0
+50,Ability.txt,1.A.2.a.1,Arm-Hand Steadiness,IM | LV,902.0
+50,Ability.txt,1.A.2.a.2,Manual Dexterity,IM | LV,902.0
+50,Ability.txt,1.A.2.a.3,Finger Dexterity,IM | LV,902.0
+50,Ability.txt,1.A.2.b.1,Control Precision,IM | LV,902.0
+50,Ability.txt,1.A.2.b.2,Multilimb Coordination,IM | LV,902.0
+50,Ability.txt,1.A.2.b.3,Response Orientation,IM | LV,902.0
+50,Ability.txt,1.A.2.b.4,Rate Control,IM | LV,902.0
+50,Ability.txt,1.A.2.c.1,Reaction Time,IM | LV,902.0
+50,Ability.txt,1.A.2.c.2,Wrist-Finger Speed,IM | LV,902.0
+50,Ability.txt,1.A.2.c.3,Speed of Limb Movement,IM | LV,902.0
+50,Ability.txt,1.A.3.a.1,Static Strength,IM | LV,902.0
+50,Ability.txt,1.A.3.a.2,Explosive Strength,IM | LV,902.0
+50,Ability.txt,1.A.3.a.3,Dynamic Strength,IM | LV,902.0
+50,Ability.txt,1.A.3.a.4,Trunk Strength,IM | LV,902.0
+50,Ability.txt,1.A.3.b.1,Stamina,IM | LV,902.0
+50,Ability.txt,1.A.3.c.1,Extent Flexibility,IM | LV,902.0
+50,Ability.txt,1.A.3.c.2,Dynamic Flexibility,IM | LV,902.0
+50,Ability.txt,1.A.3.c.3,Gross Body Coordination,IM | LV,902.0
+50,Ability.txt,1.A.3.c.4,Gross Body Equilibrium,IM | LV,902.0
+50,Ability.txt,1.A.4.a.1,Near Vision,IM | LV,902.0
+50,Ability.txt,1.A.4.a.2,Far Vision,IM | LV,902.0
+50,Ability.txt,1.A.4.a.3,Visual Color Discrimination,IM | LV,902.0
+50,Ability.txt,1.A.4.a.4,Night Vision,IM | LV,902.0
+50,Ability.txt,1.A.4.a.5,Peripheral Vision,IM | LV,902.0
+50,Ability.txt,1.A.4.a.6,Depth Perception,IM | LV,902.0
+50,Ability.txt,1.A.4.a.7,Glare Sensitivity,IM | LV,902.0
+50,Ability.txt,1.A.4.b.1,Hearing Sensitivity,IM | LV,902.0
+50,Ability.txt,1.A.4.b.2,Auditory Attention,IM | LV,902.0
+50,Ability.txt,1.A.4.b.3,Sound Localization,IM | LV,902.0
+50,Ability.txt,1.A.4.b.4,Speech Recognition,IM | LV,902.0
+50,Ability.txt,1.A.4.b.5,Speech Clarity,IM | LV,902.0
+50,EducTrainExp.txt,2.D.1,Required Level of Education,RL,54.0
+50,EducTrainExp.txt,3.A.1,Related Work Experience,RW,54.0
+50,EducTrainExp.txt,3.A.2,On-Site or In-Plant Training,PT,54.0
+50,EducTrainExp.txt,3.A.3,On-the-Job Training,OJ,54.0
+50,Interest.txt,1.B.1.a,Realistic,OI,900.0
+50,Interest.txt,1.B.1.b,Investigative,OI,900.0
+50,Interest.txt,1.B.1.c,Artistic,OI,900.0
+50,Interest.txt,1.B.1.d,Social,OI,900.0
+50,Interest.txt,1.B.1.e,Enterprising,OI,900.0
+50,Interest.txt,1.B.1.f,Conventional,OI,900.0
+50,Interest.txt,1.B.1.g,First Interest High-Point,IH,900.0
+50,Interest.txt,1.B.1.h,Second Interest High-Point,IH,900.0
+50,Interest.txt,1.B.1.i,Third Interest High-Point,IH,900.0
+50,Knowledge.txt,2.C.1.a,Administration and Management,IM | LV,902.0
+50,Knowledge.txt,2.C.1.b,Clerical,IM | LV,902.0
+50,Knowledge.txt,2.C.1.c,Economics and Accounting,IM | LV,902.0
+50,Knowledge.txt,2.C.1.d,Sales and Marketing,IM | LV,902.0
+50,Knowledge.txt,2.C.1.e,Customer and Personal Service,IM | LV,902.0
+50,Knowledge.txt,2.C.1.f,Personnel and Human Resources,IM | LV,902.0
+50,Knowledge.txt,2.C.10,Transportation,IM | LV,902.0
+50,Knowledge.txt,2.C.2.a,Production and Processing,IM | LV,902.0
+50,Knowledge.txt,2.C.2.b,Food Production,IM | LV,902.0
+50,Knowledge.txt,2.C.3.a,Computers and Electronics,IM | LV,902.0
+50,Knowledge.txt,2.C.3.b,Engineering and Technology,IM | LV,902.0
+50,Knowledge.txt,2.C.3.c,Design,IM | LV,902.0
+50,Knowledge.txt,2.C.3.d,Building and Construction,IM | LV,902.0
+50,Knowledge.txt,2.C.3.e,Mechanical,IM | LV,902.0
+50,Knowledge.txt,2.C.4.a,Mathematics,IM | LV,902.0
+50,Knowledge.txt,2.C.4.b,Physics,IM | LV,902.0
+50,Knowledge.txt,2.C.4.c,Chemistry,IM | LV,902.0
+50,Knowledge.txt,2.C.4.d,Biology,IM | LV,902.0
+50,Knowledge.txt,2.C.4.e,Psychology,IM | LV,902.0
+50,Knowledge.txt,2.C.4.f,Sociology and Anthropology,IM | LV,902.0
+50,Knowledge.txt,2.C.4.g,Geography,IM | LV,902.0
+50,Knowledge.txt,2.C.5.a,Medicine and Dentistry,IM | LV,902.0
+50,Knowledge.txt,2.C.5.b,Therapy and Counseling,IM | LV,902.0
+50,Knowledge.txt,2.C.6,Education and Training,IM | LV,902.0
+50,Knowledge.txt,2.C.7.a,English Language,IM | LV,902.0
+50,Knowledge.txt,2.C.7.b,Foreign Language,IM | LV,902.0
+50,Knowledge.txt,2.C.7.c,Fine Arts,IM | LV,902.0
+50,Knowledge.txt,2.C.7.d,History and Archeology,IM | LV,902.0
+50,Knowledge.txt,2.C.7.e,Philosophy and Theology,IM | LV,902.0
+50,Knowledge.txt,2.C.8.a,Public Safety and Security,IM | LV,902.0
+50,Knowledge.txt,2.C.8.b,Law and Government,IM | LV,902.0
+50,Knowledge.txt,2.C.9.a,Telecommunications,IM | LV,902.0
+50,Knowledge.txt,2.C.9.b,Communications and Media,IM | LV,902.0
+50,Skills.txt,2.A.1.a,Reading Comprehension,IM | LV,902.0
+50,Skills.txt,2.A.1.b,Active Listening,IM | LV,902.0
+50,Skills.txt,2.A.1.c,Writing,IM | LV,902.0
+50,Skills.txt,2.A.1.d,Speaking,IM | LV,902.0
+50,Skills.txt,2.A.1.e,Mathematics,IM | LV,902.0
+50,Skills.txt,2.A.1.f,Science,IM | LV,902.0
+50,Skills.txt,2.A.2.a,Critical Thinking,IM | LV,902.0
+50,Skills.txt,2.A.2.b,Active Learning,IM | LV,902.0
+50,Skills.txt,2.A.2.c,Learning Strategies,IM | LV,902.0
+50,Skills.txt,2.A.2.d,Monitoring,IM | LV,902.0
+50,Skills.txt,2.B.1.a,Social Perceptiveness,IM | LV,902.0
+50,Skills.txt,2.B.1.b,Coordination,IM | LV,902.0
+50,Skills.txt,2.B.1.c,Persuasion,IM | LV,902.0
+50,Skills.txt,2.B.1.d,Negotiation,IM | LV,902.0
+50,Skills.txt,2.B.1.e,Instructing,IM | LV,902.0
+50,Skills.txt,2.B.1.f,Service Orientation,IM | LV,902.0
+50,Skills.txt,2.B.2.i,Complex Problem Solving,IM | LV,902.0
+50,Skills.txt,2.B.3.a,Operations Analysis,IM | LV,902.0
+50,Skills.txt,2.B.3.b,Technology Design,IM | LV,902.0
+50,Skills.txt,2.B.3.c,Equipment Selection,IM | LV,902.0
+50,Skills.txt,2.B.3.d,Installation,IM | LV,902.0
+50,Skills.txt,2.B.3.e,Programming,IM | LV,902.0
+50,Skills.txt,2.B.3.g,Operation Monitoring,IM | LV,902.0
+50,Skills.txt,2.B.3.h,Operation and Control,IM | LV,902.0
+50,Skills.txt,2.B.3.j,Equipment Maintenance,IM | LV,902.0
+50,Skills.txt,2.B.3.k,Troubleshooting,IM | LV,902.0
+50,Skills.txt,2.B.3.l,Repairing,IM | LV,902.0
+50,Skills.txt,2.B.3.m,Quality Control Analysis,IM | LV,902.0
+50,Skills.txt,2.B.4.e,Judgment and Decision Making,IM | LV,902.0
+50,Skills.txt,2.B.4.g,Systems Analysis,IM | LV,902.0
+50,Skills.txt,2.B.4.h,Systems Evaluation,IM | LV,902.0
+50,Skills.txt,2.B.5.a,Time Management,IM | LV,902.0
+50,Skills.txt,2.B.5.b,Management of Financial Resources,IM | LV,902.0
+50,Skills.txt,2.B.5.c,Management of Material Resources,IM | LV,902.0
+50,Skills.txt,2.B.5.d,Management of Personnel Resources,IM | LV,902.0
+50,Survey_Booklet_Location_Reference.txt,1.A.1.a.1,Oral Comprehension,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.a.2,Written Comprehension,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.a.3,Oral Expression,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.a.4,Written Expression,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.1,Fluency of Ideas,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.2,Originality,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.3,Problem Sensitivity,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.4,Deductive Reasoning,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.5,Inductive Reasoning,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.6,Information Ordering,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.b.7,Category Flexibility,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.c.1,Mathematical Reasoning,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.c.2,Number Facility,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.d.1,Memorization,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.e.1,Speed of Closure,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.e.2,Flexibility of Closure,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.e.3,Perceptual Speed,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.f.1,Spatial Orientation,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.f.2,Visualization,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.g.1,Selective Attention,,
+50,Survey_Booklet_Location_Reference.txt,1.A.1.g.2,Time Sharing,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.a.1,Arm-Hand Steadiness,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.a.2,Manual Dexterity,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.a.3,Finger Dexterity,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.b.1,Control Precision,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.b.2,Multilimb Coordination,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.b.3,Response Orientation,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.b.4,Rate Control,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.c.1,Reaction Time,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.c.2,Wrist-Finger Speed,,
+50,Survey_Booklet_Location_Reference.txt,1.A.2.c.3,Speed of Limb Movement,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.a.1,Static Strength,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.a.2,Explosive Strength,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.a.3,Dynamic Strength,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.a.4,Trunk Strength,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.b.1,Stamina,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.c.1,Extent Flexibility,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.c.2,Dynamic Flexibility,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.c.3,Gross Body Coordination,,
+50,Survey_Booklet_Location_Reference.txt,1.A.3.c.4,Gross Body Equilibrium,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.1,Near Vision,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.2,Far Vision,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.3,Visual Color Discrimination,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.4,Night Vision,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.5,Peripheral Vision,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.6,Depth Perception,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.a.7,Glare Sensitivity,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.b.1,Hearing Sensitivity,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.b.2,Auditory Attention,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.b.3,Sound Localization,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.b.4,Speech Recognition,,
+50,Survey_Booklet_Location_Reference.txt,1.A.4.b.5,Speech Clarity,,
+50,Survey_Booklet_Location_Reference.txt,1.C.1.a,Achievement/Effort,,
+50,Survey_Booklet_Location_Reference.txt,1.C.1.b,Persistence,,
+50,Survey_Booklet_Location_Reference.txt,1.C.1.c,Initiative,,
+50,Survey_Booklet_Location_Reference.txt,1.C.2.b,Leadership,,
+50,Survey_Booklet_Location_Reference.txt,1.C.3.a,Cooperation,,
+50,Survey_Booklet_Location_Reference.txt,1.C.3.b,Concern for Others,,
+50,Survey_Booklet_Location_Reference.txt,1.C.3.c,Social Orientation,,
+50,Survey_Booklet_Location_Reference.txt,1.C.4.a,Self Control,,
+50,Survey_Booklet_Location_Reference.txt,1.C.4.b,Stress Tolerance,,
+50,Survey_Booklet_Location_Reference.txt,1.C.4.c,Adaptability/Flexibility,,
+50,Survey_Booklet_Location_Reference.txt,1.C.5.a,Dependability,,
+50,Survey_Booklet_Location_Reference.txt,1.C.5.b,Attention to Detail,,
+50,Survey_Booklet_Location_Reference.txt,1.C.5.c,Integrity,,
+50,Survey_Booklet_Location_Reference.txt,1.C.6,Independence,,
+50,Survey_Booklet_Location_Reference.txt,1.C.7.a,Innovation,,
+50,Survey_Booklet_Location_Reference.txt,1.C.7.b,Analytical Thinking,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.a,Reading Comprehension,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.b,Active Listening,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.c,Writing,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.d,Speaking,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.e,Mathematics,,
+50,Survey_Booklet_Location_Reference.txt,2.A.1.f,Science,,
+50,Survey_Booklet_Location_Reference.txt,2.A.2.a,Critical Thinking,,
+50,Survey_Booklet_Location_Reference.txt,2.A.2.b,Active Learning,,
+50,Survey_Booklet_Location_Reference.txt,2.A.2.c,Learning Strategies,,
+50,Survey_Booklet_Location_Reference.txt,2.A.2.d,Monitoring,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.a,Social Perceptiveness,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.b,Coordination,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.c,Persuasion,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.d,Negotiation,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.e,Instructing,,
+50,Survey_Booklet_Location_Reference.txt,2.B.1.f,Service Orientation,,
+50,Survey_Booklet_Location_Reference.txt,2.B.2.i,Complex Problem Solving,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.a,Operations Analysis,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.b,Technology Design,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.c,Equipment Selection,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.d,Installation,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.e,Programming,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.g,Operation Monitoring,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.h,Operation and Control,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.j,Equipment Maintenance,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.k,Troubleshooting,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.l,Repairing,,
+50,Survey_Booklet_Location_Reference.txt,2.B.3.m,Quality Control Analysis,,
+50,Survey_Booklet_Location_Reference.txt,2.B.4.e,Judgment and Decision Making,,
+50,Survey_Booklet_Location_Reference.txt,2.B.4.g,Systems Analysis,,
+50,Survey_Booklet_Location_Reference.txt,2.B.4.h,Systems Evaluation,,
+50,Survey_Booklet_Location_Reference.txt,2.B.5.a,Time Management,,
+50,Survey_Booklet_Location_Reference.txt,2.B.5.b,Management of Financial Resources,,
+50,Survey_Booklet_Location_Reference.txt,2.B.5.c,Management of Material Resources,,
+50,Survey_Booklet_Location_Reference.txt,2.B.5.d,Management of Personnel Resources,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.a,Administration and Management,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.b,Clerical,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.c,Economics and Accounting,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.d,Sales and Marketing,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.e,Customer and Personal Service,,
+50,Survey_Booklet_Location_Reference.txt,2.C.1.f,Personnel and Human Resources,,
+50,Survey_Booklet_Location_Reference.txt,2.C.10,Transportation,,
+50,Survey_Booklet_Location_Reference.txt,2.C.2.a,Production and Processing,,
+50,Survey_Booklet_Location_Reference.txt,2.C.2.b,Food Production,,
+50,Survey_Booklet_Location_Reference.txt,2.C.3.a,Computers and Electronics,,
+50,Survey_Booklet_Location_Reference.txt,2.C.3.b,Engineering and Technology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.3.c,Design,,
+50,Survey_Booklet_Location_Reference.txt,2.C.3.d,Building and Construction,,
+50,Survey_Booklet_Location_Reference.txt,2.C.3.e,Mechanical,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.a,Mathematics,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.b,Physics,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.c,Chemistry,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.d,Biology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.e,Psychology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.f,Sociology and Anthropology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.4.g,Geography,,
+50,Survey_Booklet_Location_Reference.txt,2.C.5.a,Medicine and Dentistry,,
+50,Survey_Booklet_Location_Reference.txt,2.C.5.b,Therapy and Counseling,,
+50,Survey_Booklet_Location_Reference.txt,2.C.6,Education and Training,,
+50,Survey_Booklet_Location_Reference.txt,2.C.7.a,English Language,,
+50,Survey_Booklet_Location_Reference.txt,2.C.7.b,Foreign Language,,
+50,Survey_Booklet_Location_Reference.txt,2.C.7.c,Fine Arts,,
+50,Survey_Booklet_Location_Reference.txt,2.C.7.d,History and Archeology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.7.e,Philosophy and Theology,,
+50,Survey_Booklet_Location_Reference.txt,2.C.8.a,Public Safety and Security,,
+50,Survey_Booklet_Location_Reference.txt,2.C.8.b,Law and Government,,
+50,Survey_Booklet_Location_Reference.txt,2.C.9.a,Telecommunications,,
+50,Survey_Booklet_Location_Reference.txt,2.C.9.b,Communications and Media,,
+50,Survey_Booklet_Location_Reference.txt,2.D.1,Required Level of Education,,
+50,Survey_Booklet_Location_Reference.txt,3.A.1,Related Work Experience,,
+50,Survey_Booklet_Location_Reference.txt,3.A.2,On-Site or In-Plant Training,,
+50,Survey_Booklet_Location_Reference.txt,3.A.3,On-the-Job Training,,
+50,Survey_Booklet_Location_Reference.txt,4.A.1.a.1,Getting Information,,
+50,Survey_Booklet_Location_Reference.txt,4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",,
+50,Survey_Booklet_Location_Reference.txt,4.A.1.b.1,"Identifying Objects, Actions, and Events",,
+50,Survey_Booklet_Location_Reference.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,
+50,Survey_Booklet_Location_Reference.txt,4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.a.2,Processing Information,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.a.4,Analyzing Data or Information,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.1,Making Decisions and Solving Problems,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.2,Thinking Creatively,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.3,Updating and Using Relevant Knowledge,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.4,Developing Objectives and Strategies,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.5,Scheduling Work and Activities,,
+50,Survey_Booklet_Location_Reference.txt,4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.1,Performing General Physical Activities,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.2,Handling and Moving Objects,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.3,Controlling Machines and Processes,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.1,Interacting With Computers,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.6,Documenting/Recording Information,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.1,Interpreting the Meaning of Information for Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.3,Communicating with Persons Outside Organization,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.5,Assisting and Caring for Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.6,Selling or Influencing Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.7,Resolving Conflicts and Negotiating with Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.8,Performing for or Working Directly with the Public,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.1,Coordinating the Work and Activities of Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.2,Developing and Building Teams,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.3,Training and Teaching Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.5,Coaching and Developing Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.b.6,Provide Consultation and Advice to Others,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.c.1,Performing Administrative Activities,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.c.2,Staffing Organizational Units,,
+50,Survey_Booklet_Location_Reference.txt,4.A.4.c.3,Monitoring and Controlling Resources,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.c,Public Speaking,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.f,Telephone,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.h,Electronic Mail,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.j,Letters and Memos,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.l,Face-to-Face Discussions,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.4,Contact With Others,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.b.1.e,Work With Work Group or Team,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.b.1.f,Deal With External Customers,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.b.1.g,Coordinate or Lead Others,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.c.1,Responsible for Others' Health and Safety,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.c.2,Responsibility for Outcomes and Results,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.d.1,Frequency of Conflict Situations,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,,
+50,Survey_Booklet_Location_Reference.txt,4.C.1.d.3,Deal With Physically Aggressive People,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.d,"Outdoors, Under Cover",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.3,Physical Proximity,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.b,Very Hot or Cold Temperatures,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.d,Exposed to Contaminants,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.b.1.f,Exposed to Whole Body Vibration,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.a,Exposed to Radiation,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.b,Exposed to Disease or Infections,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.c,Exposed to High Places,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.d,Exposed to Hazardous Conditions,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.a,Spend Time Sitting,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.b,Spend Time Standing,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.d,Spend Time Walking and Running,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling?",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.h,Spend Time Bending or Twisting the Body,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.d.1.i,Spend Time Making Repetitive Motions,,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,
+50,Survey_Booklet_Location_Reference.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.a.1,Consequence of Error,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.a.2.b,Frequency of Decision Making,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.a.4,Freedom to Make Decisions,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.b.2,Degree of Automation,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.b.4,Importance of Being Exact or Accurate,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.b.7,Importance of Repeating Same Tasks,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.b.8,Structured versus Unstructured Work,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.c.1,Level of Competition,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.d.1,Time Pressure,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.d.4,Work Schedules,,
+50,Survey_Booklet_Location_Reference.txt,4.C.3.d.8,Duration of Typical Work Week,,
+50,WorkActivity.txt,4.A.1.a.1,Getting Information,IM | LV,902.0
+50,WorkActivity.txt,4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",IM | LV,902.0
+50,WorkActivity.txt,4.A.1.b.1,"Identifying Objects, Actions, and Events",IM | LV,902.0
+50,WorkActivity.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",IM | LV,902.0
+50,WorkActivity.txt,4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",IM | LV,902.0
+50,WorkActivity.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",IM | LV,902.0
+50,WorkActivity.txt,4.A.2.a.2,Processing Information,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.a.4,Analyzing Data or Information,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.1,Making Decisions and Solving Problems,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.2,Thinking Creatively,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.3,Updating and Using Relevant Knowledge,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.4,Developing Objectives and Strategies,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.5,Scheduling Work and Activities,IM | LV,902.0
+50,WorkActivity.txt,4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",IM | LV,902.0
+50,WorkActivity.txt,4.A.3.a.1,Performing General Physical Activities,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.a.2,Handling and Moving Objects,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.a.3,Controlling Machines and Processes,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",IM | LV,902.0
+50,WorkActivity.txt,4.A.3.b.1,Interacting With Computers,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",IM | LV,902.0
+50,WorkActivity.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,IM | LV,902.0
+50,WorkActivity.txt,4.A.3.b.6,Documenting/Recording Information,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.1,Interpreting the Meaning of Information for Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.3,Communicating with Persons Outside Organization,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.5,Assisting and Caring for Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.6,Selling or Influencing Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.7,Resolving Conflicts and Negotiating with Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.a.8,Performing for or Working Directly with the Public,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.1,Coordinating the Work and Activities of Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.2,Developing and Building Teams,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.3,Training and Teaching Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.5,Coaching and Developing Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.b.6,Provide Consultation and Advice to Others,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.c.1,Performing Administrative Activities,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.c.2,Staffing Organizational Units,IM | LV,902.0
+50,WorkActivity.txt,4.A.4.c.3,Monitoring and Controlling Resources,IM | LV,902.0
+50,WorkContext.txt,4.C.1.a.2.c,Public Speaking,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.a.2.f,Telephone,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.a.2.h,Electronic Mail,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.a.2.j,Letters and Memos,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.a.2.l,Face-to-Face Discussions,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.a.4,Contact With Others,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.b.1.e,Work With Work Group or Team,CX | CXP,54.0
+50,WorkContext.txt,4.C.1.b.1.f,Deal With External Customers,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.b.1.g,Coordinate or Lead Others,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.c.1,Responsible for Others' Health and Safety,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.c.2,Responsibility for Outcomes and Results,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.d.1,Frequency of Conflict Situations,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,CX | CXP,902.0
+50,WorkContext.txt,4.C.1.d.3,Deal With Physically Aggressive People,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",CX | CXP,54.0
+50,WorkContext.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.a.1.d,"Outdoors, Under Cover",CX | CXP,54.0
+50,WorkContext.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,CX | CXP,54.0
+50,WorkContext.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,CX | CXP,54.0
+50,WorkContext.txt,4.C.2.a.3,Physical Proximity,CX | CXP,54.0
+50,WorkContext.txt,4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.b.1.b,Very Hot or Cold Temperatures,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.b.1.d,Exposed to Contaminants,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.b.1.f,Exposed to Whole Body Vibration,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.a,Exposed to Radiation,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.b,Exposed to Disease or Infections,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.c,Exposed to High Places,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.d,Exposed to Hazardous Conditions,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.a,Spend Time Sitting,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.b,Spend Time Standing,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.d,Spend Time Walking and Running,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling?",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.h,Spend Time Bending or Twisting the Body,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.d.1.i,Spend Time Making Repetitive Motions,CX | CXP,902.0
+50,WorkContext.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",CX | CXP,902.0
+50,WorkContext.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",CX | CXP,902.0
+50,WorkContext.txt,4.C.3.a.1,Consequence of Error,CX | CXP,902.0
+50,WorkContext.txt,4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.a.2.b,Frequency of Decision Making,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.a.4,Freedom to Make Decisions,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.b.2,Degree of Automation,CX | CXP,902.0
+50,WorkContext.txt,4.C.3.b.4,Importance of Being Exact or Accurate,CX | CXP,902.0
+50,WorkContext.txt,4.C.3.b.7,Importance of Repeating Same Tasks,CX | CXP,902.0
+50,WorkContext.txt,4.C.3.b.8,Structured versus Unstructured Work,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.c.1,Level of Competition,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.d.1,Time Pressure,CX | CXP,54.0
+50,WorkContext.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,CX | CXP,902.0
+50,WorkContext.txt,4.C.3.d.4,Work Schedules,CT | CTP,54.0
+50,WorkContext.txt,4.C.3.d.8,Duration of Typical Work Week,CT | CTP,54.0
+50,WorkStyles.txt,1.C.1.a,Achievement/Effort,IM,54.0
+50,WorkStyles.txt,1.C.1.b,Persistence,IM,54.0
+50,WorkStyles.txt,1.C.1.c,Initiative,IM,54.0
+50,WorkStyles.txt,1.C.2.b,Leadership,IM,54.0
+50,WorkStyles.txt,1.C.3.a,Cooperation,IM,54.0
+50,WorkStyles.txt,1.C.3.b,Concern for Others,IM,54.0
+50,WorkStyles.txt,1.C.3.c,Social Orientation,IM,54.0
+50,WorkStyles.txt,1.C.4.a,Self Control,IM,54.0
+50,WorkStyles.txt,1.C.4.b,Stress Tolerance,IM,54.0
+50,WorkStyles.txt,1.C.4.c,Adaptability/Flexibility,IM,54.0
+50,WorkStyles.txt,1.C.5.a,Dependability,IM,54.0
+50,WorkStyles.txt,1.C.5.b,Attention to Detail,IM,54.0
+50,WorkStyles.txt,1.C.5.c,Integrity,IM,54.0
+50,WorkStyles.txt,1.C.6,Independence,IM,54.0
+50,WorkStyles.txt,1.C.7.a,Innovation,IM,54.0
+50,WorkStyles.txt,1.C.7.b,Analytical Thinking,IM,54.0
+50,WorkValue.txt,1.B.2.a,Achievement-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.a.1,Ability Utilization,EN,900.0
+50,WorkValue.txt,1.B.2.a.2,Achievement,EN,900.0
+50,WorkValue.txt,1.B.2.b,Working Conditions-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.b.1,Activity,EN,900.0
+50,WorkValue.txt,1.B.2.b.2,Independence,EN,900.0
+50,WorkValue.txt,1.B.2.b.3,Variety,EN,900.0
+50,WorkValue.txt,1.B.2.b.4,Compensation,EN,900.0
+50,WorkValue.txt,1.B.2.b.5,Security,EN,900.0
+50,WorkValue.txt,1.B.2.b.6,Working Conditions,EN,900.0
+50,WorkValue.txt,1.B.2.c,Recognition-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.c.1,Advancement,EN,900.0
+50,WorkValue.txt,1.B.2.c.2,Recognition,EN,900.0
+50,WorkValue.txt,1.B.2.c.3,Authority,EN,900.0
+50,WorkValue.txt,1.B.2.c.4,Social Status,EN,900.0
+50,WorkValue.txt,1.B.2.d,Relationships-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.d.1,Co-workers,EN,900.0
+50,WorkValue.txt,1.B.2.d.2,Social Service,EN,900.0
+50,WorkValue.txt,1.B.2.d.3,Moral Values,EN,900.0
+50,WorkValue.txt,1.B.2.e,Support-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.e.1,Company Policies and Practices,EN,900.0
+50,WorkValue.txt,1.B.2.e.2,"Supervision, Human Relations",EN,900.0
+50,WorkValue.txt,1.B.2.e.3,"Supervision, Technical",EN,900.0
+50,WorkValue.txt,1.B.2.f,Independence-Mean Extent,EN,900.0
+50,WorkValue.txt,1.B.2.f.1,Creativity,EN,900.0
+50,WorkValue.txt,1.B.2.f.2,Responsibility,EN,900.0
+50,WorkValue.txt,1.B.2.f.3,Autonomy,EN,900.0
+50,onet_content_model_reference.txt,1,Worker Characteristics,,
+50,onet_content_model_reference.txt,1.A,Abilities,,
+50,onet_content_model_reference.txt,1.A.1,Cognitive Abilities,,
+50,onet_content_model_reference.txt,1.A.1.a,Verbal Abilities,,
+50,onet_content_model_reference.txt,1.A.1.a.1,Oral Comprehension,,
+50,onet_content_model_reference.txt,1.A.1.a.2,Written Comprehension,,
+50,onet_content_model_reference.txt,1.A.1.a.3,Oral Expression,,
+50,onet_content_model_reference.txt,1.A.1.a.4,Written Expression,,
+50,onet_content_model_reference.txt,1.A.1.b,Idea Generation and Reasoning Abilities,,
+50,onet_content_model_reference.txt,1.A.1.b.1,Fluency of Ideas,,
+50,onet_content_model_reference.txt,1.A.1.b.2,Originality,,
+50,onet_content_model_reference.txt,1.A.1.b.3,Problem Sensitivity,,
+50,onet_content_model_reference.txt,1.A.1.b.4,Deductive Reasoning,,
+50,onet_content_model_reference.txt,1.A.1.b.5,Inductive Reasoning,,
+50,onet_content_model_reference.txt,1.A.1.b.6,Information Ordering,,
+50,onet_content_model_reference.txt,1.A.1.b.7,Category Flexibility,,
+50,onet_content_model_reference.txt,1.A.1.c,Quantitative Abilities,,
+50,onet_content_model_reference.txt,1.A.1.c.1,Mathematical Reasoning,,
+50,onet_content_model_reference.txt,1.A.1.c.2,Number Facility,,
+50,onet_content_model_reference.txt,1.A.1.d,Memory,,
+50,onet_content_model_reference.txt,1.A.1.d.1,Memorization,,
+50,onet_content_model_reference.txt,1.A.1.e,Perceptual Abilities,,
+50,onet_content_model_reference.txt,1.A.1.e.1,Speed of Closure,,
+50,onet_content_model_reference.txt,1.A.1.e.2,Flexibility of Closure,,
+50,onet_content_model_reference.txt,1.A.1.e.3,Perceptual Speed,,
+50,onet_content_model_reference.txt,1.A.1.f,Spatial Abilities,,
+50,onet_content_model_reference.txt,1.A.1.f.1,Spatial Orientation,,
+50,onet_content_model_reference.txt,1.A.1.f.2,Visualization,,
+50,onet_content_model_reference.txt,1.A.1.g,Attentiveness,,
+50,onet_content_model_reference.txt,1.A.1.g.1,Selective Attention,,
+50,onet_content_model_reference.txt,1.A.1.g.2,Time Sharing,,
+50,onet_content_model_reference.txt,1.A.2,Psychomotor Abilities,,
+50,onet_content_model_reference.txt,1.A.2.a,Fine Manipulative Abilities,,
+50,onet_content_model_reference.txt,1.A.2.a.1,Arm-Hand Steadiness,,
+50,onet_content_model_reference.txt,1.A.2.a.2,Manual Dexterity,,
+50,onet_content_model_reference.txt,1.A.2.a.3,Finger Dexterity,,
+50,onet_content_model_reference.txt,1.A.2.b,Control Movement Abilities,,
+50,onet_content_model_reference.txt,1.A.2.b.1,Control Precision,,
+50,onet_content_model_reference.txt,1.A.2.b.2,Multilimb Coordination,,
+50,onet_content_model_reference.txt,1.A.2.b.3,Response Orientation,,
+50,onet_content_model_reference.txt,1.A.2.b.4,Rate Control,,
+50,onet_content_model_reference.txt,1.A.2.c,Reaction Time and Speed Abilities,,
+50,onet_content_model_reference.txt,1.A.2.c.1,Reaction Time,,
+50,onet_content_model_reference.txt,1.A.2.c.2,Wrist-Finger Speed,,
+50,onet_content_model_reference.txt,1.A.2.c.3,Speed of Limb Movement,,
+50,onet_content_model_reference.txt,1.A.3,Physical Abilities,,
+50,onet_content_model_reference.txt,1.A.3.a,Physical Strength Abilities,,
+50,onet_content_model_reference.txt,1.A.3.a.1,Static Strength,,
+50,onet_content_model_reference.txt,1.A.3.a.2,Explosive Strength,,
+50,onet_content_model_reference.txt,1.A.3.a.3,Dynamic Strength,,
+50,onet_content_model_reference.txt,1.A.3.a.4,Trunk Strength,,
+50,onet_content_model_reference.txt,1.A.3.b,Endurance,,
+50,onet_content_model_reference.txt,1.A.3.b.1,Stamina,,
+50,onet_content_model_reference.txt,1.A.3.c,"Flexibility, Balance, and Coordination",,
+50,onet_content_model_reference.txt,1.A.3.c.1,Extent Flexibility,,
+50,onet_content_model_reference.txt,1.A.3.c.2,Dynamic Flexibility,,
+50,onet_content_model_reference.txt,1.A.3.c.3,Gross Body Coordination,,
+50,onet_content_model_reference.txt,1.A.3.c.4,Gross Body Equilibrium,,
+50,onet_content_model_reference.txt,1.A.4,Sensory Abilities,,
+50,onet_content_model_reference.txt,1.A.4.a,Visual Abilities,,
+50,onet_content_model_reference.txt,1.A.4.a.1,Near Vision,,
+50,onet_content_model_reference.txt,1.A.4.a.2,Far Vision,,
+50,onet_content_model_reference.txt,1.A.4.a.3,Visual Color Discrimination,,
+50,onet_content_model_reference.txt,1.A.4.a.4,Night Vision,,
+50,onet_content_model_reference.txt,1.A.4.a.5,Peripheral Vision,,
+50,onet_content_model_reference.txt,1.A.4.a.6,Depth Perception,,
+50,onet_content_model_reference.txt,1.A.4.a.7,Glare Sensitivity,,
+50,onet_content_model_reference.txt,1.A.4.b,Auditory and Speech Abilities,,
+50,onet_content_model_reference.txt,1.A.4.b.1,Hearing Sensitivity,,
+50,onet_content_model_reference.txt,1.A.4.b.2,Auditory Attention,,
+50,onet_content_model_reference.txt,1.A.4.b.3,Sound Localization,,
+50,onet_content_model_reference.txt,1.A.4.b.4,Speech Recognition,,
+50,onet_content_model_reference.txt,1.A.4.b.5,Speech Clarity,,
+50,onet_content_model_reference.txt,1.B,Interests,,
+50,onet_content_model_reference.txt,1.B.1,Occupational Interests,,
+50,onet_content_model_reference.txt,1.B.1.a,Realistic,,
+50,onet_content_model_reference.txt,1.B.1.b,Investigative,,
+50,onet_content_model_reference.txt,1.B.1.c,Artistic,,
+50,onet_content_model_reference.txt,1.B.1.d,Social,,
+50,onet_content_model_reference.txt,1.B.1.e,Enterprising,,
+50,onet_content_model_reference.txt,1.B.1.f,Conventional,,
+50,onet_content_model_reference.txt,1.B.1.g,First Interest High-Point,,
+50,onet_content_model_reference.txt,1.B.1.h,Second Interest High-Point,,
+50,onet_content_model_reference.txt,1.B.1.i,Third Interest High-Point,,
+50,onet_content_model_reference.txt,1.B.2,Occupational Values,,
+50,onet_content_model_reference.txt,1.B.2.a,Achievement-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.a.1,Ability Utilization,,
+50,onet_content_model_reference.txt,1.B.2.a.2,Achievement,,
+50,onet_content_model_reference.txt,1.B.2.b,Working Conditions-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.b.1,Activity,,
+50,onet_content_model_reference.txt,1.B.2.b.2,Independence,,
+50,onet_content_model_reference.txt,1.B.2.b.3,Variety,,
+50,onet_content_model_reference.txt,1.B.2.b.4,Compensation,,
+50,onet_content_model_reference.txt,1.B.2.b.5,Security,,
+50,onet_content_model_reference.txt,1.B.2.b.6,Working Conditions,,
+50,onet_content_model_reference.txt,1.B.2.c,Recognition-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.c.1,Advancement,,
+50,onet_content_model_reference.txt,1.B.2.c.2,Recognition,,
+50,onet_content_model_reference.txt,1.B.2.c.3,Authority,,
+50,onet_content_model_reference.txt,1.B.2.c.4,Social Status,,
+50,onet_content_model_reference.txt,1.B.2.d,Relationships-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.d.1,Co-workers,,
+50,onet_content_model_reference.txt,1.B.2.d.2,Social Service,,
+50,onet_content_model_reference.txt,1.B.2.d.3,Moral Values,,
+50,onet_content_model_reference.txt,1.B.2.e,Support-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.e.1,Company Policies and Practices,,
+50,onet_content_model_reference.txt,1.B.2.e.2,"Supervision, Human Relations",,
+50,onet_content_model_reference.txt,1.B.2.e.3,"Supervision, Technical",,
+50,onet_content_model_reference.txt,1.B.2.f,Independence-Mean Extent,,
+50,onet_content_model_reference.txt,1.B.2.f.1,Creativity,,
+50,onet_content_model_reference.txt,1.B.2.f.2,Responsibility,,
+50,onet_content_model_reference.txt,1.B.2.f.3,Autonomy,,
+50,onet_content_model_reference.txt,1.C,Work Styles,,
+50,onet_content_model_reference.txt,1.C.1,Achievement Orientation,,
+50,onet_content_model_reference.txt,1.C.1.a,Achievement/Effort,,
+50,onet_content_model_reference.txt,1.C.1.b,Persistence,,
+50,onet_content_model_reference.txt,1.C.1.c,Initiative,,
+50,onet_content_model_reference.txt,1.C.2,Social Influence,,
+50,onet_content_model_reference.txt,1.C.2.b,Leadership,,
+50,onet_content_model_reference.txt,1.C.3,Interpersonal Orientation,,
+50,onet_content_model_reference.txt,1.C.3.a,Cooperation,,
+50,onet_content_model_reference.txt,1.C.3.b,Concern for Others,,
+50,onet_content_model_reference.txt,1.C.3.c,Social Orientation,,
+50,onet_content_model_reference.txt,1.C.4,Adjustment,,
+50,onet_content_model_reference.txt,1.C.4.a,Self Control,,
+50,onet_content_model_reference.txt,1.C.4.b,Stress Tolerance,,
+50,onet_content_model_reference.txt,1.C.4.c,Adaptability/Flexibility,,
+50,onet_content_model_reference.txt,1.C.5,Conscientiousness,,
+50,onet_content_model_reference.txt,1.C.5.a,Dependability,,
+50,onet_content_model_reference.txt,1.C.5.b,Attention to Detail,,
+50,onet_content_model_reference.txt,1.C.5.c,Integrity,,
+50,onet_content_model_reference.txt,1.C.6,Independence,,
+50,onet_content_model_reference.txt,1.C.7,Practical Intelligence,,
+50,onet_content_model_reference.txt,1.C.7.a,Innovation,,
+50,onet_content_model_reference.txt,1.C.7.b,Analytical Thinking,,
+50,onet_content_model_reference.txt,2,Worker Requirements,,
+50,onet_content_model_reference.txt,2.A,Basic Skills,,
+50,onet_content_model_reference.txt,2.A.1,Content,,
+50,onet_content_model_reference.txt,2.A.1.a,Reading Comprehension,,
+50,onet_content_model_reference.txt,2.A.1.b,Active Listening,,
+50,onet_content_model_reference.txt,2.A.1.c,Writing,,
+50,onet_content_model_reference.txt,2.A.1.d,Speaking,,
+50,onet_content_model_reference.txt,2.A.1.e,Mathematics,,
+50,onet_content_model_reference.txt,2.A.1.f,Science,,
+50,onet_content_model_reference.txt,2.A.2,Process,,
+50,onet_content_model_reference.txt,2.A.2.a,Critical Thinking,,
+50,onet_content_model_reference.txt,2.A.2.b,Active Learning,,
+50,onet_content_model_reference.txt,2.A.2.c,Learning Strategies,,
+50,onet_content_model_reference.txt,2.A.2.d,Monitoring,,
+50,onet_content_model_reference.txt,2.B,Cross-Functional Skills,,
+50,onet_content_model_reference.txt,2.B.1,Social Skills,,
+50,onet_content_model_reference.txt,2.B.1.a,Social Perceptiveness,,
+50,onet_content_model_reference.txt,2.B.1.b,Coordination,,
+50,onet_content_model_reference.txt,2.B.1.c,Persuasion,,
+50,onet_content_model_reference.txt,2.B.1.d,Negotiation,,
+50,onet_content_model_reference.txt,2.B.1.e,Instructing,,
+50,onet_content_model_reference.txt,2.B.1.f,Service Orientation,,
+50,onet_content_model_reference.txt,2.B.2,Complex Problem Solving Skills,,
+50,onet_content_model_reference.txt,2.B.2.i,Complex Problem Solving,,
+50,onet_content_model_reference.txt,2.B.3,Technical Skills,,
+50,onet_content_model_reference.txt,2.B.3.a,Operations Analysis,,
+50,onet_content_model_reference.txt,2.B.3.b,Technology Design,,
+50,onet_content_model_reference.txt,2.B.3.c,Equipment Selection,,
+50,onet_content_model_reference.txt,2.B.3.d,Installation,,
+50,onet_content_model_reference.txt,2.B.3.e,Programming,,
+50,onet_content_model_reference.txt,2.B.3.g,Operation Monitoring,,
+50,onet_content_model_reference.txt,2.B.3.h,Operation and Control,,
+50,onet_content_model_reference.txt,2.B.3.j,Equipment Maintenance,,
+50,onet_content_model_reference.txt,2.B.3.k,Troubleshooting,,
+50,onet_content_model_reference.txt,2.B.3.l,Repairing,,
+50,onet_content_model_reference.txt,2.B.3.m,Quality Control Analysis,,
+50,onet_content_model_reference.txt,2.B.4,Systems Skills,,
+50,onet_content_model_reference.txt,2.B.4.e,Judgment and Decision Making,,
+50,onet_content_model_reference.txt,2.B.4.g,Systems Analysis,,
+50,onet_content_model_reference.txt,2.B.4.h,Systems Evaluation,,
+50,onet_content_model_reference.txt,2.B.5,Resource Management Skills,,
+50,onet_content_model_reference.txt,2.B.5.a,Time Management,,
+50,onet_content_model_reference.txt,2.B.5.b,Management of Financial Resources,,
+50,onet_content_model_reference.txt,2.B.5.c,Management of Material Resources,,
+50,onet_content_model_reference.txt,2.B.5.d,Management of Personnel Resources,,
+50,onet_content_model_reference.txt,2.C,Knowledge,,
+50,onet_content_model_reference.txt,2.C.1,Business and Management,,
+50,onet_content_model_reference.txt,2.C.1.a,Administration and Management,,
+50,onet_content_model_reference.txt,2.C.1.b,Clerical,,
+50,onet_content_model_reference.txt,2.C.1.c,Economics and Accounting,,
+50,onet_content_model_reference.txt,2.C.1.d,Sales and Marketing,,
+50,onet_content_model_reference.txt,2.C.1.e,Customer and Personal Service,,
+50,onet_content_model_reference.txt,2.C.1.f,Personnel and Human Resources,,
+50,onet_content_model_reference.txt,2.C.10,Transportation,,
+50,onet_content_model_reference.txt,2.C.2,Manufacturing and Production,,
+50,onet_content_model_reference.txt,2.C.2.a,Production and Processing,,
+50,onet_content_model_reference.txt,2.C.2.b,Food Production,,
+50,onet_content_model_reference.txt,2.C.3,Engineering and Technology,,
+50,onet_content_model_reference.txt,2.C.3.a,Computers and Electronics,,
+50,onet_content_model_reference.txt,2.C.3.b,Engineering and Technology,,
+50,onet_content_model_reference.txt,2.C.3.c,Design,,
+50,onet_content_model_reference.txt,2.C.3.d,Building and Construction,,
+50,onet_content_model_reference.txt,2.C.3.e,Mechanical,,
+50,onet_content_model_reference.txt,2.C.4,Mathematics and Science,,
+50,onet_content_model_reference.txt,2.C.4.a,Mathematics,,
+50,onet_content_model_reference.txt,2.C.4.b,Physics,,
+50,onet_content_model_reference.txt,2.C.4.c,Chemistry,,
+50,onet_content_model_reference.txt,2.C.4.d,Biology,,
+50,onet_content_model_reference.txt,2.C.4.e,Psychology,,
+50,onet_content_model_reference.txt,2.C.4.f,Sociology and Anthropology,,
+50,onet_content_model_reference.txt,2.C.4.g,Geography,,
+50,onet_content_model_reference.txt,2.C.5,Health Services,,
+50,onet_content_model_reference.txt,2.C.5.a,Medicine and Dentistry,,
+50,onet_content_model_reference.txt,2.C.5.b,Therapy and Counseling,,
+50,onet_content_model_reference.txt,2.C.6,Education and Training,,
+50,onet_content_model_reference.txt,2.C.7,Arts and Humanities,,
+50,onet_content_model_reference.txt,2.C.7.a,English Language,,
+50,onet_content_model_reference.txt,2.C.7.b,Foreign Language,,
+50,onet_content_model_reference.txt,2.C.7.c,Fine Arts,,
+50,onet_content_model_reference.txt,2.C.7.d,History and Archeology,,
+50,onet_content_model_reference.txt,2.C.7.e,Philosophy and Theology,,
+50,onet_content_model_reference.txt,2.C.8,Law and Public Safety,,
+50,onet_content_model_reference.txt,2.C.8.a,Public Safety and Security,,
+50,onet_content_model_reference.txt,2.C.8.b,Law and Government,,
+50,onet_content_model_reference.txt,2.C.9,Communications,,
+50,onet_content_model_reference.txt,2.C.9.a,Telecommunications,,
+50,onet_content_model_reference.txt,2.C.9.b,Communications and Media,,
+50,onet_content_model_reference.txt,2.D,Education,,
+50,onet_content_model_reference.txt,2.D.1,Required Level of Education,,
+50,onet_content_model_reference.txt,2.D.2,Instructional Program Required,,
+50,onet_content_model_reference.txt,2.D.3,Education Level in Specific Subjects,,
+50,onet_content_model_reference.txt,2.D.3.a,Technical Vocational,,
+50,onet_content_model_reference.txt,2.D.3.b,Business Vocational,,
+50,onet_content_model_reference.txt,2.D.3.c,English/language Arts,,
+50,onet_content_model_reference.txt,2.D.3.d,Oral Communication,,
+50,onet_content_model_reference.txt,2.D.3.e,Languages,,
+50,onet_content_model_reference.txt,2.D.3.f,Basic Math,,
+50,onet_content_model_reference.txt,2.D.3.g,Advanced Math,,
+50,onet_content_model_reference.txt,2.D.3.h,Physical Science,,
+50,onet_content_model_reference.txt,2.D.3.i,Computer Science,,
+50,onet_content_model_reference.txt,2.D.3.j,Biological Science,,
+50,onet_content_model_reference.txt,2.D.3.k,Applied Science,,
+50,onet_content_model_reference.txt,2.D.3.l,Social Science,,
+50,onet_content_model_reference.txt,2.D.3.m,Arts,,
+50,onet_content_model_reference.txt,2.D.3.n,Humanities,,
+50,onet_content_model_reference.txt,2.D.3.o,Physical Education,,
+50,onet_content_model_reference.txt,3,Experience Requirements,,
+50,onet_content_model_reference.txt,3.A,Experience and Training,,
+50,onet_content_model_reference.txt,3.A.1,Related Work Experience,,
+50,onet_content_model_reference.txt,3.A.2,On-Site or In-Plant Training,,
+50,onet_content_model_reference.txt,3.A.3,On-the-Job Training,,
+50,onet_content_model_reference.txt,3.A.4,Apprenticeship,,
+50,onet_content_model_reference.txt,3.B,Basic Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1,Content - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.a,Reading Comprehension - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.b,Active Listening - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.c,Writing - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.d,Speaking - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.e,Mathematics - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.1.f,Science - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.2,Process - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.2.a,Critical Thinking - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.2.b,Active Learning - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.2.c,Learning Strategies - Entry Requirement,,
+50,onet_content_model_reference.txt,3.B.2.d,Monitoring - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C,Cross-Functional Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1,Social Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.a,Social Perceptiveness - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.b,Coordination - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.c,Persuasion - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.d,Negotiation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.e,Instructing - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.1.f,Service Orientation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2,Complex Problem Solving Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.a,Problem Identification - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.b,Information Gathering - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.c,Information Organization - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.d,Synthesis/Reorganization - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.e,Idea Generation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.f,Idea Evaluation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.g,Implementation Planning - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.2.h,Solution Appraisal - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3,Technical Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.a,Operations Analysis - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.b,Technology Design - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.c,Equipment Selection - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.d,Installation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.e,Programming - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.f,Testing - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.g,Operation Monitoring - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.h,Operation and Control - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.i,Product Inspection - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.j,Equipment Maintenance - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.k,Troubleshooting - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.3.l,Repairing - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4,Systems Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.a,Visioning - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.b,Systems Perception - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.c,Identifying Downstream Consequences - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.d,Identification of Key Causes - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.e,Judgment and Decision Making - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.4.f,System Evaluation - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.5,Resource Management Skills - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.5.a,Time Management - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.5.b,Management of Financial Resources - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.5.c,Management of Material Resources - Entry Requirement,,
+50,onet_content_model_reference.txt,3.C.5.d,Management of Personnel Resources - Entry Requirement,,
+50,onet_content_model_reference.txt,3.D,Licensing,,
+50,onet_content_model_reference.txt,3.D.1,"License, Certificate, or Registration Required",,
+50,onet_content_model_reference.txt,3.D.2,Specific License or Certificate Required,,
+50,onet_content_model_reference.txt,3.D.2.a,Post-Secondary Degree,,
+50,onet_content_model_reference.txt,3.D.2.b,Graduate Degree,,
+50,onet_content_model_reference.txt,3.D.2.c,On-the-Job Training,,
+50,onet_content_model_reference.txt,3.D.2.d,Examination,,
+50,onet_content_model_reference.txt,3.D.2.e,Character References,,
+50,onet_content_model_reference.txt,3.D.4,Additional Education and Training,,
+50,onet_content_model_reference.txt,3.D.5,Organization and Agency Requirements,,
+50,onet_content_model_reference.txt,3.D.5.a,Legal Requirement,,
+50,onet_content_model_reference.txt,3.D.5.b,Employer Requirement,,
+50,onet_content_model_reference.txt,3.D.5.c,"Union, Guild, or Professional Association",,
+50,onet_content_model_reference.txt,4,Occupational Requirements,,
+50,onet_content_model_reference.txt,4.A,Generalized Work Activities,,
+50,onet_content_model_reference.txt,4.A.1,Information Input,,
+50,onet_content_model_reference.txt,4.A.1.a,Looking for and Receiving Job-Related Information,,
+50,onet_content_model_reference.txt,4.A.1.a.1,Getting Information,,
+50,onet_content_model_reference.txt,4.A.1.a.2,"Monitor Processes, Materials, or Surroundings",,
+50,onet_content_model_reference.txt,4.A.1.b,Identify and Evaluating Job-Relevant Information,,
+50,onet_content_model_reference.txt,4.A.1.b.1,"Identifying Objects, Actions, and Events",,
+50,onet_content_model_reference.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,
+50,onet_content_model_reference.txt,4.A.1.b.3,"Estimating the Quantifiable Characteristics of Products, Events, or Information",,
+50,onet_content_model_reference.txt,4.A.2,Mental Processes,,
+50,onet_content_model_reference.txt,4.A.2.a,Information and Data Processing,,
+50,onet_content_model_reference.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,
+50,onet_content_model_reference.txt,4.A.2.a.2,Processing Information,,
+50,onet_content_model_reference.txt,4.A.2.a.3,Evaluating Information to Determine Compliance with Standards,,
+50,onet_content_model_reference.txt,4.A.2.a.4,Analyzing Data or Information,,
+50,onet_content_model_reference.txt,4.A.2.b,Reasoning and Decision Making,,
+50,onet_content_model_reference.txt,4.A.2.b.1,Making Decisions and Solving Problems,,
+50,onet_content_model_reference.txt,4.A.2.b.2,Thinking Creatively,,
+50,onet_content_model_reference.txt,4.A.2.b.3,Updating and Using Relevant Knowledge,,
+50,onet_content_model_reference.txt,4.A.2.b.4,Developing Objectives and Strategies,,
+50,onet_content_model_reference.txt,4.A.2.b.5,Scheduling Work and Activities,,
+50,onet_content_model_reference.txt,4.A.2.b.6,"Organizing, Planning, and Prioritizing Work",,
+50,onet_content_model_reference.txt,4.A.3,Work Output,,
+50,onet_content_model_reference.txt,4.A.3.a,Performing Physical and Manual Work Activities,,
+50,onet_content_model_reference.txt,4.A.3.a.1,Performing General Physical Activities,,
+50,onet_content_model_reference.txt,4.A.3.a.2,Handling and Moving Objects,,
+50,onet_content_model_reference.txt,4.A.3.a.3,Controlling Machines and Processes,,
+50,onet_content_model_reference.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,
+50,onet_content_model_reference.txt,4.A.3.b,Performing Complex and Technical Activities,,
+50,onet_content_model_reference.txt,4.A.3.b.1,Interacting With Computers,,
+50,onet_content_model_reference.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,
+50,onet_content_model_reference.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,
+50,onet_content_model_reference.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,
+50,onet_content_model_reference.txt,4.A.3.b.6,Documenting/Recording Information,,
+50,onet_content_model_reference.txt,4.A.4,Interacting With Others,,
+50,onet_content_model_reference.txt,4.A.4.a,Communicating and Interacting,,
+50,onet_content_model_reference.txt,4.A.4.a.1,Interpreting the Meaning of Information for Others,,
+50,onet_content_model_reference.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,
+50,onet_content_model_reference.txt,4.A.4.a.3,Communicating with Persons Outside Organization,,
+50,onet_content_model_reference.txt,4.A.4.a.4,Establishing and Maintaining Interpersonal Relationships,,
+50,onet_content_model_reference.txt,4.A.4.a.5,Assisting and Caring for Others,,
+50,onet_content_model_reference.txt,4.A.4.a.6,Selling or Influencing Others,,
+50,onet_content_model_reference.txt,4.A.4.a.7,Resolving Conflicts and Negotiating with Others,,
+50,onet_content_model_reference.txt,4.A.4.a.8,Performing for or Working Directly with the Public,,
+50,onet_content_model_reference.txt,4.A.4.b,"Coordinating, Developing, Managing, and Advising",,
+50,onet_content_model_reference.txt,4.A.4.b.1,Coordinating the Work and Activities of Others,,
+50,onet_content_model_reference.txt,4.A.4.b.2,Developing and Building Teams,,
+50,onet_content_model_reference.txt,4.A.4.b.3,Training and Teaching Others,,
+50,onet_content_model_reference.txt,4.A.4.b.4,"Guiding, Directing, and Motivating Subordinates",,
+50,onet_content_model_reference.txt,4.A.4.b.5,Coaching and Developing Others,,
+50,onet_content_model_reference.txt,4.A.4.b.6,Provide Consultation and Advice to Others,,
+50,onet_content_model_reference.txt,4.A.4.c,Administering,,
+50,onet_content_model_reference.txt,4.A.4.c.1,Performing Administrative Activities,,
+50,onet_content_model_reference.txt,4.A.4.c.2,Staffing Organizational Units,,
+50,onet_content_model_reference.txt,4.A.4.c.3,Monitoring and Controlling Resources,,
+50,onet_content_model_reference.txt,4.B,Organizational Context,,
+50,onet_content_model_reference.txt,4.B.1,Structural Characteristics,,
+50,onet_content_model_reference.txt,4.B.1.a,Organizational Structure,,
+50,onet_content_model_reference.txt,4.B.1.a.1,Decision Making System,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a,Decentralization and Employee Empowerment,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.1,Have Control Over Unit or Department,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.2,Have Influence Over Decisions,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.3,Monitor Data on Quality/costs/Waste/etc.,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.4,Determine Work Flow or Order of Tasks,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.5,Invest in New Equipment and Technology,,
+50,onet_content_model_reference.txt,4.B.1.a.1.a.6,"Develop New Products, Services, and Procedures",,
+50,onet_content_model_reference.txt,4.B.1.a.1.b,Individual versus Team Structure,,
+50,onet_content_model_reference.txt,4.B.1.a.1.b.1,Percent of Time in Intact Team,,
+50,onet_content_model_reference.txt,4.B.1.a.2,Job Characteristics,,
+50,onet_content_model_reference.txt,4.B.1.a.2.a,Skill Variety,,
+50,onet_content_model_reference.txt,4.B.1.a.2.a.1,Job Variety,,
+50,onet_content_model_reference.txt,4.B.1.a.2.a.2,Complex or High Level Skills Required,,
+50,onet_content_model_reference.txt,4.B.1.a.2.a.3,Variety of Tasks Required,,
+50,onet_content_model_reference.txt,4.B.1.a.2.b,Task Significance,,
+50,onet_content_model_reference.txt,4.B.1.a.2.b.1,Significance or Importance of Job,,
+50,onet_content_model_reference.txt,4.B.1.a.2.b.2,Job Quality Affects Lots of People,,
+50,onet_content_model_reference.txt,4.B.1.a.2.b.3,Job Itself Is Very Significant,,
+50,onet_content_model_reference.txt,4.B.1.a.2.c,Task Identity,,
+50,onet_content_model_reference.txt,4.B.1.a.2.c.1,Job Involves Whole Piece of Work,,
+50,onet_content_model_reference.txt,4.B.1.a.2.c.2,Can Do Entire Piece of Work,,
+50,onet_content_model_reference.txt,4.B.1.a.2.c.3,Can Finish What You Start,,
+50,onet_content_model_reference.txt,4.B.1.a.2.d,Autonomy,,
+50,onet_content_model_reference.txt,4.B.1.a.2.d.1,Autonomy and Freedom in Job,,
+50,onet_content_model_reference.txt,4.B.1.a.2.d.2,Chance for Initiative and Judgment,,
+50,onet_content_model_reference.txt,4.B.1.a.2.d.3,Opportunity for Independence and Freedom,,
+50,onet_content_model_reference.txt,4.B.1.a.2.e,Feedback,,
+50,onet_content_model_reference.txt,4.B.1.a.2.e.1,Extent of Feedback From Doing Job Itself,,
+50,onet_content_model_reference.txt,4.B.1.a.2.e.2,Doing Job Provides Chances for Feedback,,
+50,onet_content_model_reference.txt,4.B.1.a.2.e.3,"After Finishing Job, Know Own Performance",,
+50,onet_content_model_reference.txt,4.B.1.a.3,Job Stability and Rotation,,
+50,onet_content_model_reference.txt,4.B.1.a.3.a,Number of Supervisors in Past Year,,
+50,onet_content_model_reference.txt,4.B.1.a.3.b,Number of Work Teams in Past Year,,
+50,onet_content_model_reference.txt,4.B.1.a.3.c,Number of Work Group Reorganizations in Past Year,,
+50,onet_content_model_reference.txt,4.B.1.a.3.d,Number of Times Nature of Job Changed,,
+50,onet_content_model_reference.txt,4.B.1.a.3.e,Job Rotation Practices,,
+50,onet_content_model_reference.txt,4.B.1.b,Human Resources Systems and Practices,,
+50,onet_content_model_reference.txt,4.B.1.b.1,Recruitment and Selection,,
+50,onet_content_model_reference.txt,4.B.1.b.1.a,Recruitment Operations,,
+50,onet_content_model_reference.txt,4.B.1.b.1.a.1,Sources of People for Current Job,,
+50,onet_content_model_reference.txt,4.B.1.b.1.b,Selection Assessment Methods Used,,
+50,onet_content_model_reference.txt,4.B.1.b.1.b.1,Assessment Methods Used to Select for Job,,
+50,onet_content_model_reference.txt,4.B.1.b.2,Training and Development,,
+50,onet_content_model_reference.txt,4.B.1.b.2.a,Training Methods,,
+50,onet_content_model_reference.txt,4.B.1.b.2.a.1,Training Methods Used in Company,,
+50,onet_content_model_reference.txt,4.B.1.b.2.b,Training Topics and Content,,
+50,onet_content_model_reference.txt,4.B.1.b.2.b.1,Areas of Recent Formal Training,,
+50,onet_content_model_reference.txt,4.B.1.b.2.c,Extent and Support of Training Activities,,
+50,onet_content_model_reference.txt,4.B.1.b.2.c.1,Recent Technical Skill Training,,
+50,onet_content_model_reference.txt,4.B.1.b.3,Reward System,,
+50,onet_content_model_reference.txt,4.B.1.b.3.a,Basis of Compensation,,
+50,onet_content_model_reference.txt,4.B.1.b.3.a.1,Compensation Package Components,,
+50,onet_content_model_reference.txt,4.B.1.b.3.b,Benefits,,
+50,onet_content_model_reference.txt,4.B.1.b.3.b.1,Benefit Components,,
+50,onet_content_model_reference.txt,4.B.2,Social Processes,,
+50,onet_content_model_reference.txt,4.B.2.a,Goals,,
+50,onet_content_model_reference.txt,4.B.2.a.1,Individual Goal Characteristics,,
+50,onet_content_model_reference.txt,4.B.2.a.1.a,Achieve Most Important Individual Goal,,
+50,onet_content_model_reference.txt,4.B.2.a.1.b,How Many Quantitative Individual Goals,,
+50,onet_content_model_reference.txt,4.B.2.a.2,Goal Feedback,,
+50,onet_content_model_reference.txt,4.B.2.a.2.a,How Many Specific Individual Goals,,
+50,onet_content_model_reference.txt,4.B.2.a.2.b,When Get Information on Individual Goals,,
+50,onet_content_model_reference.txt,4.B.2.a.2.c,"Informal, Job-Relevant Feedback",,
+50,onet_content_model_reference.txt,4.B.2.a.2.d,"Meet One-on-One With Supervisor on Goals, Training, and Development",,
+50,onet_content_model_reference.txt,4.B.2.b,Roles,,
+50,onet_content_model_reference.txt,4.B.2.b.1,Role Conflict,,
+50,onet_content_model_reference.txt,4.B.2.b.1.a,Often Receive Conflicting Requests,,
+50,onet_content_model_reference.txt,4.B.2.b.1.b,Work With Groups With Different Focuses,,
+50,onet_content_model_reference.txt,4.B.2.b.1.c,You and Your Supervisor Agree About Job,,
+50,onet_content_model_reference.txt,4.B.2.b.1.d,Supervisor Makes Conflicting Requests,,
+50,onet_content_model_reference.txt,4.B.2.b.2,Role Negotiability,,
+50,onet_content_model_reference.txt,4.B.2.b.2.a,Negotiate Changes in Role with Supervisor,,
+50,onet_content_model_reference.txt,4.B.2.b.2.b,Significant Input Into Way You Do Job,,
+50,onet_content_model_reference.txt,4.B.2.b.3,Role Overload,,
+50,onet_content_model_reference.txt,4.B.2.b.3.a,Get Assignments without Adequate Resources,,
+50,onet_content_model_reference.txt,4.B.2.b.3.b,Given Enough Time to Do Work,,
+50,onet_content_model_reference.txt,4.B.2.b.3.c,Too Much for One Person to Do,,
+50,onet_content_model_reference.txt,4.B.2.c,Culture,,
+50,onet_content_model_reference.txt,4.B.2.c.1,Organizational Values,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a,Guiding Principles of Organization,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.1,Taking Chances; Going Out on a Limb,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.10,Providing High Quality Products,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.11,Openness and Honesty,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.12,"Flexibility, Adapting to Change",,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.2,Fairness; Justice,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.3,Precision,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.4,Stability,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.5,Getting Things Done,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.6,Caring About Employees,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.7,Innovation,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.8,Aggressiveness,,
+50,onet_content_model_reference.txt,4.B.2.c.1.a.9,Valuing Customers,,
+50,onet_content_model_reference.txt,4.B.2.d,Supervisor Role,,
+50,onet_content_model_reference.txt,4.B.2.d.1,Supervisor Friendly and Supportive,,
+50,onet_content_model_reference.txt,4.B.2.d.2,Supervisor Takes Active Role,,
+50,onet_content_model_reference.txt,4.B.2.d.3,Supervisor Provides Clear Vision,,
+50,onet_content_model_reference.txt,4.B.2.d.4,Supervisor Solves Problems,,
+50,onet_content_model_reference.txt,4.C,Work Context,,
+50,onet_content_model_reference.txt,4.C.1,Interpersonal Relationships,,
+50,onet_content_model_reference.txt,4.C.1.a,Communication,,
+50,onet_content_model_reference.txt,4.C.1.a.2,Communication Methods,,
+50,onet_content_model_reference.txt,4.C.1.a.2.c,Public Speaking,,
+50,onet_content_model_reference.txt,4.C.1.a.2.f,Telephone,,
+50,onet_content_model_reference.txt,4.C.1.a.2.h,Electronic Mail,,
+50,onet_content_model_reference.txt,4.C.1.a.2.j,Letters and Memos,,
+50,onet_content_model_reference.txt,4.C.1.a.2.l,Face-to-Face Discussions,,
+50,onet_content_model_reference.txt,4.C.1.a.4,Contact With Others,,
+50,onet_content_model_reference.txt,4.C.1.b,Role Relationships,,
+50,onet_content_model_reference.txt,4.C.1.b.1,Job Interactions,,
+50,onet_content_model_reference.txt,4.C.1.b.1.e,Work With Work Group or Team,,
+50,onet_content_model_reference.txt,4.C.1.b.1.f,Deal With External Customers,,
+50,onet_content_model_reference.txt,4.C.1.b.1.g,Coordinate or Lead Others,,
+50,onet_content_model_reference.txt,4.C.1.c,Responsibility for Others,,
+50,onet_content_model_reference.txt,4.C.1.c.1,Responsible for Others' Health and Safety,,
+50,onet_content_model_reference.txt,4.C.1.c.2,Responsibility for Outcomes and Results,,
+50,onet_content_model_reference.txt,4.C.1.d,Conflictual Contact,,
+50,onet_content_model_reference.txt,4.C.1.d.1,Frequency of Conflict Situations,,
+50,onet_content_model_reference.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,,
+50,onet_content_model_reference.txt,4.C.1.d.3,Deal With Physically Aggressive People,,
+50,onet_content_model_reference.txt,4.C.2,Physical Work Conditions,,
+50,onet_content_model_reference.txt,4.C.2.a,Work Setting,,
+50,onet_content_model_reference.txt,4.C.2.a.1,Frequency Required to Work:,,
+50,onet_content_model_reference.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,
+50,onet_content_model_reference.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,
+50,onet_content_model_reference.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,
+50,onet_content_model_reference.txt,4.C.2.a.1.d,"Outdoors, Under Cover",,
+50,onet_content_model_reference.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,,
+50,onet_content_model_reference.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,
+50,onet_content_model_reference.txt,4.C.2.a.3,Physical Proximity,,
+50,onet_content_model_reference.txt,4.C.2.b,Environmental Conditions,,
+50,onet_content_model_reference.txt,4.C.2.b.1,Frequency in Environmental Conditions,,
+50,onet_content_model_reference.txt,4.C.2.b.1.a,"Sounds, Noise Levels Are Distracting or Uncomfortable",,
+50,onet_content_model_reference.txt,4.C.2.b.1.b,Very Hot or Cold Temperatures,,
+50,onet_content_model_reference.txt,4.C.2.b.1.c,Extremely Bright or Inadequate Lighting,,
+50,onet_content_model_reference.txt,4.C.2.b.1.d,Exposed to Contaminants,,
+50,onet_content_model_reference.txt,4.C.2.b.1.e,"Cramped Work Space, Awkward Positions",,
+50,onet_content_model_reference.txt,4.C.2.b.1.f,Exposed to Whole Body Vibration,,
+50,onet_content_model_reference.txt,4.C.2.c,Job Hazards,,
+50,onet_content_model_reference.txt,4.C.2.c.1,Frequency of Exposure to Job Hazards,,
+50,onet_content_model_reference.txt,4.C.2.c.1.a,Exposed to Radiation,,
+50,onet_content_model_reference.txt,4.C.2.c.1.b,Exposed to Disease or Infections,,
+50,onet_content_model_reference.txt,4.C.2.c.1.c,Exposed to High Places,,
+50,onet_content_model_reference.txt,4.C.2.c.1.d,Exposed to Hazardous Conditions,,
+50,onet_content_model_reference.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,,
+50,onet_content_model_reference.txt,4.C.2.c.1.f,"Exposed to Minor Burns, Cuts, Bites, or Stings",,
+50,onet_content_model_reference.txt,4.C.2.c.2,Likelihood of Injury From Job Hazards,,
+50,onet_content_model_reference.txt,4.C.2.c.3,Degree of Injury,,
+50,onet_content_model_reference.txt,4.C.2.d,Body Positioning,,
+50,onet_content_model_reference.txt,4.C.2.d.1,Time Spent in Body Positions,,
+50,onet_content_model_reference.txt,4.C.2.d.1.a,Spend Time Sitting,,
+50,onet_content_model_reference.txt,4.C.2.d.1.b,Spend Time Standing,,
+50,onet_content_model_reference.txt,4.C.2.d.1.c,"Spend Time Climbing Ladders, Scaffolds, or Poles",,
+50,onet_content_model_reference.txt,4.C.2.d.1.d,Spend Time Walking and Running,,
+50,onet_content_model_reference.txt,4.C.2.d.1.e,"Spend Time Kneeling, Crouching, Stooping, or Crawling?",,
+50,onet_content_model_reference.txt,4.C.2.d.1.f,Spend Time Keeping or Regaining Balance,,
+50,onet_content_model_reference.txt,4.C.2.d.1.g,"Spend Time Using Your Hands to Handle, Control, or Feel Objects, Tools, or Controls",,
+50,onet_content_model_reference.txt,4.C.2.d.1.h,Spend Time Bending or Twisting the Body,,
+50,onet_content_model_reference.txt,4.C.2.d.1.i,Spend Time Making Repetitive Motions,,
+50,onet_content_model_reference.txt,4.C.2.e,Work Attire,,
+50,onet_content_model_reference.txt,4.C.2.e.1,Frequency of Wearing Work Attire,,
+50,onet_content_model_reference.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,
+50,onet_content_model_reference.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,
+50,onet_content_model_reference.txt,4.C.3,Structural Job Characteristics,,
+50,onet_content_model_reference.txt,4.C.3.a,Criticality of Position,,
+50,onet_content_model_reference.txt,4.C.3.a.1,Consequence of Error,,
+50,onet_content_model_reference.txt,4.C.3.a.2,Impact of Decisions,,
+50,onet_content_model_reference.txt,4.C.3.a.2.a,Impact of Decisions on Co-workers or Company Results,,
+50,onet_content_model_reference.txt,4.C.3.a.2.b,Frequency of Decision Making,,
+50,onet_content_model_reference.txt,4.C.3.a.4,Freedom to Make Decisions,,
+50,onet_content_model_reference.txt,4.C.3.b,Routine versus Challenging Work,,
+50,onet_content_model_reference.txt,4.C.3.b.2,Degree of Automation,,
+50,onet_content_model_reference.txt,4.C.3.b.4,Importance of Being Exact or Accurate,,
+50,onet_content_model_reference.txt,4.C.3.b.7,Importance of Repeating Same Tasks,,
+50,onet_content_model_reference.txt,4.C.3.b.8,Structured versus Unstructured Work,,
+50,onet_content_model_reference.txt,4.C.3.c,Competition,,
+50,onet_content_model_reference.txt,4.C.3.c.1,Level of Competition,,
+50,onet_content_model_reference.txt,4.C.3.d,Pace and Scheduling,,
+50,onet_content_model_reference.txt,4.C.3.d.1,Time Pressure,,
+50,onet_content_model_reference.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,,
+50,onet_content_model_reference.txt,4.C.3.d.4,Work Schedules,,
+50,onet_content_model_reference.txt,4.C.3.d.8,Duration of Typical Work Week,,
+50,onet_content_model_reference.txt,5.,Occupation-Specific Information,,
+50,onet_content_model_reference.txt,5.A,Tasks,,
+50,onet_content_model_reference.txt,5.A.1,Task List,,
+50,onet_content_model_reference.txt,6,Labor Market Characteristics,,
+50,onet_content_model_reference.txt,6.A,Labor Market Information,,
+50,onet_content_model_reference.txt,6.A.1,Occupational Statistics,,
+50,onet_content_model_reference.txt,6.B,Occupational Outlook,,
+50,onet_content_model_reference.txt,6.B.1,Occupational Projections,,

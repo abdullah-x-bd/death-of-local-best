@@ -1,0 +1,232 @@
+release,table,element_id,element_name,scales,occupation_count,selection_reason
+40,Knowledge.TXT,2.C.1.e,Customer and Personal Service,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Knowledge.TXT,2.C.3.a,Computers and Electronics,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Knowledge.TXT,2.C.8.a,Public Safety and Security,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Knowledge.TXT,2.C.9.a,Telecommunications,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Knowledge.TXT,2.C.9.b,Communications and Media,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Skills.TXT,2.B.3.c,Equipment Selection,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,Skills.TXT,2.B.3.j,Equipment Maintenance,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.a.1,Performing General Physical Activities,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.a.2,Handling and Moving Objects,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.a.3,Controlling Machines and Processes,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.b.1,Interacting With Computers,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.a.3,Communicating with Persons Outside Organization,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.a.5,Assisting and Caring for Others,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.a.6,Selling or Influencing Others,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.a.8,Performing for or Working Directly with the Public,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkActivity.TXT,4.A.4.c.1,Performing Administrative Activities,IM | LV,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.1.a.4,Contact With Others,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.1.b.1.f,Deal With External Customers,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.1.d.2,Deal With Unpleasant or Angry People,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.1.d.3,Deal With Physically Aggressive People,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.2.a.1.a,"Indoors, Environmentally Controlled",CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.2.a.1.c,"Outdoors, Exposed to Weather",CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.2.c.1.e,Exposed to Hazardous Equipment,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,WorkContext.TXT,4.C.3.d.3,Pace Determined by Speed of Equipment,CX,900.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.B.3.c,Equipment Selection,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.B.3.j,Equipment Maintenance,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.1.e,Customer and Personal Service,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.3.a,Computers and Electronics,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.8,Law and Public Safety,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.8.a,Public Safety and Security,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.9,Communications,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.9.a,Telecommunications,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.C.9.b,Communications and Media,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.D.3.d,Oral Communication,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,2.D.3.i,Computer Science,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,3.C.3.c,Equipment Selection - Entry Requirement,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,3.C.3.j,Equipment Maintenance - Entry Requirement,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.a,Performing Physical and Manual Work Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.a.1,Performing General Physical Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.a.2,Handling and Moving Objects,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.a.3,Controlling Machines and Processes,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.b,Performing Complex and Technical Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.b.1,Interacting With Computers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a,Communicating and Interacting,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a.3,Communicating with Persons Outside Organization,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a.5,Assisting and Caring for Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a.6,Selling or Influencing Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.a.8,Performing for or Working Directly with the Public,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.A.4.c.1,Performing Administrative Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.B.1.a.1.a.5,Invest in New Equipment and Technology,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.B.1.a.2.b.2,Job Quality Affects Lots of People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.B.1.b.1.a.1,Sources of People for Current Job,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.B.2.c.1.a.9,Valuing Customers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a,Communication,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.2,Communication Methods,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.2.c,Public Speaking,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.2.f,Telephone,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.2.h,Electronic Mail,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.2.l,Face-to-Face Discussions,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.a.4,Contact With Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.b.1.f,Deal With External Customers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.d.2,Deal With Unpleasant or Angry People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.1.d.3,Deal With Physically Aggressive People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.d,"Outdoors, Under Cover",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.e,In an Open Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.a.3,Physical Proximity,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.c.1.e,Exposed to Hazardous Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+40,onet_content_model_reference.TXT,4.C.3.d.3,Pace Determined by Speed of Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Knowledge.txt,2.C.1.e,Customer and Personal Service,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Knowledge.txt,2.C.3.a,Computers and Electronics,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Knowledge.txt,2.C.8.a,Public Safety and Security,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Knowledge.txt,2.C.9.a,Telecommunications,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Knowledge.txt,2.C.9.b,Communications and Media,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Skills.txt,2.B.3.c,Equipment Selection,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Skills.txt,2.B.3.j,Equipment Maintenance,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.B.3.c,Equipment Selection,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.B.3.j,Equipment Maintenance,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.C.1.e,Customer and Personal Service,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.C.3.a,Computers and Electronics,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.C.8.a,Public Safety and Security,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.C.9.a,Telecommunications,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,2.C.9.b,Communications and Media,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.1,Performing General Physical Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.2,Handling and Moving Objects,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.3,Controlling Machines and Processes,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.1,Interacting With Computers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.3,Communicating with Persons Outside Organization,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.5,Assisting and Caring for Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.6,Selling or Influencing Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.a.8,Performing for or Working Directly with the Public,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.A.4.c.1,Performing Administrative Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.c,Public Speaking,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.f,Telephone,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.h,Electronic Mail,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.2.l,Face-to-Face Discussions,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.a.4,Contact With Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.b.1.f,Deal With External Customers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.1.d.3,Deal With Physically Aggressive People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.d,"Outdoors, Under Cover",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.a.3,Physical Proximity,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,Survey_Booklet_Location_Reference.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.a.1,Performing General Physical Activities,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.a.2,Handling and Moving Objects,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.a.3,Controlling Machines and Processes,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.b.1,Interacting With Computers,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.a.3,Communicating with Persons Outside Organization,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.a.5,Assisting and Caring for Others,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.a.6,Selling or Influencing Others,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.a.8,Performing for or Working Directly with the Public,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkActivity.txt,4.A.4.c.1,Performing Administrative Activities,IM | LV,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.a.2.c,Public Speaking,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.a.2.f,Telephone,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.a.2.h,Electronic Mail,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.a.2.l,Face-to-Face Discussions,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.a.4,Contact With Others,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.b.1.f,Deal With External Customers,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.1.d.3,Deal With Physically Aggressive People,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.d,"Outdoors, Under Cover",CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.a.3,Physical Proximity,CX | CXP,54.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,WorkContext.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,CX | CXP,902.0,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.B.3.c,Equipment Selection,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.B.3.j,Equipment Maintenance,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.1.e,Customer and Personal Service,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.3.a,Computers and Electronics,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.8,Law and Public Safety,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.8.a,Public Safety and Security,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.9,Communications,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.9.a,Telecommunications,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.C.9.b,Communications and Media,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.D.3.d,Oral Communication,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,2.D.3.i,Computer Science,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,3.C.3.c,Equipment Selection - Entry Requirement,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,3.C.3.j,Equipment Maintenance - Entry Requirement,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.1.b.2,"Inspecting Equipment, Structures, or Material",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.2.a.1,"Judging the Qualities of Things, Services, or People",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.a,Performing Physical and Manual Work Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.a.1,Performing General Physical Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.a.2,Handling and Moving Objects,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.a.3,Controlling Machines and Processes,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.a.4,"Operating Vehicles, Mechanized Devices, or Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.b,Performing Complex and Technical Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.b.1,Interacting With Computers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.b.2,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.b.4,Repairing and Maintaining Mechanical Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.3.b.5,Repairing and Maintaining Electronic Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a,Communicating and Interacting,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a.2,"Communicating with Supervisors, Peers, or Subordinates",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a.3,Communicating with Persons Outside Organization,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a.5,Assisting and Caring for Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a.6,Selling or Influencing Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.a.8,Performing for or Working Directly with the Public,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.A.4.c.1,Performing Administrative Activities,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.B.1.a.1.a.5,Invest in New Equipment and Technology,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.B.1.a.2.b.2,Job Quality Affects Lots of People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.B.1.b.1.a.1,Sources of People for Current Job,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.B.2.c.1.a.9,Valuing Customers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a,Communication,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.2,Communication Methods,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.2.c,Public Speaking,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.2.f,Telephone,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.2.h,Electronic Mail,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.2.l,Face-to-Face Discussions,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.a.4,Contact With Others,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.b.1.f,Deal With External Customers,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.d.2,Deal With Unpleasant or Angry People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.1.d.3,Deal With Physically Aggressive People,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.a,"Indoors, Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.b,"Indoors, Not Environmentally Controlled",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.c,"Outdoors, Exposed to Weather",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.d,"Outdoors, Under Cover",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.e,In an Open Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.1.f,In an Enclosed Vehicle or Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.a.3,Physical Proximity,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.c.1.e,Exposed to Hazardous Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.e.1.d,"Wear Common Protective or Safety Equipment such as Safety Shoes, Glasses, Gloves, Hearing Protection, Hard Hats, or Life Jackets",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.2.e.1.e,"Wear Specialized Protective or Safety Equipment such as Breathing Apparatus, Safety Harness, Full Protection Suits, or Radiation Protection",,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression
+50,onet_content_model_reference.txt,4.C.3.d.3,Pace Determined by Speed of Equipment,,,lexical pre-screen only; final inclusion requires theory rule frozen before outcome regression

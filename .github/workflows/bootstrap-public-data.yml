@@ -1,0 +1,80 @@
+name: Bootstrap public research data
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - causal-architecture-v1
+    paths:
+      - ".github/workflows/bootstrap-public-data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install requests beautifulsoup4
+
+      - name: Download O*NET
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_onet.json --sources onet
+
+      - name: Download OEWS
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_oews.json --sources oews
+
+      - name: Download County Business Patterns
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_cbp.json --sources cbp
+
+      - name: Download Nonemployer Statistics
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_nonemployer.json --sources nonemployer
+
+      - name: Download NTIA broadband sources
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_ntia.json --sources ntia
+
+      - name: Download Ofcom broadband sources
+        continue-on-error: true
+        run: python scripts/fetch_public_data.py --root public-data-core --manifest public-data-core/manifest_ofcom.json --sources ofcom
+
+      - name: Bundle successful source snapshots
+        run: |
+          mkdir -p release-assets
+          for src in onet oews cbp nonemployer ntia ofcom; do
+            if [ -d "public-data-core/$src" ] && [ "$(find "public-data-core/$src" -type f | wc -l)" -gt 0 ]; then
+              tar -C public-data-core -czf "release-assets/${src}.tar.gz" "${src}"
+            fi
+          done
+          cp public-data-core/manifest_*.json release-assets/ 2>/dev/null || true
+          sha256sum release-assets/* > release-assets/SHA256SUMS.txt
+          ls -lh release-assets
+
+      - name: Freeze successful snapshots in GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="public-data-core-v0.1"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" release-assets/* --clobber
+          else
+            gh release create "$TAG" release-assets/* \
+              --title "Public data core v0.1" \
+              --notes "Frozen public raw-data snapshots for the causal market-shelter project. Each successful source has a source-level manifest and release SHA-256 checksum."
+          fi
+
+# bootstrap revision 3: independent source freezing
+
+# bootstrap revision 4: canonical Census Nonemployer paths

@@ -1,0 +1,53 @@
+name: Freeze QCEW annual archives
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - causal-architecture-v1
+    paths:
+      - ".github/workflows/freeze-qcew.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  qcew:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install requests beautifulsoup4
+
+      - name: Download annual QCEW 1990-2025
+        run: |
+          python scripts/fetch_public_data.py \
+            --root public-data-qcew \
+            --manifest public-data-qcew/manifest_qcew.json \
+            --sources qcew
+
+      - name: Compute hashes
+        run: |
+          cd public-data-qcew
+          sha256sum qcew/*.zip > SHA256SUMS.txt
+          ls -lh qcew | tail
+
+      - name: Create release and upload annual archives
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="qcew-1990-2025-v0.1"
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" \
+              --title "QCEW annual archives 1990-2025 v0.1" \
+              --notes "Frozen official BLS QCEW annual single-file archives. NAICS data from 1990 forward. Checksums and acquisition manifest included."
+          fi
+          gh release upload "$TAG" public-data-qcew/qcew/*.zip --clobber
+          gh release upload "$TAG" public-data-qcew/manifest_qcew.json public-data-qcew/SHA256SUMS.txt --clobber

@@ -1,0 +1,2 @@
+rows_processed,chunks_processed,occupation_codings,geography_codings,note
+89052176,179,"OCC2010,OCC1990","STATEFIP,MET2013,METAREA",MET2013 and METAREA are retained as separate series; no cross-definition pooling is performed.

@@ -1,0 +1,575 @@
+var_name,var_label,var_desc,code_instr,start,end,imp_decim,var_type,rectypes
+YEAR,Census year,"YEAR reports the four-digit year when the household was enumerated or included in the census, the ACS, and the PRCS.
+
+For the multi-year ACS/PRCS samples, YEAR indicates the last year of data included (e.g., 2007 for the 2005-2007 3-year ACS/PRCS; 2008 for the 2006-2008 3-year ACS/PRCS; and so on).  For the actual year of survey in these multi-year data, see MULTYEAR.",,1,4,0,integer,
+SAMPLE,IPUMS sample identifier,"SAMPLE identifies the IPUMS sample from which the case is drawn. Each sample receives a unique 6-digit code. The codes are structured as follows:
+
+The first four digits are the year of the census/survey.
+
+The next two digits identify the sample within the year.
+For most censuses, IPUMS has multiple datasets which were constructed using different sampling techniques (i.e. size/demographic of the sample population, geographic coverage level or location, or duration of the sampling period for the ACS/PRCS samples).  
+
+The availability table for each variable indicates whether that variable is available in only certain samples for a given year. For further discussion of sample differences, see ""Sample Designs."".
+
+Note: SAMPLE replaces DATANUM. Though the last two digits in SAMPLE do not correlate exactly with the now-deprecated DATANUM, the variable serves the same purpose of assigning a unique id to all cases that belong to the same dataset.",,5,10,0,integer,
+SERIAL,Household serial number,"SERIAL is an identifying number unique to each household record in a given sample. All person records are assigned the same serial number as the household record that they follow. (Person records also have their own unique identifiers - see PERNUM.) A combination of SAMPLE and SERIAL provides a unique identifier for every household in the IPUMS; the combination of SAMPLE, SERIAL, and PERNUM uniquely identifies every person in the database.
+
+For 1850-1930, households that are part of a multi-household dwelling can be identified by using the DWELLING and DWSEQ variables. See ""Sample Designs"" for further discussion of sampling from within multi-household dwellings.","SERIAL is an 8-digit numeric variable which assigns a unique identification number to each household record in a given sample (See PERNUM for the analogous person record identifier). A combination of SAMPLE and SERIAL provides a unique identifier for every household in the IPUMS; the combination of SAMPLE, SERIAL, and PERNUM uniquely identifies every person in the database. SERIAL specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+SERIAL Specific Variable Codes",11,18,0,numeric,
+CBSERIAL,Original Census Bureau household serial number,"CBSERIAL is the unique, original identification number assigned to each household record in a given sample by the Census Bureau. All person records are assigned the same serial number as the household record that they follow. (The original person record unique identification numbers assigned by the Census Bureau are provided by CBPERNUM.) 
+
+A combination of SAMPLE and CBSERIAL provides a unique identifier for every household in the IPUMS; the combination of SAMPLE, CBSERIAL, and CBPERNUM uniquely identifies every person in the database.","CBSERIAL is an 8-digit numeric variable which assigns a unique identification number to each household record in a given sample (See CBPERNUM for the analogous person record identifier). CBSERIAL specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+CBSERIAL Specific Variable Codes",19,31,0,numeric,
+HHWT,Household weight,"HHWT indicates how many households in the U.S. population are represented by a given household in an IPUMS sample. 
+
+It is generally a good idea to use HHWT when conducting a household-level analysis of any IPUMS sample. The use of HHWT is optional when analyzing one of the ""flat"" or unweighted IPUMS samples. Flat IPUMS samples include the 1% samples from 1850-1930, all samples from 1960, 1970, and 1980, the 1% unweighted samples from 1990 and 2000, the 10% 2010 sample, and any of the full count 100% census datasets. HHWT must be used to obtain nationally representative statistics for household-level analyses of any sample other than those.
+
+Users should also be sure to select one person (e.g., PERNUM = 1) to represent the entire household.
+
+For further explanation of the sample weights, see ""Sample Designs"" and ""Sample Weights"". See also PERWT for a corresponding variable at the person level, and SLWT for a weight variable used with sample-line records in 1940 1% and 1950.","HHWT is a 6-digit numeric variable which indicates how many households in the U.S. population are represented by a given household in an IPUMS sample and has two implied decimals. For example, a HHWT value of 010461 should be interpreted as 104.61. HHWT specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+User Note: Users should also be sure to select one person (e.g., PERNUM = 1) to represent the entire household when using HHWT.
+
+HHWT Specific Variable Codes",32,41,2,numeric,
+CLUSTER,Household cluster for variance estimation,CLUSTER is designed for use with STRATA in Taylor series linear approximation for correction of complex sample design characteristics. See the STRATA variable description for more details.,"CLUSTER is an 11-digit numeric variable designed for use with STRATA in Taylor series linear approximation for correction of complex sample design characteristics (See the Description of STRATA for more details). CLUSTER specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+CLUSTER Specific Variable Codes",42,54,0,numeric,
+STATEFIP,State (FIPS code),"STATEFIP reports the state in which the household was located, using the Federal Information Processing Standards (FIPS) coding scheme, which orders the states alphabetically.
+
+In the 1980 Urban/Rural sample, STATEFIP identifies state groups that are not available in STATEICP; these state groups (codes 61-68) are only available for that particular sample. 
+
+See ""Geographic Coding and Comparability"" for more information on the geographic detail available in particular samples.",,55,56,0,integer,
+PUMA,Public Use Microdata Area,"PUMA identifies the Public Use Microdata Area (PUMA) where the housing unit was located. PUMAs are the smallest geographic units identified in Public Use Microdata Samples since 1990 for both the decennial censuses and the ACS/PRCS. To help maintain the confidentiality of respondents in public use microdata, every PUMA must, by design, have at least 100,000 residents at the time of the corresponding census. 
+
+IPUMS has also created PUMAs for the 1960 5% sample, which each correspond approximately to one or more 2000 PUMAs using a minimum population threshold of 50,000.
+
+Note: PUMA codes are state-dependent. The PUMA codes for 1990 and later samples are unique only within each state, so a single code may identify different PUMAs in different states. To uniquely identify all PUMAs, it is necessary to combine the PUMA variable with a state identifier (STATEFIP or STATEICP). The IPUMS-defined 1960 PUMA codes are unique across all states and do not have this requirement.
+
+The Census Bureau updates PUMA definitions with each decennial census, so PUMA codes may or may not identify consistent areas over longer periods of time. See the Comparability section for information about which PUMAs are used in each sample. See the Codes section for information about each set of PUMA definitions.
+
+Note: In some multi-year samples, PUMA definitions vary or are allocated In multi-year ACS/PRCS samples that span a PUMA definition change, the identified PUMAs vary based on the survey year when each respondent was interviewed (as given by MULTYEAR). This occurs in samples that span the change from 2000 PUMAs (survey years 2000-2011) to 2010 PUMAs (survey years 2012-2021) and in the 2022 5-year ACS/PRCS sample (which uses 2010 PUMAs for survey years 2018-2021 and 2020 PUMAs in 2022). With the 2023 5-year ACS/PRCS sample, the Census Bureau began reporting only 2020 PUMAs for all survey years, which they achieved by assigning pre-2022 respondents a 2020 PUMA based on their 2010 PUMAs of residence and the known relationships between 2010 and 2020 PUMAs. The Bureau has provided no details on their PUMA allocation method, but IPUMS has confirmed that it produces plausible population totals for the assigned 2020 PUMAs.
+
+In 1980 samples, ""county groups"" (CNTYGP98) are functionally similar to PUMAs with the same minimum population threshold of 100,000. In fact, ""county group"" is a misnomer because 1980 county groups, like PUMAs, typically subdivide large-population counties into smaller areas (though 1980 county groups still do not subdivide cities within counties as PUMAs do). In contrast, the county groups in 1970 samples (CNTYGP97) nearly all correspond to groups of one or more counties with a minimum population threshold of 250,000. In 1940 and 1950 samples, the identified geographic areas most like PUMAs are State Economic Areas (SEA).","PUMA is a 5-digit numeric variable identifying the Public Use Microdata Area (PUMA) where the housing unit was located.
+
+In all samples but 1960, PUMA codes are state-dependent. To uniquely identify all PUMAs in 1990 or later samples, the codes must be read in combination with one of the STATE variables: STATEFIP or STATEICP.
+
+As explained in the Description and Comparability sections, PUMA definitions are updated every ten years and therefore vary across samples and within some multi-year samples. IPUMS provides maps, composition files, and boundary files describing each set of PUMA definitions through the links below.
+ 
+PUMA Resource Pages
+2020 PUMAs: 2022-2031 ACS/PRCS
+2010 PUMAs: 2010 Census and 2012-2021 ACS/PRCS
+ 2000 PUMAs: 2000 Census and 2005-2011 ACS/PRCS
+1990 PUMAs: 1990 5% State and 1% Metro samples
+1990 PUMAs crossing state lines: 1% Metro sample
+1960 PUMAs and Mini-PUMAs: 1960 5% sample",57,61,0,numeric,
+METAREA,"Metropolitan area (pre-2013 delineations, identifiable areas only) [general version]","A metropolitan area, or metro area, is a region consisting of a large urban core together with surrounding communities that have a high degree of economic and social integration with the urban core. For residents of metro areas, METAREA identifies the metro area of residence, contingent on varying delineations of metro areas across time and on variations in available geographic information and in confidentiality restrictions among samples.
+
+METAREA is not available for 2012-onward ACS and PRCS samples or the 2010 census 10% sample. For information about variables that provide metro area codes for these samples, see the overview page: IPUMS USA Variables for Metropolitan Areas.
+
+User Caution: Incompletely Identified Metropolitan Areas 
+In samples from 1960 to 2011 (excluding the 1970 and 1980 metro samples), METAREA only partially identifies the populations of many metro areas, and the unidentified portions can be considerably large, occasionally over 50%. Users should consult the Incompletely Identified Metropolitan Areas page, which lists the percent of each metro area's population that resided in excluded areas for each sample.
+
+The reason for incomplete coverage is that the source data for these samples include no specific information about metro areas. The most detailed geographic information available is for 1980 county groups or for PUMAs, areas which occasionally straddle official metro area boundaries. If any portion of a straddling area's population resided outside a single metro area, the METAREA variable uses a conservative assignment strategy and identifies no metro area for all residents of the straddling area.
+
+Users should not assume that the identified portion of a partly identified metro area is a representative sample of the entire metro area. In fact, because the unidentified population is located in areas that straddle the metro area boundaries, the identified population will often skew toward core populations and omit outlying communities. Also, weighted population counts for incompletely identified metro areas will be low by amounts ranging from 1 to 69% (since the unidentified individuals will not be counted as living in the metro area).
+
+Metropolitan Area Delineations
+Since 1950, the Bureau of the Budget (later renamed the Office of Management and Budget, or OMB), has produced and continually updated standard delineations of metropolitan areas for the U.S., defining each area as a county or a set of contiguous counties, or, for New England prior to 2003, as a set of cities or towns. In IPUMS samples for 1950 and later, the areas identified by METAREA generally correspond to contemporary OMB delineations, as were also used by the Census Bureau. For ACS samples through 2011, METAREA uses the 1999 OMB delineations, as were used for Census 2000 tabulations.
+
+To delineate metro areas in pre-1950 samples, the general approach (used first by the creators of the 1940 PUMS and then by IPUMS for earlier samples) is to apply the 1950 OMB standards to historical statistics. One deviation from the 1950 standards is that all pre-1950 delineations are county-based, even in New England. 
+
+See the Comparability section for details on how delineations have changed over time and how confidentiality restrictions have affected METAREA's correspondence with standard delineations. For a listing of the counties associated with each metro area in each sample year, see the County Composition tables. For a complete record of OMB standards and changes since 1950, see the Census Bureau's historical delineations page.
+
+The METAREA Code System 
+METAREA codes are based primarily on the 4-digit OMB codes of 1990 metropolitan areas but with adjustments to reflect hierarchical relationships among metro areas across time. For any group of metro areas that were at any time defined to be components of a single metro area together, the 4-digit METAREA codes were adjusted to use the same first 3 digits. E.g., the METAREA code for Fort Worth, TX, is 1921, which indicates that the area was, in some sample, included as part of the Dallas-Fort Worth, TX, metro area, which has a code of 1920. Similarly, in cases where the 1990 OMB codes of disjoint areas share the same first 3 digits, the METAREA codes were adjusted to be distinct through 3 digits. This system enables users to obtain relatively consistent samples for ""top-level"" metro areas across time by grouping records according to the first 3 METAREA digits.
+
+However, when IPUMS assigned METAREA codes for the 2000 and ACS samples, the codes were not adjusted to reflect any new splits or mergers. E.g., between 1990 and 1999, the OMB delineations merged the Odessa and Midland, TX, metro areas (with codes of 5800 and 5040) into a single area (with a code of 5800). Maintaining the hierarchical structure of METAREA codes would have required changing some existing 1990-based codes (e.g., changing the Midland code from 5040 to 5801), but to maintain static codes for prior users of METAREA, no codes were changed. Therefore, the first 3 digits of METAREA codes do not consistently represent top-level groups for the 2000 and ACS samples.
+
+The METAREA Label System 
+METAREA labels are generally based on the OMB names of 1990 metropolitan areas or on the standard names of other older areas that do not appear in the 1990 delineations. A METAREA label may include the names of any major central cities that were ever included in the identified area, including some cities that are associated with a different code in some samples. E.g., the METAREA code 1920 has a label of ""Dallas-Fort Worth, TX,"" but in most samples, records for Fort Worth have a code of 1921 and not 1920.
+
+This system ensures that the first label in each 3-digit METAREA group will properly describe the full extent of the general 3-digit code group, but it also causes ambiguities for the detailed 4-digit codes. In samples where a city name appears in the labels for 2 different codes, users should assume that the city is associated only with the higher-numbered code.
+
+Alternative for Pre-1950 Samples: Metropolitan Districts
+Prior to the introduction of the OMB's standard metropolitan areas in 1950, the Census Bureau had defined and tabulated statistics for metropolitan districts, which differ from metropolitan areas primarily in their use of minor civil divisions (cities, towns, etc.) as building blocks instead of counties. The METDIST variable identifies metropolitan districts for pre-1950 samples using criteria similar to those used by the Census in 1940. One advantage of METDIST relative to METAREA is that METDIST was constructed for the 1940 sample after confidentiality requirements were lifted for 1940 and is therefore more complete than METAREA for that year.",,62,64,0,integer,
+METAREAD,"Metropolitan area (pre-2013 delineations, identifiable areas only) [detailed version]","A metropolitan area, or metro area, is a region consisting of a large urban core together with surrounding communities that have a high degree of economic and social integration with the urban core. For residents of metro areas, METAREA identifies the metro area of residence, contingent on varying delineations of metro areas across time and on variations in available geographic information and in confidentiality restrictions among samples.
+
+METAREA is not available for 2012-onward ACS and PRCS samples or the 2010 census 10% sample. For information about variables that provide metro area codes for these samples, see the overview page: IPUMS USA Variables for Metropolitan Areas.
+
+User Caution: Incompletely Identified Metropolitan Areas 
+In samples from 1960 to 2011 (excluding the 1970 and 1980 metro samples), METAREA only partially identifies the populations of many metro areas, and the unidentified portions can be considerably large, occasionally over 50%. Users should consult the Incompletely Identified Metropolitan Areas page, which lists the percent of each metro area's population that resided in excluded areas for each sample.
+
+The reason for incomplete coverage is that the source data for these samples include no specific information about metro areas. The most detailed geographic information available is for 1980 county groups or for PUMAs, areas which occasionally straddle official metro area boundaries. If any portion of a straddling area's population resided outside a single metro area, the METAREA variable uses a conservative assignment strategy and identifies no metro area for all residents of the straddling area.
+
+Users should not assume that the identified portion of a partly identified metro area is a representative sample of the entire metro area. In fact, because the unidentified population is located in areas that straddle the metro area boundaries, the identified population will often skew toward core populations and omit outlying communities. Also, weighted population counts for incompletely identified metro areas will be low by amounts ranging from 1 to 69% (since the unidentified individuals will not be counted as living in the metro area).
+
+Metropolitan Area Delineations
+Since 1950, the Bureau of the Budget (later renamed the Office of Management and Budget, or OMB), has produced and continually updated standard delineations of metropolitan areas for the U.S., defining each area as a county or a set of contiguous counties, or, for New England prior to 2003, as a set of cities or towns. In IPUMS samples for 1950 and later, the areas identified by METAREA generally correspond to contemporary OMB delineations, as were also used by the Census Bureau. For ACS samples through 2011, METAREA uses the 1999 OMB delineations, as were used for Census 2000 tabulations.
+
+To delineate metro areas in pre-1950 samples, the general approach (used first by the creators of the 1940 PUMS and then by IPUMS for earlier samples) is to apply the 1950 OMB standards to historical statistics. One deviation from the 1950 standards is that all pre-1950 delineations are county-based, even in New England. 
+
+See the Comparability section for details on how delineations have changed over time and how confidentiality restrictions have affected METAREA's correspondence with standard delineations. For a listing of the counties associated with each metro area in each sample year, see the County Composition tables. For a complete record of OMB standards and changes since 1950, see the Census Bureau's historical delineations page.
+
+The METAREA Code System 
+METAREA codes are based primarily on the 4-digit OMB codes of 1990 metropolitan areas but with adjustments to reflect hierarchical relationships among metro areas across time. For any group of metro areas that were at any time defined to be components of a single metro area together, the 4-digit METAREA codes were adjusted to use the same first 3 digits. E.g., the METAREA code for Fort Worth, TX, is 1921, which indicates that the area was, in some sample, included as part of the Dallas-Fort Worth, TX, metro area, which has a code of 1920. Similarly, in cases where the 1990 OMB codes of disjoint areas share the same first 3 digits, the METAREA codes were adjusted to be distinct through 3 digits. This system enables users to obtain relatively consistent samples for ""top-level"" metro areas across time by grouping records according to the first 3 METAREA digits.
+
+However, when IPUMS assigned METAREA codes for the 2000 and ACS samples, the codes were not adjusted to reflect any new splits or mergers. E.g., between 1990 and 1999, the OMB delineations merged the Odessa and Midland, TX, metro areas (with codes of 5800 and 5040) into a single area (with a code of 5800). Maintaining the hierarchical structure of METAREA codes would have required changing some existing 1990-based codes (e.g., changing the Midland code from 5040 to 5801), but to maintain static codes for prior users of METAREA, no codes were changed. Therefore, the first 3 digits of METAREA codes do not consistently represent top-level groups for the 2000 and ACS samples.
+
+The METAREA Label System 
+METAREA labels are generally based on the OMB names of 1990 metropolitan areas or on the standard names of other older areas that do not appear in the 1990 delineations. A METAREA label may include the names of any major central cities that were ever included in the identified area, including some cities that are associated with a different code in some samples. E.g., the METAREA code 1920 has a label of ""Dallas-Fort Worth, TX,"" but in most samples, records for Fort Worth have a code of 1921 and not 1920.
+
+This system ensures that the first label in each 3-digit METAREA group will properly describe the full extent of the general 3-digit code group, but it also causes ambiguities for the detailed 4-digit codes. In samples where a city name appears in the labels for 2 different codes, users should assume that the city is associated only with the higher-numbered code.
+
+Alternative for Pre-1950 Samples: Metropolitan Districts
+Prior to the introduction of the OMB's standard metropolitan areas in 1950, the Census Bureau had defined and tabulated statistics for metropolitan districts, which differ from metropolitan areas primarily in their use of minor civil divisions (cities, towns, etc.) as building blocks instead of counties. The METDIST variable identifies metropolitan districts for pre-1950 samples using criteria similar to those used by the Census in 1940. One advantage of METDIST relative to METAREA is that METDIST was constructed for the 1940 sample after confidentiality requirements were lifted for 1940 and is therefore more complete than METAREA for that year.",,65,68,0,integer,
+MET2013,"Metropolitan area (2013 delineations, identifiable areas only)","A metropolitan area, or metro area, is a region consisting of a large urban core together with surrounding communities that have a high degree of economic and social integration with the urban core.
+
+MET2013 identifies metro areas of residence using the 2013 definitions for metropolitan statistical areas (MSAs) from the U.S. Office of Management and Budget (OMB). 
+
+MET2013 is available only for 2000 and later samples. For information about variables that provide metro area codes for other samples, see the overview page: IPUMS USA Variables for Metropolitan Areas.
+
+Inexact Correspondence with Official Delineations
+Since 1990, the only sub-state-level geographic information available in public-use census and ACS/PRCS microdata is for PUMAs, areas which occasionally straddle official metro area boundaries. Given this limitation,   MET2013 cannot identify the exact set of households residing in every metro area.
+
+The protocol used by MET2013 is to identify the metro area in which the majority of each PUMA's population resided. If MET2013 identifies a metro area for a given household, it indicates that, for the PUMA where the household resided, a majority of the PUMA's population resided in the identified metro area.
+
+Match Errors and Code Suppression
+MET2013's code assignment protocol yields errors of omission (residents of a MSA who are not identified as residents) and errors of commission (non-residents who are identified as residents). PUMAs often nest well within metro area boundaries, resulting in small match errors, if any. For many metro areas, however, especially smaller metro areas, the intersecting PUMAs are a poor match.
+
+As an index of mismatch, IPUMS uses the sum of percent omission error (the portion of an MSA's population residing in excluded PUMAs) and percent commission error (the portion of the population in associated PUMAs that did not reside in the MSA).
+
+  MET2013 reports no code for MSAs where the sum of match errors is 15% or more
+
+For each reported MET2013 code, the MET2013ERR variable identifies the level of the sum of errors. Researchers may use MET2013ERR to impose a more restrictive error limit if desired.
+
+To compute match errors, IPUMS uses 2020 populations for 2022-2031 ACS and PRCS samples, 2010 populations for 2005-2021 ACS and PRCS samples, and 2000 populations for 2000 samples. For samples that use 2000 PUMA definitions (which includes 2000 samples and ACS/PRCS samples through 2011), IPUMS estimates the populations of the areas of intersection between 2000 PUMAs and 2013 MSAs by summing the populations of census blocks that had their geographic center in each area.
+
+In multi-year ACS/PRCS samples that span different PUMA definitions, this variable is based on whichever PUMA definition is associated with the respondent's survey year (as given by MULTYEAR). This occurs only in the 2022 5-year samples and in multi-year samples that include both 2011 and 2012 survey years. For more information about how PUMA definitions vary within multi-year samples, see the PUMA variable description.
+
+For detailed information about 2013 MSA delineations and their correspondence with PUMAs, see the 2013 MSA geographic resource page.",,69,73,0,integer,
+STRATA,Household strata for variance estimation,"STRATA is designed for use with CLUSTER in Taylor series linear approximation for correction of complex sample design characteristics.
+
+While appropriate use of the sampling weights PERWT and HHWT allow users to produce correct point estimates (such as means and proportions), many researchers believe that additional statistical techniques are also necessary to produce correct standard errors and statistical tests that account for complex sample design. 
+
+For further information on why and how to use STRATA and CLUSTER, see  Analysis and Variance Estimation with the IPUMS . For more details on the mathematics behind this method, see  Issues Concerning the Calculation of Standard Errors Using IPUMS Data Products .","STRATA is a 12-digit numeric variable designed for use with CLUSTER in Taylor series linear approximation for correction of complex sample design characteristics. While appropriate use of the sampling weights PERWT and HHWT allow users to produce correct point estimates (such as means and proportions), many researchers believe that additional statistical techniques are also necessary to produce correct standard errors and statistical tests that account for complex sample design. STRATA specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+User Note: For further information on why and how to use STRATA and CLUSTER, see Analysis and Variance Estimation with the IPUMS. For more details on the mathematics behind this method, see Issues Concerning the Calculation of Standard Errors Using IPUMS Data Products.  
+
+STRATA Specific Variable Codes",74,85,0,numeric,
+GQ,Group quarters status,"GQ classifies all housing units as falling into one of three main categories: households, group quarters, or vacant units. It also identifies fragmentary sample units for 1850-1930 (see below). In all years, the data available about a person and their co-residents depend on whether the person lives in a household or in group quarters. Households are sampled as units, meaning that everyone in the household is included in the sample, and most household-level variables are available. People living in group quarters are generally sampled as individuals; other people in their unit may or may not be included in the sample, and there is no way of linking co-residents' records to one another. If, however, a sampled person in group quarters was living with relatives, the related group was sampled for 1850-1930. Most household-level variables are not available for group quarters or for vacant units.
+
+Group quarters are largely institutions and other group living arrangements, such as rooming houses and military barracks. The definitions vary from year to year, but the pre-1940 samples have generally used a definition of group quarters that includes units with 10 or more individuals unrelated to the householder. See the comparability discussion below and ""Sample Designs"" for more details about changing definitions of group quarters.  Group-quarters types are identified in further detail by GQTYPE and GQFUNDS.",,86,86,0,integer,
+PERNUM,Person number in sample unit,"PERNUM numbers all persons within each household consecutively in the order in which they appear on the original census or survey form. When combined with SAMPLE and SERIAL, PERNUM uniquely identifies each person within the IPUMS.","PERNUM is a 4-digit numeric variable which numbers all persons within each household consecutively in the order in which they appear on the original census or survey form. PERNUM specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).",87,90,0,numeric,
+PERWT,Person weight,"PERWT indicates how many persons in the U.S. population are represented by a given person in an IPUMS sample. 
+
+It is generally a good idea to use PERWT when conducting a person-level analysis of any IPUMS sample. The use of PERWT is optional when analyzing one of the ""flat"" or unweighted IPUMS samples. Flat IPUMS samples include the 1% samples from 1850-1930, all samples from 1960, 1970, and 1980, the 1% unweighted samples from 1990 and 2000, the 10% 2010 sample, and any of the full count 100% census datasets. PERWT must be used to obtain nationally representative statistics for person-level analyses of any sample other than those.
+
+For further explanation of the sample weights, see ""Sample Designs"" and ""Sample Weights"". See also HHWT for a corresponding variable at the household level, and SLWT for a weight variable used with sample-line records in 1940 and 1950.","PERWT is a 6-digit numeric variable which indicates how many persons in the U.S. population are represented by a given person in an IPUMS sample and has two implied decimals. For example, a PERWT value of 010461 should be interpreted as 104.61. PERWT specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+PERWT Specific Variable Codes",91,100,2,numeric,
+SEX,Sex,SEX reports whether the person was male or female.,,101,101,0,integer,
+AGE,Age,AGE reports the person's age in years as of the last birthday.,,102,104,0,integer,
+RACE,Race [general version],"The concept of race has changed over the more than 150 years represented in IPUMS. Currently, the Census Bureau and others consider race to be a sociopolitical construct, not a scientific or anthropological one. Many detailed RACE categories consist of national origin groups. With the exception of the 1970-1990 Puerto Rican censuses, RACE was asked of every person in all years. 
+
+Beginning in 2000, the race question changed substantially to allow respondents to report as many races as they felt necessary to describe themselves. In earlier years, only one race response was coded. Beginning in 2020, the Census Bureau updated the questionnaire text, processing, and coding of the race and Hispanic origin questions, resulting in major changes to the distribution of race and Hispanic origin categories. As a result, users should proceed with caution when comparing RACE and HISPAN in 2019-prior samples with 2020-onward samples. More improvements made to the race question in 2020 were implemented in 2023. See the comparability tab for more details. 
+
+IPUMS offers several variables describing the answer(s) to the race question. RACE provides the full detail given by the respondent and/or released by the Census Bureau; it is not always historically compatible (see comparability discussion below). Users primarily interested in historical compatibility should consider using RACHSING. RACHSING codes race and Hispanic origin responses into a simple, historically compatible scheme that includes only federally defined race and Hispanic origin groups. Please note that RACESING, an earlier version of RACHSING, is also available on the IPUMS website. 
+
+In addition, specific combinations of major races can be discerned using the following bivariate indicators of whether a particular race group was reported: RACAMIND, RACASIAN, RACBLK, RACOTHER, RACPACIS, and RACWHT. RACNUM indicates the total number of major race groups reported for an individual. The information contained in the bivariate indicators and in RACNUM is integrated into the detailed version of RACE. 
+
+Prior to 1960, the census enumerator was responsible for categorizing persons and was not specifically instructed to ask the individual his or her race. In 1970 and later years, an individual's race was reported by someone in the household or group quarters. In the 1990 U.S. census, the 2000 U.S. and Puerto Rican censuses, the ACS, and the PRCS respondents were specifically asked what race the person ""considers himself/herself"" to be, although such self-description was more or less operative since 1960.
+
+User Note: Race questions were not asked in the Puerto Rican censuses of 1970, 1980, and 1990.  They were asked in the 1910 and 1920 Puerto Rican censuses, the 2000-2010 Puerto Rican censuses, and the PRCS.",,105,105,0,integer,
+RACED,Race [detailed version],"The concept of race has changed over the more than 150 years represented in IPUMS. Currently, the Census Bureau and others consider race to be a sociopolitical construct, not a scientific or anthropological one. Many detailed RACE categories consist of national origin groups. With the exception of the 1970-1990 Puerto Rican censuses, RACE was asked of every person in all years. 
+
+Beginning in 2000, the race question changed substantially to allow respondents to report as many races as they felt necessary to describe themselves. In earlier years, only one race response was coded. Beginning in 2020, the Census Bureau updated the questionnaire text, processing, and coding of the race and Hispanic origin questions, resulting in major changes to the distribution of race and Hispanic origin categories. As a result, users should proceed with caution when comparing RACE and HISPAN in 2019-prior samples with 2020-onward samples. More improvements made to the race question in 2020 were implemented in 2023. See the comparability tab for more details. 
+
+IPUMS offers several variables describing the answer(s) to the race question. RACE provides the full detail given by the respondent and/or released by the Census Bureau; it is not always historically compatible (see comparability discussion below). Users primarily interested in historical compatibility should consider using RACHSING. RACHSING codes race and Hispanic origin responses into a simple, historically compatible scheme that includes only federally defined race and Hispanic origin groups. Please note that RACESING, an earlier version of RACHSING, is also available on the IPUMS website. 
+
+In addition, specific combinations of major races can be discerned using the following bivariate indicators of whether a particular race group was reported: RACAMIND, RACASIAN, RACBLK, RACOTHER, RACPACIS, and RACWHT. RACNUM indicates the total number of major race groups reported for an individual. The information contained in the bivariate indicators and in RACNUM is integrated into the detailed version of RACE. 
+
+Prior to 1960, the census enumerator was responsible for categorizing persons and was not specifically instructed to ask the individual his or her race. In 1970 and later years, an individual's race was reported by someone in the household or group quarters. In the 1990 U.S. census, the 2000 U.S. and Puerto Rican censuses, the ACS, and the PRCS respondents were specifically asked what race the person ""considers himself/herself"" to be, although such self-description was more or less operative since 1960.
+
+User Note: Race questions were not asked in the Puerto Rican censuses of 1970, 1980, and 1990.  They were asked in the 1910 and 1920 Puerto Rican censuses, the 2000-2010 Puerto Rican censuses, and the PRCS.",,106,108,0,integer,
+HISPAN,Hispanic origin [general version],"HISPAN identifies persons of Hispanic/Spanish/Latino origin and classifies them according to their country of origin when possible. Origin is defined by the Census Bureau as ancestry, lineage, heritage, nationality group, or country of birth. People of Hispanic origin may be of any race; see RACE for a discussion of coding issues involved.  Users should note that race questions were not asked in the Puerto Rican censuses of 1970, 1980 and 1990.  They were asked in the 1910 and 1920 Puerto Rican censuses, and in the 2000 and 2010 Puerto Rican census and the PRCS.  However, questions assessing Spanish/Hispanic origin were not asked in the Puerto Rican censuses prior to 2000. 
+
+The HISPAN general code covers country-of-origin classifications common to all years; the detailed code distinguishes additional groups and subgroups. See HISPRULE for details on how country of origin information was assigned prior to 1980. 
+
+In 2020, the Census Bureau updated the questionnaire text, processing, and coding of the race and Hispanic origin questions, resulting in major changes to the distribution of race and Hispanic origin categories. As a result, users should proceed with caution when comparing HISPAN and RACE in 2019-prior samples with 2020-onward samples. See the comparability tab for more details.",,109,109,0,integer,
+HISPAND,Hispanic origin [detailed version],"HISPAN identifies persons of Hispanic/Spanish/Latino origin and classifies them according to their country of origin when possible. Origin is defined by the Census Bureau as ancestry, lineage, heritage, nationality group, or country of birth. People of Hispanic origin may be of any race; see RACE for a discussion of coding issues involved.  Users should note that race questions were not asked in the Puerto Rican censuses of 1970, 1980 and 1990.  They were asked in the 1910 and 1920 Puerto Rican censuses, and in the 2000 and 2010 Puerto Rican census and the PRCS.  However, questions assessing Spanish/Hispanic origin were not asked in the Puerto Rican censuses prior to 2000. 
+
+The HISPAN general code covers country-of-origin classifications common to all years; the detailed code distinguishes additional groups and subgroups. See HISPRULE for details on how country of origin information was assigned prior to 1980. 
+
+In 2020, the Census Bureau updated the questionnaire text, processing, and coding of the race and Hispanic origin questions, resulting in major changes to the distribution of race and Hispanic origin categories. As a result, users should proceed with caution when comparing HISPAN and RACE in 2019-prior samples with 2020-onward samples. See the comparability tab for more details.",,110,112,0,integer,
+EDUC,Educational attainment [general version],"EDUC indicates respondents' educational attainment, as measured by the highest year of school or degree completed. Note that completion differs from the highest year of school attendance; for example, respondents who attended 10th grade but did not finish were classified in EDUC as having completed 9th grade. For additional detail on grade attendance, see GRADEATT as well as the detailed version of HIGRADE.",,113,114,0,integer,
+EDUCD,Educational attainment [detailed version],"EDUC indicates respondents' educational attainment, as measured by the highest year of school or degree completed. Note that completion differs from the highest year of school attendance; for example, respondents who attended 10th grade but did not finish were classified in EDUC as having completed 9th grade. For additional detail on grade attendance, see GRADEATT as well as the detailed version of HIGRADE.",,115,117,0,integer,
+EMPSTAT,Employment status [general version],"EMPSTAT indicates whether the respondent was a part of the labor force -- working or seeking work -- and, if so, whether the person was currently unemployed. The second digit preserves additional related information available for some years but not others. See LABFORCE for a dichotomous variable that identifies whether a person participated in the labor force or not and is available for all years in the IPUMS.",,118,118,0,integer,
+EMPSTATD,Employment status [detailed version],"EMPSTAT indicates whether the respondent was a part of the labor force -- working or seeking work -- and, if so, whether the person was currently unemployed. The second digit preserves additional related information available for some years but not others. See LABFORCE for a dichotomous variable that identifies whether a person participated in the labor force or not and is available for all years in the IPUMS.",,119,120,0,integer,
+LABFORCE,Labor force status,"LABFORCE is a dichotomous variable indicating whether a person participated in the labor force. See EMPSTAT for a non-dichotomous variable that indicates whether the respondent was part of the labor force -- working or seeking work -- and, if so, whether the person was currently unemployed.",,121,121,0,integer,
+CLASSWKR,Class of worker [general version],"CLASSWKR indicates whether respondents worked for their own enterprise(s) or for someone else as employees. Workers with multiple sources of employment were classified according to the work relationship in which they spent the most time during the reference day or week. As described below, CLASSWKR contains other related information in most years.",,122,122,0,integer,
+CLASSWKRD,Class of worker [detailed version],"CLASSWKR indicates whether respondents worked for their own enterprise(s) or for someone else as employees. Workers with multiple sources of employment were classified according to the work relationship in which they spent the most time during the reference day or week. As described below, CLASSWKR contains other related information in most years.",,123,124,0,integer,
+OCC,Occupation,"OCC reports the person's primary occupation, coded into a contemporary census classification scheme (some non-occupational activities are also recorded in the pre-1940 samples). Generally, the primary occupation is the one from which the person earns the most money; if respondents were not sure about this, they were to report the one at which they spent the most time. Unemployed persons were to give their most recent occupation. For persons listing more than one occupation, the samples use the first one listed.
+
+Universe Note: ""New Workers"" are persons seeking employment for the first time, who had not yet secured their first job.
+
+Note Regarding Multi-Year Samples: In Multi-Year ACS files, OCC codes are based on the year that the file was publicly released (see YEAR). For example, in the 2011-2015 5-year ACS sample, the OCC codes for respondents in 2011 were crosswalked by the Census Bureau to the set of OCC codes used in 2015 to create a single vintage of the occupation variable. See the Industry and Occupation Code Lists and Crosswalks page on the Census Bureau's website for more guidance on how codes are matched across years.",,125,128,0,integer,
+OCC1990,"Occupation, 1990 basis","OCC1990 is a modified version of the 1990 Census Bureau occupational classification scheme. OCC1990 provides researchers with a consistent classification of occupations using the 1990 coding scheme as its starting point. It spans the period from 1950 forward. Researchers who want consistent occupations prior to 1950 should consult OCC1950. 
+&nbsp;The Census Bureau has reorganized its occupational classification system in almost every census administered since 1850.  All original occupational information is stored in the OCC variable.  The meaning of codes in the OCC variable changes with each census year.  
+
+We chose the 1990 coding scheme as the standard for OCC1990 so that no year's occupational data would be forced to bridge both of the two most significant changes in twentieth-century coding schemes: from 1970 to 1980 and from 1990 to 2000.  In OCC1990, all samples from 1950 onward bridge no more than one of these major shifts.  For this reason, the variable may be preferable to OCC1950 for the samples from 1980 onward.  Sensitivity testing suggests that OCC1990 performs very similarly to OCC1950 for most purposes.While the 1990 Census occupation classification system is the basis for OCC1990, we combine several categories to improve the variable's comparability over time. Users are encouraged to review the BLS working paper that describes the variable and how available categories map to 1960-2000 Census occupation codes.
+
+Creation of OCC1990
+OCC1990 was created using a series of technical papers published by the Census Bureau shortly after each census was administered.  These papers provide detailed analyses of how the occupational coding scheme for each census year differed from the scheme used during the previous census year.  These occupational ""crosswalks"" are based on samples of cases that are ""double coded"" into the occupational schemes of the current and previous census year.  The original Census Bureau crosswalks are available via links in ""Occupation and Industry Variables"" of the IPUMS documentation. 
+
+Using the information from the occupational crosswalks, we traced the proportion of each occupation as it broke out into more specific occupations or as it was combined with others into a more general occupation.  To take one example from the technical paper produced after the 2000 census: of persons coded as ""Gaming managers"" in 2000 (2000 code 33), the Census Bureau determined that 35% would have been coded as ""Managers, service organizations"" in 1990 (1990 code 21), while 65% would have been coded as ""Managers, food serving and lodging establishments"" (1990 code 17).  In OCC1990, we assign original 2000 OCC values of 33 to 17.  We generated the same information for every occupational code in every census year from 1950-2000. 
+
+Researchers at the Bureau of Labor Statistics (BLS) then used the resulting tables to create aggregated occupational categories that were more useful for long-term analyses; these are the categories that are used in the IPUMS variable OCC1990.  More specifics on their methods and a detailed comparison of OCC1950 and OCC1990 can be found in the resulting BLS working paper. 
+
+The IPUMS codes differ from those outlined in the BLS working paper in two instances. 
+&nbsp;In the BLS working paper, persons with the occupation of ""Parking Enforcement Workers"" (2000 code 384) were coded as ""Housekeepers, maids, butlers, stewards, and lodging quarters cleaners"" (1990 code 405). IPUMS assigns a code of 423 to these cases in OCC1990, which corresponds to ""Other law enforcement: sheriffs, bailiffs, correctional institution officers"". The double-coded crosswalks from the Census Bureau show that 100% of persons coded as ""Parking Enforcement Workers"" in 2000 would have been coded as ""Other law enforcement: sheriffs, bailiffs, correctional institution officers"" under the 1990 coding scheme. 
+
+The second difference is for code 874 in the 1990 census occupation, which is labeled as ""Helper-production worker"". The BLS working paper assigns these cases to ""Laborers outside construction"" (1990 code 889), but separately includes the occupation ""Helper-production worker"" with a code of 873; note that code 873 for occupation does not exist in the 1990 PUMS. IPUMS retains the original value of 874 with the label of ""Helper-production workers"" in OCC1990 and does not include an occupation code of 873. 
+
+While OCC1990 has fewer occupational categories than the original 1990 occupational scheme, users may want to further aggregate categories into the broad occupational categories implicit in the 1990 scheme:  
+
+Managerial and Professional (000-200);
+
+Technical, Sales, and Administrative (201-400);
+
+Service (401-470);
+
+Farming, Forestry, and Fishing (471-500);
+
+Precision Production, Craft, and Repairers (501-700);
+
+Operatives and Laborers (701-900);
+
+Non-occupational responses (900-999).
+Universe Note: ""New Workers"" are persons seeking employment for the first time, who had not yet secured their first job.",,129,131,0,integer,
+OCC2010,"Occupation, 2010 basis","OCC2010 is a harmonized occupation coding scheme that recodes information contained in the variable OCC from prior and subsequent classification schemes to the Census Bureau 2010 occupation codes. OCC2010 was developed to enhance the comparability of occupational data by providing a consistent set of occupational codes for IPUMS USA from 1950 forward.  Similar variables are offered for the 1950 (OCC1950) and 1990 (OCC1990) classification codes. Original, un-recoded occupation categories are available in the OCC variable.
+
+Beginning in 2012 some 2010 Census occupation codes are collapsed in the data for categories that contained less than 10,000 people in the ACS sample. These categories are not included in the ACS data and so OCC2010 is harmonized to the collapsed codes. This crosswalk shows the detailed 2010 codes that get combined in 2012. 
+
+Modal Assignment
+Mapping the changing Census occupation classification codes to the 2010 Census codes is largely done using modal assignment. In this technique, crosswalks from the Census Bureau are used to track when occupations break into more specific categories in the adjacent coding scheme or collapse into a more general occupation. Categories from the base occupation coding scheme are mapped to the target occupation coding scheme (in this case, the 2010 Census codes) following a plurality of records, as defined by the Census crosswalks. Modal assignment is also used when mapping new Census Bureau coding schemes back to the 2010 coding scheme; see Williams and Flood (2020) for a detailed description of backward modal assignment. 
+
+For example, the 2002 Census occupation code 0620 (Human Resources, Training, and Labor Relations Specialists) splits into three 2010 Census occupation codes 0630 (Human Resources Workers), 0640 (Compensation, Benefits, and Job Analysis Specialists), and 0650 (Training and Development Specialists). According to the Census Bureau crosswalk, 73% of the 2002 occupation category Human Resources, Training, and Labor Relations Specialists would be classified as Human Resource workers in the 2010 Census occupation coding scheme. Thus, IPUMS recodes the 2002 code 0620 to the 2010 code 0630.
+
+Forced Recoding
+In some instances, modal assignment results in non-sensical recodings. Non-sensical results from modal assignment when specific categories get collapsed into more general categories and, in a subsequent Census occupation classification, this general category is again broken up into many more specific categories. Non-sensical results can also occur as occupations change or become obsolete over time. In addition, these types of outcomes occur more frequently as more occupation classifications need to be bridged to map to the target 2010 Census codes (e.g. modal assignment results in more frequent questionable outcomes between the 1970 Census occupation codes and the 2010 occupation codes than between the 2000 occupation codes and the 2010 occupation codes). 
+
+An example of a forced recoding in OCC2010 is the 1980 Census category ""Telegraphers."" Between 1980 and 1990, Telegraphers are grouped together with other categories into a general category ""Communications equipment operators, n.e.c."" This general category is then broken into multiple more detailed categories between the 1990 and 2000 Census coding schemes; modal assignment across this change matches 1980 ""Telegraphers"" with 2000 ""Switchboard Operators, Including Answering Service."" This Switchboard Operators category remains unchanged across the 2000-2010 occupation codes change. However, the occupation of telegrapher is largely obsolete by 2010 and is not especially analogous with switchboard operator. Thus, IPUMS forces 1980 Telegraphers to be recoded to the 2010 occupation category "" Communications Equipment Operators, All Other.""
+
+Another example of forced recoding is the 1970 category ""Floor layers, except tile setters."" This category is collapsed into a general category in the 1980 occupation coding scheme, ""Construction trades, n.e.c."" This category remains unchanged in the 1990 occupation categories, but in the 2000 Census occupation coding scheme, ""Construction trades, n.e.c."" is split into 18 more detailed categories. Modal assignment across this split goes to ""Highway maintenance workers"" with 20.28% of ""Construction trades, n.e.c."" cases landing in this new category. However, floor laying and highway maintenance have little to do with one another and modal assignment in this case is not desirable. Instead, IPUMS forces this recode to another of the 18 new 2000 Census codes, ""Carpet, floor, and tile installers and finishers."" This category remains unchanged in the transition from 2000 Census codes to 2010 Census codes. Even though this 2010 recode is not perfect (tile installers are included in the 2010 category, but excluded in the 1970 category), the forced recode provides a more reasonable alignment of occupation categories than modal assignment in this case.
+
+Crosswalks
+The IPUMS crosswalks showing the mapping of each Census occupation classification scheme to the 2010 Census occupation codes are below. Whether or not a recoding was forced to something other than the modal assignment outcome are indicated in the farthest right column. Note that the 2000 Census codes shown in the crosswalk are identical to the 2002 Census codes, but for a trailing zero in the 2002 codes. 
+
+1950 to 2010 Census occupation code mapping
+
+1960 to 2010 Census occupation code mapping
+
+1970 to 2010 Census occupation code mapping
+
+1980 to 2010 Census occupation code mapping
+
+1990 to 2010 Census occupation code mapping
+
+2000 to 2010 Census occupation code mapping(2000 Census and 2000-2002 ACS/PRCS samples)
+
+Note that the 2002 Census occupation codes used in the 2003-2009 ACS/PRCS samples are identical to the 2000 Census occupation codes except for a trailing zero in all 2002 occupation code values
+
+OCC and OCC2010 are identical ACS/PRCS samples from 2010-2017
+
+2018 to 2010 Census occupation code mapping (ACS/PRCS samples from 2018 onward)
+In the 2018 Census occupation categories, several occupations that were combined into more general categories are once again unique categories. These categories, which have the same codes and occupation titles in the 2010 and 2018 Census occupation categories, are 
+
+4160 - Food preparation and serving related workers, all other
+
+6540 - Solar photovoltaic installers
+
+8000 - Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic
+These 2018 codes are mapped back to their collapsed 2010/2012 counterparts in OCC2010. 
+
+Major Occupation Groups
+For users who wish to aggregate occupation to broader categories, the 2010 scheme is generally organized by the following groups:
+
+Management in Business, Science, and Arts = 10-430
+Business Operations Specialists = 500-730
+Financial Specialists = 800-950
+Computer and Mathematical = 1000-1240
+Architecture and Engineering = 1300-1540
+Technicians = 1550-1560
+Life, Physical, and Social Science = 1600-1980
+Community and Social Services = 2000-2060
+Legal = 2100-2150
+Education, Training, and Library = 2200-2550
+Arts, Design, Entertainment, Sports, and Media = 2600-2920
+Healthcare Practitioners and Technicians = 3000-3540
+Healthcare Support = 3600-3650
+Protective Service = 3700-3950
+Food Preparation and Serving = 4000-4150
+Building and Grounds Cleaning and Maintenance = 4200-4250
+Personal Care and Service = 4300-4650
+Sales and Related = 4700-4965
+Office and Administrative Support = 5000-5940
+Farming, Fisheries, and Forestry = 6005-6130
+Construction = 6200-6765
+Extraction = 6800-6940
+Installation, Maintenance, and Repair = 7000-7630
+Production = 7700-8965
+Transportation and Material Moving = 9000-9750
+Military = 9800-9830
+No Occupation = 9920",,132,135,0,integer,
+OCCSOC,"Occupation, SOC classification","OCCSOC reports the person's primary occupation, classified according to the 2000 Standard Occupational Classification (SOC) system for 2000-2009, according to the 2010 Standard Occupational Classification (SOC) for 2010-2017, and according to 2018 Standard Occupational Classification (SOC) for 2018-onward. 
+
+For workers employed during the previous week, the data refer to the job at which the person worked the greatest number of hours. For persons who were unemployed or out of the labor force, the data refer to the most recent job, if it was within the previous five years.
+
+The variable OCC provides a numeric occupational classification that is closely related to the OCCSOC scheme. The crosswalk between the OCC and OCCSOC codes are available here:
+
+ OCC to OCCSOC Crosswalk
+
+User caution: OCCSOC contains alphabetic characters (See OCC for a fully numeric classification of occupations).
+
+Note: The OCC to OCCSOC crosswalk is reflective of the codes in the ACS PUMS data files, which slightly differ from the codes found here: Full list of Census provided Industry and Occupation Codes.","OCCSOC is a 6-digit alphanumeric string variable which reports the person's primary occupation, classified according to the 2000 Standard Occupational Classification (SOC) system for 2000-2009, according to the 2010 Standard Occupational Classification (SOC) for 2010-2017, and according to 2018 Standard Occupational Classification (SOC) for 2018-onward. A crosswalk of OCCSOC codes for the 2000 Census and the ACS/PRCS from 2000-onward is available here: 
+
+OCCSOC Crosswalk
+
+Please note that in some cases the SOC occupation codes are aggregated if they do not have an exact match to a Census occupation code or to preserve confidentiality in cases where the category contained fewer than 10,000 people nationwide (Lauger, Wisniewski,  McKenna, 2014). 
+
+Reference:
+Lauger, A., Bisniewski, B.,  McKenna, L. (2014). Disclosure avoidance techniques at the U.S. Census Bureau: Current practices and research (Research Report Series #2014-02). U.S. Census Bureau: https://www.census.gov/content/census/en/about/policies/privacy/statistical_safeguards/working-papers.html.",136,141,0,character,
+IND,Industry,"IND is an un-recoded variable that reports the type of industry in which the person performed an occupation, which is recorded in the variables OCC (Occupation) and OCC1950 (Occupation, 1950 basis). In census usage, ""industry"" currently refers to work setting and economic sector, as opposed to the worker's specific technical function, or ""occupation"". Prior to 1930, the occupation and industry concepts were not so clearly distinguishable from one another.
+
+Some persons work in more than one industry. Generally, the instructions asked for the industry from which the person earned the most money. Respondents not sure about this were to report the industry in which they spent the most time. For persons listing more than one industry, the samples use the first one listed. Persons not currently employed were to give their most recent industry. 
+
+Universe Note: ""New Workers"" are persons seeking employment for the first time, who had not yet secured their first job.
+
+Note Regarding Multi-Year Samples: In Multi-Year ACS files, IND codes are based on the year that the file was publicly released (see YEAR). For example, in the 2011-2015 5-year ACS sample, the IND codes for respondents from 2011 and 2012 were crosswalked by the Census Bureau to the set of IND codes used in 2015 to create a single vintage of the industry variable. See the Industry and Occupation Code Lists and Crosswalks page on the Census Bureau's website for more guidance on how codes are matched across years.",,142,145,0,integer,
+IND1990,"Industry, 1990 basis","IND1990 classifies industries from all years since 1950 into the 1990 Census Bureau industrial classification scheme.  Like IND1950, IND1990 offers researchers a consistent long-term classification of industries.    
+
+The Census Bureau has reorganized its industrial classification system in almost every census administered since 1940.  All original industry information is stored in the IND variable.  The meaning of codes in the IND variable changes with each census year.  We chose the 1990 scheme as the standard for IND1990 so that no year's industry data would be forced to bridge both of the two most significant changes in twentieth-century coding schemes: from 1970 to 1980 and from 1990 to 2000.  In IND1990, all samples from 1950 onward bridge no more than one major change in twentieth-century industrial coding schemes.  For this reason, the variable may be preferable to IND1950 for the samples from 1980 onward.  Sensitivity testing suggests that IND1990 performs very similarly to IND1950 for most purposes.
+
+IND1990 was created using a series of technical papers published by the Census Bureau shortly after each census was administered.  These papers provide detailed analyses of how the industrial coding scheme for each census year differed from the scheme used during the previous census year.  These industrial ""crosswalks"" are based on samples of cases that are ""double coded"" into the industrial schemes of the current and previous census year.  The original Census Bureau crosswalks are available via links in ""Occupation and Industry Variables"" of the IPUMS documentation. 
+
+Using the information from the industrial crosswalks, we traced the proportion of each industry as it broke out into more specific industries or as it was combined with others into a more general industry.  To take one example from the technical paper produced after the 2000 census: of persons coded in ""Footwear"" in 2000 (2000 code 177), the Census Bureau determined that 11% would have been coded as "" Other rubber products, and plastics footwear and belting"" in 1990 (1990 code 211), while 89% would have been coded as "" Footwear, except rubber and plastic"" (1990 code 221).  Thus, IND1990 assigns a code of 221 to the cases in the 2000 IPUMS sample having an original 2000 IND value of 177.  We generated the same information for every industrial code in every census year from 1950-2000.",,146,148,0,integer,
+INDNAICS,"Industry, NAICS classification","INDNAICS reports the type of establishment in which the person worked, in terms of the good or service produced. INDNAICS codes industries according to the North American Industrial Classification System, which was developed in 1997. This categorization system is substantially different from industry classifications used in prior years. 
+
+For workers employed during the previous week, the data refer to the job at which the person worked the greatest number of hours. For unemployed persons or those out of the labor force, the data refer to their most recent job, if it was within the previous five years.
+
+A crosswalk of INDNAICS codes for the 2000 Census and the ACS/PRCS from 2000-onward is available here:
+
+INDNAICS Crosswalk
+
+The variable IND provides a numeric industry classification that is closely related to the INDNAICS scheme. A crosswalk between IND and INDNAICS codes is available here:
+
+IND to INDNAICS Crosswalk
+
+User Caution: INDNAICS contains alphabetic characters (See IND for a fully numeric classification of industry).
+
+Note: The IND to INDNAICS crosswalk is reflective of the codes in the ACS PUMS data files, which slightly differ from the codes found here: Full list of Census provided Industry and Occupation Codes.","INDNAICS is an 8-digit alphanumeric string variable which reports the type of establishment in which the person worked, in terms of the good or service produced. INDNAICS codes industries according to the North American Industrial Classification System, which was developed in 1997. This categorization system is substantially different from industry classifications used in prior years.",149,156,0,character,
+WKSWORK2,"Weeks worked last year, intervalled","WKSWORK2, like WKSWORK1, reports the number of weeks that the respondent worked for profit, pay, or as an unpaid family worker during the previous year. For the census, the reference period is the previous calendar year; for the ACS, the reference period is the previous 12 months. WKSWORK2 differs from WKSWORK1 in that responses are given in intervals (1-13 weeks, 14-26 weeks, and so on), instead of the precise number of weeks. This is because the 1960 and 1970 samples recorded weeks worked only in intervals. For the other years contained in WKSWORK2 (the 1940-1950 and 1980-2000 censuses, the ACS, and the PRCS), the exact number of weeks worked is recorded in WKSWORK1. 
+
+For further discussion, see the WKSWORK1 variable description. See EMPSTAT for definitions of key labor force and employment terminology.",,157,157,0,integer,
+UHRSWORK,Usual hours worked per week,"UHRSWORK reports the number of hours per week that the respondent usually worked, if the person worked during the previous year. The census inquiry relates to the previous calendar year, while the ACS and the PRCS uses the previous 12 months as the reference period.",,158,159,0,integer,
+WORKEDYR,Worked last year,"WORKEDYR indicates whether the person had worked at all for profit, pay, or as an unpaid family worker during the previous year. For the census samples, the reference period is the previous calendar year; for the ACS and the PRCS, the reference period is the preceding 12 months.",,160,160,0,integer,
+INCTOT,Total personal income,"INCTOT reports each respondent's total pre-tax personal income or losses from all sources for the previous year. The censuses collected information on income received from these sources during the previous calendar year; for the ACS and the PRCS, the reference period was the past 12 months. Amounts are expressed in contemporary dollars, and users studying change over time must adjust for inflation:
+
+Users studying change over time must adjust for inflation. Consumer Price Index adjustment factors for the appropriate years can be found in the CPI99 variable.
+
+The exception is the ACS/PRCS multi-year files, where all dollar amounts have been standardized to dollars as valued in the final year of data included in the file (e.g., 2007 dollars for the 2005-2007 3-year file). Additionally, more detail may be available than exists in the original ACS samples.
+
+User Note: ACS respondents are surveyed throughout the year, and amounts do not reflect calendar year dollars. While the Census Bureau provides an adjustment factor (available in ADJUST), this is an imperfect solution. See the ACS income variables note for further details.
+
+For a more complete discussion of the use of these factors to adjust for inflation, users may wish to see the IPUMS-CPS note on adjusting dollar amount variables for inflation.","INCTOT is a 7-digit numeric code reporting each respondent's total pre-tax personal income or losses from all sources for the previous year. INCTOT specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below by Census year (and data sample if specified).
+
+User Note: Users studying change over time must adjust for inflation (See Description).
+
+INCTOT Specific Variable Codes
+-009995 = -$9,900 (1980)
+-000001 = Net loss (1950)
+0000000 = None
+0000001 = $1 or break even (2000, 2005-onward ACS and PRCS)
+9999999 = N/A
+9999998 = Unknown
+
+
+* .indent {
+  text-indent: 10px;
+}
+
+
+* .lrgindent {
+  text-indent: 90px;
+}
+
+
+
+	
+		INCTOT
+	
+		Census
+		Bottom Code
+		Top Code
+	
+		1950
+		 Net loss
+		$10,000
+	
+		1960
+		-$9,900
+		$25,000
+	
+		1970
+		-$9,900
+		$50,000
+	
+		1980
+		-$9,990
+		$75,000
+	
+		1990
+		-$19,998
+		&nbsp;$400,000*
+	
+		2000
+		-$20,000
+		$999,998
+	
+		ACS
+		-$19,998
+		-
+	
+		PRCS
+		-$19,998
+		-
+	
+
+
+",161,167,0,numeric,
+INCWAGE,Wage and salary income,"INCWAGE reports each respondent's total pre-tax wage and salary income - that is, money received as an employee - for the previous year. The censuses collected information on income received from these sources during the previous calendar year; for the ACS and the PRCS, the reference period was the past 12 months. Sources of income in INCWAGE include wages, salaries, commissions, cash bonuses, tips, and other money income received from an employer. Payments-in-kind or reimbursements for business expenses are not included. See the comparability discussion below for further information.
+
+Amounts are expressed in contemporary dollars, and users studying change over time must adjust for inflation (See INCTOT for Consumer Price Index adjustment factors). The exception is the ACS/PRCS multi-year files, where all dollar amounts have been standardized to dollars as valued in the final year of data included in the file (e.g., 2007 dollars for the 2005-2007 3-year file). Additionally, more detail may be available than exists in the original ACS samples.
+
+Inflation-adjusted versions of this variable created with the Adjust Monetary Values tool will use the default reference year for the sample (i.e., survey year [YEAR] for ACS and previous year [YEAR-1] for decennials).
+
+User Note: ACS respondents are surveyed throughout the year, and amounts do not reflect calendar year dollars. While the Census Bureau provides an adjustment factor (available in ADJUST), this is an imperfect solution. See the ACS income variables note for further details.","INCWAGE is a 7-digit numeric code reporting each respondent's total pre-tax wage and salary income - that is, money received as an employee - for the previous year. INCWAGE specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below by Census year (and data sample if specified).
+
+User Note: Amounts are expressed in contemporary dollars, and users studying change over time must adjust for inflation (See Description).
+
+INCWAGE Specific Variable Codes
+999999 = N/A
+999998 = Missing
+
+Year-specific codes
+
+1940 top code: $5,001
+
+1950 top code: $10,000
+
+1960 top code: $25,000
+
+1970 top code: $50,000
+
+1980 top code: $75,000
+
+1990 top code: $140,000*
+
+2000 top code: $175,000**
+
+ACS (2000-2002) top code: $200,000**
+
+ACS (2003-onward) top code: 99.5th percentile in state**
+
+PRCS (2005-onward) top code: 99.5th percentile in state**
+* Higher amounts are expressed as the state medians of values above the listed Top Code value for that specific Census year (i.e. For Census Year 1990, any observed value greater than the Top Code value of $140,000 was coded as the median value greater than $140,000 within that observation's state.).
+** Higher amounts are coded as the state means of values above the listed Top Code value for that specific Census year.
+
+Values Exceeding Top codes, by State: 1990 - onward",168,173,0,numeric,
+MIGRATE1,Migration status 1 year ago [general version],"MIGRATE1 reports whether the person had changed residence since a reference point 1 year ago. Specifically, individuals age 1+ were asked if they had lived in the ""same house"" (non-movers) or a ""different house"" (movers) one year earlier. Persons who had moved were to indicate the foreign country or the state, county, and place of their normal residence during the reference year. Migration data were collected only for sample-line persons in 1950. 
+
+The category ""Same house"" includes all eligible persons who did not move since the reference year, as well as those who had moved but by the enumeration or survey date had returned to their earlier residence. The category ""Different house"" includes persons who lived in a different house in the reference year. For 1950, movers (those who reported living in a different house in the reference year) are further subdivided according to type of move (e.g., within the county or across state lines). The ACS and the PRCS report only same/different residence and identify those previously living abroad. 
+
+Therefore, for the ACS/PRCS samples, MIGRATE1 uses information contained in the IPUMS variable MIGPLAC1 and compatible PUMAs of migration and PUMAs of residence to indicate whether movers migrated between states or within the same state (the same levels of detail in the 1950 classification.). For movers who migrated between states, a detailed version of MIGRATE1 indicates whether they moved between contiguous or non-contiguous states. For movers who migrated within the same state, detailed MIGRATE1 indicates whether they moved within or between PUMAs.",,174,174,0,integer,
+MIGRATE1D,Migration status 1 year ago [detailed version],"MIGRATE1 reports whether the person had changed residence since a reference point 1 year ago. Specifically, individuals age 1+ were asked if they had lived in the ""same house"" (non-movers) or a ""different house"" (movers) one year earlier. Persons who had moved were to indicate the foreign country or the state, county, and place of their normal residence during the reference year. Migration data were collected only for sample-line persons in 1950. 
+
+The category ""Same house"" includes all eligible persons who did not move since the reference year, as well as those who had moved but by the enumeration or survey date had returned to their earlier residence. The category ""Different house"" includes persons who lived in a different house in the reference year. For 1950, movers (those who reported living in a different house in the reference year) are further subdivided according to type of move (e.g., within the county or across state lines). The ACS and the PRCS report only same/different residence and identify those previously living abroad. 
+
+Therefore, for the ACS/PRCS samples, MIGRATE1 uses information contained in the IPUMS variable MIGPLAC1 and compatible PUMAs of migration and PUMAs of residence to indicate whether movers migrated between states or within the same state (the same levels of detail in the 1950 classification.). For movers who migrated between states, a detailed version of MIGRATE1 indicates whether they moved between contiguous or non-contiguous states. For movers who migrated within the same state, detailed MIGRATE1 indicates whether they moved within or between PUMAs.",,175,176,0,integer,
+MIGPLAC1,State or country of residence 1 year ago,"For respondents who lived in a different residence 1 year before the survey date, MIGPLAC1 identifies the U.S. state, outlying territory, or the foreign country where the respondent lived at that time.
+
+MIGPLAC5 provides analogous information for 1940 and 1960-2000 samples, using a 5-year rather than a 1-year reference period.",,177,179,0,integer,
+MIGPUMA1,Migration PUMA of residence 1 year ago,"For respondents who lived in a different residence 1 year before the survey date, MIGPUMA1 identifies the location where the respondent lived at that time, in terms of the Migration Public Use Microdata Area (PUMA) of 100,000+ residents.
+
+Migration PUMA codes are state-dependent, so MIGPUMA1 must be combined with state codes (see MIGPLAC1) to distinguish Migration PUMAs in different states.
+
+A Migration PUMA may correspond to either one or multiple PUMAs, so the codes and extents for PUMAs of residence 1 year ago (in MIGPUMA1) and the PUMA of current residence (in PUMA) occasionally differ.
+
+Details on Migration PUMA definitions, including maps, boundary files, and relationships to PUMAs:
+
+2005-2011 ACS/PRCS Migration PUMAs (2000 Definitions)
+
+2012-2021 ACS/PRCS Migration PUMAs (2010 Definitions)
+
+2022-Onward ACS/PRCS Migration PUMAs (2020 Definitions)
+Note: In some multi-year samples, Migration PUMA definitions vary or are allocated. In multi-year ACS/PRCS samples that span a PUMA definition change, the identified Migration PUMAs vary based on the survey year when each respondent was interviewed (as given by MULTYEAR). This occurs in samples that span the change from 2000 PUMAs (survey years 2000-2011) to 2010 PUMAs (survey years 2012-2021) and in the 2022 5-year ACS/PRCS sample (which uses 2010 PUMAs for survey years 2018-2021 and 2020 PUMAs in 2022). With the 2023 5-year ACS/PRCS sample, the Census Bureau began reporting only 2020 PUMAs for all survey years, which they achieved by assigning pre-2022 respondents a 2020 PUMA based on the associated 2010 PUMAs and the known relationships between 2010 and 2020 PUMAs. The Bureau has provided no details on their PUMA allocation method, but IPUMS has confirmed that it produces plausible population totals for the assigned 2020 PUMAs.","MIGPUMA1 is a 5-digit numeric variable identifying the location where the respondent lived one year ago, in terms of the Migration Public Use Microdata Area (PUMA), defined by the Census Bureau.
+
+Migration PUMA codes are state-dependent, so MIGPUMA1 must be combined with state codes (see MIGPLAC1) to distinguish Migration PUMAs located in different states.
+
+MIGPUMA1 Special Codes
+00000 = N/A (less than 1 year old or lived in same residence 1 year ago)
+00001 = Did not live in the United States or in Puerto Rico one year ago
+00002 = Lived in Puerto Rico one year ago and current residence is in the U.S.
+
+Details on Migration PUMA definitions, including maps, boundary files, and relationships to PUMAs:
+
+2005-2011 ACS/PRCS Migration PUMAs (2000 Definitions)
+
+2012-2021 ACS/PRCS Migration PUMAs (2010 Definitions)
+
+2022-Onward ACS/PRCS Migration PUMAs (2020 Definitions)
+",180,184,0,numeric,
+PWPUMA,Place of work: PUMA,"PWPUMA identifies the location of the respondent's primary workplace, in terms of the Public Use Microdata Area, a Census Bureau-defined area of 100,000+ residents.
+
+In the 1990 State sample, PUMAs generally follow the boundaries of groups of counties, single counties, or census-defined ""places""; if such areas exceed 200,000 residents, they are divided into as many PUMAs of 100,000+ residents as possible. In the 1990 Metro sample, PUMAs generally follow the boundaries of central cities, metropolitan areas (see METAREA for the definition of this concept), or non-metropolitan places, and they are divided into as many PUMAs of 100,000+ residents as possible, if the population of such areas exceeds 200,000. Thus, while PUMAs in both samples designate geographic areas of 100,000+ residents, the codes and the logic of the geography of PUMAs differ for these 1990 samples.
+
+In both the State and the Metro sample for 1990, the codes for PWPUMA are state-dependent (in the case of Puerto Rico, codes for PWPUMA are dependent on Puerto Rico), so PWPUMA can only be interpreted in combination with PWSTATE2.
+
+PUMAs defined for place of work (PWPUMA) differ slightly from PUMAs defined for place of current residence (PUMA). PWPUMA provides detail to only 3 digits of the 5-digit PUMA code. Therefore, any PUMAs that use the fourth and fifth digit are aggregated together in PWPUMA.","This variable is only available for 1990. PWPUMA is a 3-digit numeric variable which identifies the location of the respondent's primary workplace, in terms of the Public Use Microdata Area, a Census Bureau-defined area of 100,000+ residents. In other years, the Census Bureau designated other areas of 100,000+ residents for analyzing place of work. PWPUMA specific variable codes for missing, edited, or unidentified observations, observations not applicable (N/A), observations not in universe (NIU), top and bottom value coding, etc. are provided below if applicable by Census year (and data sample if specified).
+
+User Note: PUMAs are drawn and coded differently for the 1990 State and Metro samples. In the 1990 State sample, PUMAs generally follow the boundaries of groups of counties, single counties, or census-defined ""places""; if such areas exceed 200,000 residents, they are divided into as many PUMAs of 100,000+ residents as possible. In the 1990 Metro sample, PUMAs generally follow the boundaries of central cities, metropolitan areas (See METAREA for the definition of this concept), or non-metropolitan places, and they are divided into as many PUMAs of 100,000+ residents as possible, if the population of such areas exceeds 200,000.
+
+PWPUMA Specific Variable Codes
+000 = N/A
+999 = Abroad
+
+See 1990 PUMA Maps and Composition for details regarding 1990 PUMA codes.",185,187,0,numeric,
+PWPUMA00,"Place of work: PUMA, 2000 onward","PWPUMA00 identifies the location of the respondent's primary workplace, in terms of the Place-of-Work Public Use Microdata Area (POWPUMA), a Census Bureau-defined area of contiguous territory containing 100,000+ residents.
+
+POWPUMA codes are state-dependent, so PWPUMA00 must be combined with state codes (see PWSTATE2) to distinguish POWPUMAs in different states.
+
+IPUMS originally included ""00"" in the name of PWPUMA00 to indicate the variable's use of 2000 POWPUMA definitions, which are the smallest place-of-work units identified in source 2000 census samples and in 2005-2011 ACS/PRCS samples. IPUMS has, however, extended PWPUMA00 to also supply 2010 POWPUMA codes for 2012-2021 ACS/PRCS samples and 2020 POWPUMA codes for 2022 and later ACS/PRCS samples. In contrast, the PWPUMA variable provides only 1990 POWPUMA codes and is available only for 1990 samples.
+
+Details on POWPUMA definitions, including maps, boundary files, and relationships to PUMAs:
+
+2000 POWPUMAs (used in 2000 5% sample and 2005-2011 ACS/PRCS samples)
+
+2010 POWPUMAs (used in 2012-2021 ACS/PRCS samples)
+
+2020 POWPUMAs (used in 2022-onward ACS/PRCS samples)
+Note: In some multi-year samples, Place-of-Work PUMA definitions vary or are allocated. In multi-year ACS/PRCS samples that span a PUMA definition change, the identified Place-of-Work PUMAs vary based on the survey year when each respondent was interviewed (as given by MULTYEAR). This occurs in samples that span the change from 2000 PUMAs (survey years 2000-2011) to 2010 PUMAs (survey years 2012-2021) and in the 2022 5-year ACS/PRCS sample (which uses 2010 PUMAs for survey years 2018-2021 and 2020 PUMAs in 2022). With the 2023 5-year ACS/PRCS sample, the Census Bureau began reporting only 2020 PUMAs for all survey years, which they achieved by assigning pre-2022 respondents a 2020 PUMA based on the associated 2010 PUMAs and the known relationships between 2010 and 2020 PUMAs. The Bureau has provided no details on their PUMA allocation method, but IPUMS has confirmed that it produces plausible population totals for the assigned 2020 PUMAs.","PWPUMA00 is a 5-digit numeric variable identifying the location of the respondent's primary workplace, in terms of the Place-of-Work Public Use Microdata Area (POWPUMA), a Census Bureau-defined area of contiguous territory containing 100,000+ residents. 
+
+PWPUMA00-Specific Variable Codes
+00000 = N/A or not identifiable 
+00001 = Did not work in the United States or in Puerto Rico
+
+Details on POWPUMA definitions, including maps, boundary files, and relationships to PUMAs:
+
+2000 POWPUMAs (used in 2000 5% sample and 2005-2011 ACS/PRCS samples)
+
+2010 POWPUMAs (used in 2012-2021 ACS/PRCS samples)
+
+2020 POWPUMAs (used in 2022-onward ACS/PRCS samples)
+",188,192,0,numeric,

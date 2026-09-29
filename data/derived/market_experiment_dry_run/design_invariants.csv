@@ -1,0 +1,6 @@
+check,passed
+factorial_balance_per_block,True
+buyer_seller_ratio_equal,True
+integrated_choice_set_size,True
+segmented_choice_set_size,True
+capacity_upper_bound_enforced,True

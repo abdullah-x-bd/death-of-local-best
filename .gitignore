@@ -1,0 +1,22 @@
+# Raw and restricted data are not ordinary Git objects.
+data/raw/
+data/raw_public/
+public-data-core/
+public-data-qcew/
+
+# IPUMS and licensed microdata
+*.dat
+*.dat.gz
+*.dta
+*.sav
+*.sas7bdat
+
+# Temporary downloads
+*.part
+
+# Local credentials
+.Renviron
+.env
+
+# Ephemeral private data cache
+data/private/
