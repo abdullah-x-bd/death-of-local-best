@@ -11,10 +11,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: research-branch-writer
+  cancel-in-progress: false
+
 jobs:
   cpuma:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,24 +29,84 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: python -m pip install pandas requests xlrd
+      - name: Install Python dependencies
+        run: python -m pip install pandas requests xlrd "huggingface_hub>=0.35.0"
+
+      - name: Download private IPUMS data and DDI
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_XET_HIGH_PERFORMANCE: "1"
+        run: |
+          mkdir -p data/private/ipums_usa
+          python - <<'PY'
+          import os
+          from huggingface_hub import hf_hub_download
+          for fn in ["usa_00001.dat.gz","usa_00001.xml"]:
+              hf_hub_download(
+                  repo_id="abdkul/death-of-local-best-private-data",
+                  repo_type="dataset",
+                  filename=fn,
+                  token=os.environ["HF_TOKEN"],
+                  local_dir="data/private/ipums_usa",
+              )
+          PY
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'install.packages(c("ipumsr","data.table","haven","jsonlite"), repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
+
+      - name: Rebuild PUMA outcome cells
+        run: |
+          rm -rf outputs/ipums_puma
+          mkdir -p outputs/ipums_puma
+          Rscript analysis/07_ipums_puma_panel.R \
+            data/private/ipums_usa/usa_00001.xml \
+            data/private/ipums_usa/usa_00001.dat.gz \
+            outputs/ipums_puma
+          cat outputs/ipums_puma/qa.json
 
       - name: Build official IPUMS CPUMA0010 panel
         run: |
-          python analysis/09_build_cpuma0010_panel.py
-          cat data/derived/ipums_cpuma0010/qa.json
-          du -h data/derived/ipums_cpuma0010/*
+          rm -rf outputs/ipums_cpuma0010
+          python analysis/09_build_cpuma0010_panel.py \
+            --puma-dir outputs/ipums_puma \
+            --outdir outputs/ipums_cpuma0010
+          cat outputs/ipums_cpuma0010/qa.json
+          du -h outputs/ipums_cpuma0010/*
 
-      - name: Persist harmonized panel
+      - name: Upload harmonized CPUMA panel
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipums-cpuma0010-panel
+          path: outputs/ipums_cpuma0010/
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Persist compact CPUMA metadata
         run: |
+          mkdir -p /tmp/cpuma_meta
+          cp outputs/ipums_cpuma0010/qa.json /tmp/cpuma_meta/
+          cp outputs/ipums_cpuma0010/cpuma0010_source_puma_assignments.csv /tmp/cpuma_meta/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin causal-architecture-v1
+          git fetch origin causal-architecture-v1
+          git rebase origin/causal-architecture-v1
+          rm -rf data/derived/ipums_cpuma0010
+          mkdir -p data/derived/ipums_cpuma0010
+          cp /tmp/cpuma_meta/* data/derived/ipums_cpuma0010/
           git add data/derived/ipums_cpuma0010
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No metadata changes"
           else
-            git commit -m "Persist CPUMA0010 harmonized occupation panel"
+            git commit -m "Persist CPUMA0010 harmonization metadata"
             git push origin HEAD:causal-architecture-v1
           fi
