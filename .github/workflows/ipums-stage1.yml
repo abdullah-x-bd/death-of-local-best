@@ -65,9 +65,14 @@ jobs:
         with:
           use-public-rspm: true
 
+      - name: Install system libraries for R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
       - name: Install R dependencies
         run: |
-          Rscript -e 'install.packages(c("ipumsr","data.table","haven","jsonlite"), repos="https://cloud.r-project.org")'
+          Rscript -e 'install.packages(c("curl","httr","ipumsr","data.table","haven","jsonlite"), repos=Sys.getenv("RSPM"))'
 
       - name: Run streaming IPUMS ingestion
         run: |
