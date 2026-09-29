@@ -54,3 +54,5 @@ jobs:
               --title "Public data core v0.1" \
               --notes "Frozen public raw-data snapshots for the causal market-shelter project. Exact SHA-256 values are included."
           fi
+
+# bootstrap revision 2: BLS download server
