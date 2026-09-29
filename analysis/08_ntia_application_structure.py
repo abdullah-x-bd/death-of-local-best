@@ -62,8 +62,8 @@ def main():
     states=s2[[id2,state2]].copy()
     states.columns=["easygrants_id","project_state"]
     states["easygrants_id"]=states["easygrants_id"].map(clean_id)
-    states["project_state"]=states["project_state"].astype(str).str.strip()
-    states=states[(states.easygrants_id!="nan")&(states.project_state!="nan")].drop_duplicates()
+    states["project_state"]=states["project_state"].map(lambda v: "" if pd.isna(v) else str(v).strip())
+    states=states[(states.easygrants_id!="nan")&(states.project_state!="")].drop_duplicates()
     state_summary=states.groupby("easygrants_id").agg(
         n_project_states=("project_state","nunique"),
         project_states=("project_state",lambda x:"|".join(sorted(set(x))))
