@@ -76,3 +76,5 @@ jobs:
           fi
 
 # bootstrap revision 3: independent source freezing
+
+# bootstrap revision 4: canonical Census Nonemployer paths
