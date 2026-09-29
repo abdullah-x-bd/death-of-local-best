@@ -140,7 +140,7 @@ callback <- IpumsSideEffectCallback$new(function(x, pos) {
   ), by = .(YEAR, SAMPLE)]
   append_dt(sy, "sample_year.csv")
 
-  st <- dt[.working_age, .(
+  st <- dt[.working_age == TRUE, .(
     n_persons = .N,
     person_weight = sum(.w, na.rm = TRUE),
     labor_force_weight = sum(.w[.labor_force], na.rm = TRUE),
