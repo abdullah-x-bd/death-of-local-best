@@ -1,0 +1,63 @@
+name: Inventory NTIA treatment sources
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ntia-treatment-inventory.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install pandas requests xlrd openpyxl
+
+      - name: Acquire and audit NTIA sources
+        run: |
+          python analysis/06_ntia_acquire_inventory.py --outdir outputs/ntia_inventory
+          cat outputs/ntia_inventory/identification_gate.json
+          cat outputs/ntia_inventory/source_manifest.json
+
+      - name: Persist non-raw inventories
+        run: |
+          mkdir -p data/derived/ntia_inventory
+          cp outputs/ntia_inventory/source_manifest.json data/derived/ntia_inventory/
+          cp outputs/ntia_inventory/identification_gate.json data/derived/ntia_inventory/
+          cp outputs/ntia_inventory/excel_sheet_inventory.csv data/derived/ntia_inventory/
+          cp outputs/ntia_inventory/applications_candidate_columns.csv data/derived/ntia_inventory/
+          cp outputs/ntia_inventory/applications_categorical_audit.csv data/derived/ntia_inventory/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/derived/ntia_inventory
+          if git diff --cached --quiet; then
+            echo "No inventory changes"
+          else
+            git commit -m "Persist NTIA treatment-source inventory"
+            git push origin HEAD:causal-architecture-v1
+          fi
+
+      - name: Upload verified public source snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: ntia-treatment-source-snapshots
+          path: outputs/ntia_inventory/_raw/
+          retention-days: 30
+          if-no-files-found: warn
