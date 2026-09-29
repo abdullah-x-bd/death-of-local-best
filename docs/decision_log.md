@@ -69,3 +69,13 @@ Minimum evidentiary package for the strongest claim:
 - AI-era second shock
 - preregistered analysis
 - public reproducibility package
+
+
+## 2026-09-29 — Start of empirical execution
+
+- The private IPUMS USA extract is available as `usa_00001.dat.gz` with DDI, R command file, and basic codebook in the private Hugging Face data vault.
+- GitHub Actions authentication to that private repository has been verified successfully.
+- Stage 1 is restricted to ingestion, variable/sample validation, and descriptive outcome construction.
+- No primary causal coefficient may be estimated in Stage 1.
+- The broadband treatment definition, geographic exposure mapping, occupation crosswalk, market-shelter measures, outcome definitions, and exclusion rules must be frozen before the first confirmatory treatment-effect regression.
+- Stage 1 may reveal data defects or unavailable variables. Repairs motivated by data availability must be logged here and may not be justified by treatment-effect magnitude or statistical significance.
