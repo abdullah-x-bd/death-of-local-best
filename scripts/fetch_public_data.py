@@ -56,40 +56,27 @@ def fetch_onet(root: Path):
         download("https://www.onetcenter.org/dl_files/db_50.zip", root/"onet"/"db_50.zip"),
     ]
 
-def heading_year(anchor):
-    node = anchor
-    for _ in range(100):
-        node = node.find_previous()
-        if node is None:
-            return None
-        if getattr(node, "name", None) in ("h2","h3","h4"):
-            m = re.search(r"(19|20)\d{2}", node.get_text(" ", strip=True))
-            return int(m.group(0)) if m else None
-    return None
-
 def fetch_oews(root: Path):
-    html, base = get_html("https://www.bls.gov/oes/tables.htm")
-    soup = BeautifulSoup(html, "html.parser")
-    candidates = {}
-    for a in soup.find_all("a", href=True):
-        txt = " ".join(a.get_text(" ", strip=True).lower().split())
-        y = heading_year(a)
-        if not y or not (1997 <= y <= 2025):
-            continue
-        if "metropolitan" in txt:
-            href = urljoin(base, a["href"])
-            score = (2 if "metropolitan and nonmetropolitan" in txt else 0) + (1 if href.lower().split("?")[0].endswith(".xlsx") else 0)
-            if y not in candidates or score > candidates[y][0]:
-                candidates[y] = (score, href)
-    out, missing = [], []
-    for y in range(1997, 2026):
-        if y not in candidates:
-            missing.append(y); continue
-        url = candidates[y][1]
-        ext = Path(url.split("?")[0]).suffix or ".bin"
-        out.append(download(url, root/"oews"/f"{y}_metro{ext}"))
-    if missing:
-        raise RuntimeError(f"OEWS metro links missing for {missing}")
+    # Use the official BLS download server rather than scraping bls.gov.
+    # The BLS OEWS time-series documentation describes these files as
+    # containing series-level observations with year/period and mapping files.
+    base = "https://download.bls.gov/pub/time.series/OE/"
+    files = [
+        "oe.data.1.AllData",
+        "oe.area",
+        "oe.areatype",
+        "oe.datatype",
+        "oe.footnote",
+        "oe.industry",
+        "oe.occupation",
+        "oe.release",
+        "oe.seasonal",
+        "oe.sector",
+        "oe.txt",
+    ]
+    out = []
+    for fn in files:
+        out.append(download(base + fn, root/"oews"/fn))
     return out
 
 def fetch_cbp(root: Path):
