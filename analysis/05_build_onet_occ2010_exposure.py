@@ -315,6 +315,7 @@ def main():
           "rules":"docs/onet_exposure_freeze_v0.md",
           "bls_soc_crosswalk_transport":bls_transport,
           "bls_soc_crosswalk_canonical":BLS_SOC_URLS[0],
+          "bls_soc_crosswalk_mirror_commit":"sidsatya/ailabor@9ba422152072e900899f4acd84d95575422af29f",
           "treatment_effects_estimated":False
         }
         (out/"qa.json").write_text(json.dumps(coverage,indent=2))
