@@ -1,0 +1,85 @@
+name: Build IPUMS PUMA occupation panel
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ipums-puma-panel.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  puma-panel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Checkout research branch
+        uses: actions/checkout@v4
+        with:
+          ref: causal-architecture-v1
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Hugging Face client
+        run: python -m pip install "huggingface_hub>=0.35.0"
+
+      - name: Download private IPUMS data and DDI
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_XET_HIGH_PERFORMANCE: "1"
+        run: |
+          mkdir -p data/private/ipums_usa
+          python - <<'PY'
+          import os
+          from huggingface_hub import hf_hub_download
+          for fn in ["usa_00001.dat.gz","usa_00001.xml"]:
+              hf_hub_download(
+                  repo_id="abdkul/death-of-local-best-private-data",
+                  repo_type="dataset",
+                  filename=fn,
+                  token=os.environ["HF_TOKEN"],
+                  local_dir="data/private/ipums_usa",
+              )
+          PY
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e 'install.packages(c("ipumsr","data.table","haven","jsonlite"), repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
+
+      - name: Build PUMA occupation panel
+        run: |
+          mkdir -p data/derived/ipums_puma
+          Rscript analysis/07_ipums_puma_panel.R \
+            data/private/ipums_usa/usa_00001.xml \
+            data/private/ipums_usa/usa_00001.dat.gz \
+            data/derived/ipums_puma
+          cat data/derived/ipums_puma/qa.json
+          du -h data/derived/ipums_puma/*
+
+      - name: Persist PUMA derived panel
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/derived/ipums_puma
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Persist IPUMS PUMA occupation panel"
+            git push origin HEAD:causal-architecture-v1
+          fi
