@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: research-branch-writer
+  cancel-in-progress: false
+
 jobs:
   puma-panel:
     runs-on: ubuntu-latest
@@ -72,14 +76,29 @@ jobs:
           cat data/derived/ipums_puma/qa.json
           du -h data/derived/ipums_puma/*
 
-      - name: Persist PUMA derived panel
+      - name: Upload large PUMA panel
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipums-puma-panel
+          path: |
+            data/derived/ipums_puma/puma_occupation_year.csv
+            data/derived/ipums_puma/puma_year_denominators.csv
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Persist PUMA QA only
         run: |
+          cp data/derived/ipums_puma/qa.json /tmp/puma_qa.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/derived/ipums_puma
+          git fetch origin causal-architecture-v1
+          git rebase origin/causal-architecture-v1
+          mkdir -p data/derived/ipums_puma
+          cp /tmp/puma_qa.json data/derived/ipums_puma/qa.json
+          git add data/derived/ipums_puma/qa.json
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No QA changes"
           else
-            git commit -m "Persist IPUMS PUMA occupation panel"
+            git commit -m "Persist IPUMS PUMA panel QA"
             git push origin HEAD:causal-architecture-v1
           fi
