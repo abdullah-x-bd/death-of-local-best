@@ -1,0 +1,94 @@
+version: 1
+frozen_on: 2026-09-29
+repository: abdullah-x-bd/death-of-local-best
+
+policy:
+  raw_large_files: "stored as GitHub release assets, not ordinary git blobs"
+  derived_small_files: "may be committed under data/derived"
+  checksums: "SHA-256 required for every frozen asset"
+  licenses: "preserve source terms and attribution"
+
+sources:
+  onet_4_0:
+    agency: "U.S. Department of Labor O*NET"
+    url: "https://www.onetcenter.org/dl_files/db_40.zip"
+    release: "June 2002"
+    purpose: "pre-treatment occupation characteristics"
+    bundle: "onet"
+  onet_5_0:
+    agency: "U.S. Department of Labor O*NET"
+    url: "https://www.onetcenter.org/dl_files/db_50.zip"
+    release: "April 2003"
+    purpose: "longitudinal starting point recommended by O*NET"
+    bundle: "onet"
+  oews:
+    agency: "U.S. Bureau of Labor Statistics"
+    index_url: "https://www.bls.gov/oes/tables.htm"
+    years: "1997-2025"
+    artifact: "metropolitan and nonmetropolitan cross-industry files"
+    purpose: "occupation x local-labor-market employment and wages"
+    bundle: "oews"
+  cbp:
+    agency: "U.S. Census Bureau"
+    root: "https://www2.census.gov/programs-surveys/cbp/datasets/"
+    years: "1986-2023"
+    artifact: "county files"
+    purpose: "local employer establishments, employment and payroll by industry"
+    bundle: "cbp"
+  nonemployer:
+    agency: "U.S. Census Bureau"
+    root: "https://www2.census.gov/programs-surveys/nonemployer-statistics/datasets/"
+    years: "1997-2023"
+    artifact: "county files"
+    purpose: "self-employed/nonemployer business counts and receipts"
+    bundle: "nonemployer"
+  qcew:
+    agency: "U.S. Bureau of Labor Statistics"
+    root: "https://data.bls.gov/cew/data/files/"
+    years: "1990-2025"
+    artifact: "annual singlefile CSV archives"
+    purpose: "county/industry employment and wage validation"
+    bundle: "qcew"
+  ntia_btop_bip_applications:
+    agency: "NTIA / U.S. Department of Commerce"
+    url: "https://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls"
+    fallback_url: "http://www.ntia.doc.gov/broadbandgrants/applications/Comprehensive_Query_Results.xls"
+    purpose: "applications universe for broadband quasi-experiment"
+    bundle: "ntia"
+  ntia_btop_map:
+    agency: "NTIA / U.S. Department of Commerce"
+    url: "https://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls"
+    fallback_url: "http://www2.ntia.doc.gov/BTOPmap/data/BTOP_Map_Data.xls"
+    purpose: "awarded project geography and project metadata"
+    bundle: "ntia"
+  ntia_nbm_fall2010:
+    agency: "NTIA State Broadband Initiative"
+    index_url: "https://www2.ntia.gov/June-2010-datasets"
+    purpose: "first-stage validation of broadband availability"
+    bundle: "ntia"
+  ofcom_2023:
+    agency: "Ofcom"
+    page_url: "https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/connected-nations-2023/data-downloads"
+    purpose: "UK granular broadband coverage replication"
+    bundle: "ofcom"
+  ofcom_2025:
+    agency: "Ofcom"
+    url: "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/infrastructure-research/connected-nations-2025/202507_fixed_broadband_coverage_r01.zip?v=407830"
+    purpose: "UK granular broadband coverage replication"
+    bundle: "ofcom"
+  bduk:
+    agency: "Building Digital UK"
+    index_url: "https://www.gov.uk/government/collections/open-market-review-omr-determinations-and-bduk-plans"
+    purpose: "premises-level commercial viability and intervention status"
+    note: "vintage-specific download after the UK identification window is frozen"
+  india_plfs:
+    agency: "Ministry of Statistics and Programme Implementation, India"
+    index_url: "https://microdata.gov.in/nada/index.php/catalog/PLFS"
+    purpose: "India labor-market replication"
+    note: "public-use catalogue; exact data endpoint is portal/session sensitive"
+  brazil_rais:
+    agency: "Ministério do Trabalho e Emprego, Brazil"
+    index_url: "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/estatisticas-trabalho/microdados-rais-e-caged"
+    ftp_root: "ftp://ftp.mtps.gov.br/pdet/microdados/"
+    purpose: "Brazil administrative employer-worker replication"
+    note: "very large; mirror selected vintages locally, freeze hashes"
