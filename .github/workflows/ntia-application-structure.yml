@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: research-branch-writer
+  cancel-in-progress: false
+
 jobs:
   reconstruct:
     runs-on: ubuntu-latest
